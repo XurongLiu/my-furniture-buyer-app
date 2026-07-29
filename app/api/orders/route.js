@@ -16,7 +16,10 @@ export async function POST(request) {
   }
 
   const productIds = items.map((item) => item.productId);
-  const products = await prisma.product.findMany({ where: { id: { in: productIds } } });
+  const products = await prisma.product.findMany({
+    where: { id: { in: productIds } },
+    select: { id: true, price: true },
+  });
 
   let total = 0;
   const orderItemsData = [];

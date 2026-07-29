@@ -58,11 +58,25 @@ export default function CatalogueClient({ products, budget, spent, remaining }) 
         <p className="font-semibold text-stone-900">Remaining: ${remaining.toFixed(2)}</p>
       </div>
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {products.map((product) => (
           <div key={product.id} className="rounded border border-stone-200 bg-white p-4">
-            <div className="text-4xl">{product.emoji}</div>
-            <h3 className="mt-2 font-semibold">{product.name}</h3>
+            {product.imageMimeType ? (
+              <img
+                src={`/api/products/${product.id}/image`}
+                alt={product.name}
+                loading="lazy"
+                className="h-36 w-full rounded object-contain bg-stone-50"
+              />
+            ) : (
+              <div className="flex h-36 items-center justify-center text-4xl">
+                {product.emoji || "🪑"}
+              </div>
+            )}
+            <span className="mt-2 inline-block rounded-full bg-stone-100 px-2 py-0.5 text-xs text-stone-600">
+              {product.category}
+            </span>
+            <h3 className="mt-1 font-semibold">{product.name}</h3>
             <p className="text-sm text-stone-500">{product.description}</p>
             <p className="mt-2 font-medium">${product.price.toFixed(2)}</p>
             <input

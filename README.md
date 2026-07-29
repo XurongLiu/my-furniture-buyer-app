@@ -8,9 +8,10 @@ project rundown (tech stack, folder structure, data model).
 
 ```bash
 npm install
-npm run db:migrate   # creates the SQLite database
-npm run db:seed      # loads sample furniture + a demo account
-npm run dev           # starts the app at http://localhost:3000
+npm run db:migrate      # creates the SQLite database
+npm run db:seed         # creates a demo account
+npm run import:catalog  # loads the real product catalog (needs MONGODB_URI in .env)
+npm run dev              # starts the app at http://localhost:3000
 ```
 
 Demo login: `demo@example.com` / `password123`

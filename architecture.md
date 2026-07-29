@@ -40,19 +40,121 @@ Next.js app (single process)
 
 ## Data model
 
-- **User** — `name`, `email` (unique), `passwordHash`, `budget`, has many `orders`.
-- **Product** — `name` (unique), `description`, `price`, `emoji` (placeholder art), `category`.
-- **Order** — belongs to a `User`, has a `total`, has many `items`.
-- **OrderItem** — links an `Order` to a `Product`, with `quantity` and
-  `unitPrice` (the product's price *at the time of purchase*).
+Four things the app needs to remember, derived directly from
+[requirements.md](./requirements.md): who the buyer is (`User`), what's for
+sale (`Product`), what a buyer bought in one checkout (`Order`), and the
+individual line items inside that checkout (`OrderItem`).
 
-A user's **remaining budget** is never stored — it's computed on every
-request as `budget - sum(order.total for that user's orders)`. That avoids
-the number ever drifting out of sync with the underlying orders.
-`OrderItem.unitPrice` snapshots price at purchase time, so a later catalogue
-price change doesn't rewrite the total of a past order.
+```mermaid
+classDiagram
+    class User {
+        +string id
+        +string name
+        +string email
+        +string passwordHash
+        +float budget
+        +datetime createdAt
+    }
+    class Product {
+        +string id
+        +string externalId
+        +string name
+        +string description
+        +float price
+        +string category
+        +string emoji
+        +string imageData
+        +string imageMimeType
+        +string sourceUrl
+    }
+    class Order {
+        +string id
+        +float total
+        +datetime createdAt
+    }
+    class OrderItem {
+        +string id
+        +int quantity
+        +float unitPrice
+    }
+
+    User "1" --> "0..*" Order : places
+    Order "1" --> "1..*" OrderItem : contains
+    Product "1" --> "0..*" OrderItem : appears in
+```
+
+**In plain English:**
+
+- **User** is the buyer's account — name, email, a hashed password (never
+  the real password), and `budget`, the total they're allowed to spend.
+  This is the "Buyer" role from requirements.md; the code just calls it
+  `User` since there's only one kind of account in this app.
+- **Product** is one catalogue item — a name, description, price, category,
+  and a real photo (`imageData`/`imageMimeType`) when the source catalog
+  provides one, falling back to an `emoji` placeholder when it doesn't.
+  `externalId` and `sourceUrl` trace a product back to where it came from.
+  Products aren't tied to any one user; everyone browses the same catalogue.
+- **Order** is a single checkout — "I'm buying these things right now." It
+  belongs to one user and has a total and a timestamp, but it doesn't list
+  products directly.
+- **OrderItem** is why: an order is usually more than one product, in
+  different quantities, so each product-within-an-order gets its own row —
+  *this order, this product, this quantity, this price*. `unitPrice` is
+  copied from the product's price at the moment of purchase and then never
+  changes, so if the shop later changes a product's price, past orders
+  still show what the buyer actually paid.
+
+**How they connect:** one user can place many orders (or none yet); one
+order is made up of one or more order items (an order can't be empty); one
+product can show up in many order items, across many different orders and
+different buyers — that's how the same $89 chair can be part of ten
+different people's orders without ten copies of "chair" existing in the
+database.
+
+**Nothing stores "remaining budget" directly** — it's always calculated as
+`budget − sum of that user's order totals`, computed fresh each time the
+catalogue page loads. Storing it as its own field would risk it silently
+drifting out of sync with the orders it's supposed to reflect.
 
 Full field list: [prisma/schema.prisma](./prisma/schema.prisma).
+
+## Product catalog source
+
+Products are loaded from an external MongoDB collection (762 real IKEA
+catalog items, seen live in `db.catalog`), not hand-written placeholders.
+This is a one-off/rerunnable import, not a live connection the running app
+depends on — once loaded, the app only ever talks to its own SQLite
+database.
+
+- **`MONGODB_URI`** (in `.env`, gitignored, never hardcoded) points at the
+  source database. `.env.example` documents the shape without a real
+  credential in it.
+- **`scripts/import-catalog.mjs`** (`npm run import:catalog`) connects,
+  reads every document, and replaces whatever's currently in the `Product`
+  table. Because this is a full replace, it also clears `Order`/`OrderItem`
+  rows first — they'd otherwise reference products about to disappear.
+  User accounts are untouched.
+- **Field mapping quirks worth knowing:** the source has no free-text
+  description field, so one is synthesized from colour + dimensions (e.g.
+  "black · W80 × H105 cm"). Its `image_url` field is misleadingly named —
+  it's actually the raw JPEG bytes, base64-encoded, not a URL — so that's
+  stored as `imageData`/`imageMimeType` rather than a link. `item_id` from
+  the source becomes `externalId`, our idempotency key. `product_name` is
+  **not** unique in the source (colour variants of the same item share a
+  name), which is why `Product.name` isn't a unique field.
+- **Images are never inlined into a page's HTML.** At ~63 KB average and
+  762 products, embedding them directly would mean shipping tens of
+  megabytes on every catalogue load. Instead, catalogue/order queries
+  `select` only `imageMimeType` (to know a real photo exists) and the UI
+  points an `<img>` at `/api/products/[id]/image`
+  (`app/api/products/[id]/image/route.js`), which streams the bytes for
+  one product with a long-lived cache header. The browser then loads
+  images lazily and in parallel instead of them bloating one response.
+- **Known limitation:** the catalogue page renders all 762 products
+  unpaginated (this preserves the simpler "one order across the whole
+  catalogue" flow from before). It works, but pagination or search would be
+  the natural next step if the list feels heavy — not built now to avoid
+  a shopping-cart redesign that wasn't asked for.
 
 ## Authentication
 
@@ -98,7 +200,9 @@ or calling the API directly with a fake total.
 ```
 prisma/
   schema.prisma        data model
-  seed.js               sample furniture + demo login
+  seed.js               demo login only (no products — see scripts/)
+scripts/
+  import-catalog.mjs    loads the real catalog from MongoDB, replacing Product rows
 app/
   layout.js             root layout, nav bar, session provider
   page.js               home page
@@ -109,6 +213,7 @@ app/
     auth/[...nextauth]/route.js
     register/route.js
     orders/route.js
+    products/[id]/image/route.js   streams one product's photo
 components/             Navbar, SessionProvider wrapper
 lib/
   prisma.js             Prisma client singleton
@@ -119,7 +224,8 @@ lib/
 
 ```bash
 npm install
-npm run db:migrate   # create/update the SQLite database from schema.prisma
-npm run db:seed      # load sample products + a demo account
-npm run dev            # http://localhost:3000
+npm run db:migrate      # create/update the SQLite database from schema.prisma
+npm run db:seed         # create a demo account
+npm run import:catalog  # load the real catalog (needs MONGODB_URI in .env)
+npm run dev              # http://localhost:3000
 ```

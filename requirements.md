@@ -66,14 +66,16 @@ shop-owner management screen — this is a buyer-facing app only.
 
 ## Non-functional requirements
 
-- NFR1 — Runs entirely on one machine for the hackathon: no cloud accounts,
-  external services, or paid APIs required to get started.
+- NFR1 — The running app itself needs no cloud accounts or paid APIs — data
+  lives in one local SQLite file. Populating the catalogue is a one-off
+  import from an external source (see architecture.md); the app doesn't
+  stay connected to it afterward.
 - NFR2 — Passwords are never stored in plain text (hashed with bcrypt).
 - NFR3 — Budget/order validation happens on the server, not just in the
   browser, so it can't be bypassed by editing page content or calling the
   API directly.
-- NFR4 — No real image assets required; products use emoji as placeholder
-  art.
+- NFR4 — Products show a real photo when the source catalog provides one;
+  emoji placeholder art is a fallback for items that don't have one.
 - NFR5 — The whole app starts with two commands (`npm install`,
   `npm run dev`) plus one-time database setup (`npm run db:migrate`,
   `npm run db:seed`).

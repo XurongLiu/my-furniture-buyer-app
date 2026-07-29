@@ -9,7 +9,22 @@ export default async function CataloguePage() {
   if (!session) redirect("/login");
 
   const [products, user, orderAgg] = await Promise.all([
-    prisma.product.findMany({ orderBy: { category: "asc" } }),
+    prisma.product.findMany({
+      orderBy: { category: "asc" },
+      select: {
+        id: true,
+        name: true,
+        description: true,
+        price: true,
+        category: true,
+        emoji: true,
+        // imageMimeType's presence means a real image is available at
+        // /api/products/[id]/image — imageData itself (the base64 bytes)
+        // is deliberately NOT selected here so it never lands in the page's
+        // HTML; the <img> tag fetches it separately instead.
+        imageMimeType: true,
+      },
+    }),
     prisma.user.findUnique({ where: { id: session.user.id } }),
     prisma.order.aggregate({
       where: { userId: session.user.id },

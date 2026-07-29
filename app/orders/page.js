@@ -9,7 +9,15 @@ export default async function OrdersPage() {
 
   const orders = await prisma.order.findMany({
     where: { userId: session.user.id },
-    include: { items: { include: { product: true } } },
+    include: {
+      items: {
+        include: {
+          product: {
+            select: { id: true, name: true, emoji: true, imageMimeType: true },
+          },
+        },
+      },
+    },
     orderBy: { createdAt: "desc" },
   });
 
@@ -26,10 +34,20 @@ export default async function OrdersPage() {
                 <span>{new Date(order.createdAt).toLocaleString()}</span>
                 <span className="font-semibold text-stone-900">${order.total.toFixed(2)}</span>
               </div>
-              <ul className="mt-2 space-y-1 text-sm">
+              <ul className="mt-2 space-y-2 text-sm">
                 {order.items.map((item) => (
-                  <li key={item.id}>
-                    {item.quantity} × {item.product.emoji} {item.product.name} (${item.unitPrice.toFixed(2)} each)
+                  <li key={item.id} className="flex items-center gap-2">
+                    {item.product.imageMimeType ? (
+                      <img
+                        src={`/api/products/${item.product.id}/image`}
+                        alt={item.product.name}
+                        loading="lazy"
+                        className="h-8 w-8 rounded object-contain bg-stone-50"
+                      />
+                    ) : (
+                      <span>{item.product.emoji || "🪑"}</span>
+                    )}
+                    {item.quantity} × {item.product.name} (${item.unitPrice.toFixed(2)} each)
                   </li>
                 ))}
               </ul>

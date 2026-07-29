@@ -18,13 +18,17 @@ model User {
 }
 
 model Product {
-  id          String      @id @default(cuid())
-  name        String      @unique
-  description String
-  price       Float
-  emoji       String
-  category    String
-  orderItems  OrderItem[]
+  id            String      @id @default(cuid())
+  externalId    String?     @unique // source catalog's own id, e.g. IKEA item_id; null for hand-seeded items
+  name          String
+  description   String
+  price         Float
+  category      String
+  emoji         String? // fallback placeholder art, used only when no real image exists
+  imageData     String? // base64-encoded image bytes, served via /api/products/[id]/image
+  imageMimeType String?
+  sourceUrl     String? // link back to the original catalog listing, if any
+  orderItems    OrderItem[]
 }
 
 model Order {
