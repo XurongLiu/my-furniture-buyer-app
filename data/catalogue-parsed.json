@@ -1,0 +1,5336 @@
+[
+  {
+    "itemId": "00368814",
+    "name": "Bar table",
+    "category": "Bar furniture",
+    "price": 398,
+    "dimensions": "80 × 105.0 × ? cm"
+  },
+  {
+    "itemId": "30180504",
+    "name": "Wall-mounted drop-leaf table",
+    "category": "Bar furniture",
+    "price": 90,
+    "dimensions": "74 × 43.0 × 60.0 cm"
+  },
+  {
+    "itemId": "10122647",
+    "name": "Bar stool with backrest",
+    "category": "Bar furniture",
+    "price": 138,
+    "dimensions": "40 × 91.0 × 45.0 cm"
+  },
+  {
+    "itemId": "70404875",
+    "name": "Bar stool with backrest",
+    "category": "Bar furniture",
+    "price": 51.6,
+    "dimensions": "50 × 95.0 × 44.0 cm"
+  },
+  {
+    "itemId": "60155602",
+    "name": "Bar stool",
+    "category": "Bar furniture",
+    "price": 78,
+    "dimensions": "50 × ? × 50.0 cm"
+  },
+  {
+    "itemId": "69304221",
+    "name": "Bar table and 4 bar stools",
+    "category": "Bar furniture",
+    "price": 870.4,
+    "dimensions": null
+  },
+  {
+    "itemId": "90404879",
+    "name": "Bar stool with backrest",
+    "category": "Bar furniture",
+    "price": 59.6,
+    "dimensions": "52 × 103.0 × 44.0 cm"
+  },
+  {
+    "itemId": "00121766",
+    "name": "Bar stool with backrest",
+    "category": "Bar furniture",
+    "price": 158,
+    "dimensions": "40 × 102.0 × 45.0 cm"
+  },
+  {
+    "itemId": "00397736",
+    "name": "Bar stool with backrest",
+    "category": "Bar furniture",
+    "price": 158,
+    "dimensions": "46 × 103.0 × 47.0 cm"
+  },
+  {
+    "itemId": "29304826",
+    "name": "Table",
+    "category": "Bar furniture",
+    "price": 278,
+    "dimensions": "70 × 105.0 × ? cm"
+  },
+  {
+    "itemId": "70246089",
+    "name": "Bar stool",
+    "category": "Bar furniture",
+    "price": 238,
+    "dimensions": "38 × 84.0 × 36.0 cm"
+  },
+  {
+    "itemId": "00340759",
+    "name": "Bar table",
+    "category": "Bar furniture",
+    "price": 398,
+    "dimensions": "80 × 105.0 × ? cm"
+  },
+  {
+    "itemId": "00400545",
+    "name": "Bar stool with backrest",
+    "category": "Bar furniture",
+    "price": 138,
+    "dimensions": "43 × 114.0 × 51.0 cm"
+  },
+  {
+    "itemId": "10400540",
+    "name": "Bar stool with backrest",
+    "category": "Bar furniture",
+    "price": 138,
+    "dimensions": "43 × 114.0 × 52.0 cm"
+  },
+  {
+    "itemId": "29297227",
+    "name": "Bar table and 2 bar stools",
+    "category": "Bar furniture",
+    "price": 536,
+    "dimensions": null
+  },
+  {
+    "itemId": "99323925",
+    "name": "Bar table",
+    "category": "Bar furniture",
+    "price": 220,
+    "dimensions": "70 × 104.0 × ? cm"
+  },
+  {
+    "itemId": "60400745",
+    "name": "Bar stool",
+    "category": "Bar furniture",
+    "price": 190,
+    "dimensions": "40 × ? × 40.0 cm"
+  },
+  {
+    "itemId": "9288224",
+    "name": "Bar table",
+    "category": "Bar furniture",
+    "price": 220,
+    "dimensions": null
+  },
+  {
+    "itemId": "30135658",
+    "name": "Bar stool",
+    "category": "Bar furniture",
+    "price": 178,
+    "dimensions": "50 × 100.0 × 52.0 cm"
+  },
+  {
+    "itemId": "29123958",
+    "name": "Ext bed frame with slatted bed base",
+    "category": "Beds",
+    "price": 158,
+    "dimensions": "85 × ? × ? cm"
+  },
+  {
+    "itemId": "49278341",
+    "name": "Bed frame w storage and headboard",
+    "category": "Beds",
+    "price": 358,
+    "dimensions": "96 × 110.0 × 54.0 cm"
+  },
+  {
+    "itemId": "50461230",
+    "name": "Cot",
+    "category": "Beds",
+    "price": 238,
+    "dimensions": "66 × 79.0 × ? cm"
+  },
+  {
+    "itemId": "89326463",
+    "name": "Bed frame with 4 drawers",
+    "category": "Beds",
+    "price": 844.4,
+    "dimensions": "140 × 43.0 × 40.0 cm"
+  },
+  {
+    "itemId": "69326609",
+    "name": "Ext bed frame with slatted bed base",
+    "category": "Beds",
+    "price": 216,
+    "dimensions": "91 × ? × ? cm"
+  },
+  {
+    "itemId": "59099136",
+    "name": "Bed frame w storage and headboard",
+    "category": "Beds",
+    "price": 318,
+    "dimensions": "146 × 111.0 × ? cm"
+  },
+  {
+    "itemId": "40395245",
+    "name": "Bed frame",
+    "category": "Beds",
+    "price": 39.6,
+    "dimensions": "94 × ? × ? cm"
+  },
+  {
+    "itemId": "69277307",
+    "name": "Bed frame",
+    "category": "Beds",
+    "price": 478,
+    "dimensions": "188 × ? × ? cm"
+  },
+  {
+    "itemId": "70395239",
+    "name": "Bed frame",
+    "category": "Beds",
+    "price": 79.6,
+    "dimensions": "144 × ? × ? cm"
+  },
+  {
+    "itemId": "89931560",
+    "name": "Bed frame",
+    "category": "Beds",
+    "price": 270,
+    "dimensions": "154 × ? × ? cm"
+  },
+  {
+    "itemId": "30446373",
+    "name": "Upholstered bed frame",
+    "category": "Beds",
+    "price": 238,
+    "dimensions": "144 × ? × ? cm"
+  },
+  {
+    "itemId": "19254209",
+    "name": "Bed frame",
+    "category": "Beds",
+    "price": 218,
+    "dimensions": "148 × 140.0 × ? cm"
+  },
+  {
+    "itemId": "20400691",
+    "name": "Bed frame with storage",
+    "category": "Beds",
+    "price": 230,
+    "dimensions": "96 × 47.0 × 54.0 cm"
+  },
+  {
+    "itemId": "39019701",
+    "name": "Bed frame",
+    "category": "Beds",
+    "price": 178,
+    "dimensions": "147 × ? × ? cm"
+  },
+  {
+    "itemId": "29931596",
+    "name": "Bed frame",
+    "category": "Beds",
+    "price": 198,
+    "dimensions": "156 × ? × ? cm"
+  },
+  {
+    "itemId": "29179554",
+    "name": "Day-bed frame with slatted bed base",
+    "category": "Beds",
+    "price": 178,
+    "dimensions": "97 × 80.0 × ? cm"
+  },
+  {
+    "itemId": "9241043",
+    "name": "Bed frame",
+    "category": "Beds",
+    "price": 158,
+    "dimensions": "153 × ? × ? cm"
+  },
+  {
+    "itemId": "19175957",
+    "name": "Bed frame",
+    "category": "Beds",
+    "price": 368,
+    "dimensions": "196 × 15.0 × 59.0 cm"
+  },
+  {
+    "itemId": "19185433",
+    "name": "Bed frame with slatted bed base",
+    "category": "Beds",
+    "price": 78,
+    "dimensions": "77 × ? × ? cm"
+  },
+  {
+    "itemId": "79902935",
+    "name": "Bed frame with storage",
+    "category": "Beds",
+    "price": 230,
+    "dimensions": "146 × 20.0 × 54.0 cm"
+  },
+  {
+    "itemId": "90349326",
+    "name": "Day-bed frame with 3 drawers",
+    "category": "Beds",
+    "price": 598,
+    "dimensions": "89 × 18.0 × 70.0 cm"
+  },
+  {
+    "itemId": "99157983",
+    "name": "Bed frame",
+    "category": "Beds",
+    "price": 238,
+    "dimensions": "146 × 95.0 × ? cm"
+  },
+  {
+    "itemId": "69057522",
+    "name": "Bed frame",
+    "category": "Beds",
+    "price": 558,
+    "dimensions": "147 × ? × ? cm"
+  },
+  {
+    "itemId": "79012991",
+    "name": "Bed frame",
+    "category": "Beds",
+    "price": 268,
+    "dimensions": "105 × 15.0 × 59.0 cm"
+  },
+  {
+    "itemId": "00249487",
+    "name": "Bed frame",
+    "category": "Beds",
+    "price": 178,
+    "dimensions": "105 × ? × ? cm"
+  },
+  {
+    "itemId": "89227731",
+    "name": "Bed frame with underbed and storage",
+    "category": "Beds",
+    "price": 398,
+    "dimensions": "96 × ? × 57.0 cm"
+  },
+  {
+    "itemId": "69185435",
+    "name": "Bed frame with slatted bed base",
+    "category": "Beds",
+    "price": 144,
+    "dimensions": "75 × ? × ? cm"
+  },
+  {
+    "itemId": "19259631",
+    "name": "Bed frame",
+    "category": "Beds",
+    "price": 298,
+    "dimensions": "98 × 120.0 × ? cm"
+  },
+  {
+    "itemId": "79227755",
+    "name": "Bed frame with slatted bed base",
+    "category": "Beds",
+    "price": 150,
+    "dimensions": "96 × ? × ? cm"
+  },
+  {
+    "itemId": "90354327",
+    "name": "Sofa-bed",
+    "category": "Beds",
+    "price": 159.6,
+    "dimensions": "128 × 78.0 × 85.0 cm"
+  },
+  {
+    "itemId": "10362963",
+    "name": "Pouffe/mattress",
+    "category": "Beds",
+    "price": 170,
+    "dimensions": "62 × ? × ? cm"
+  },
+  {
+    "itemId": "9241420",
+    "name": "Bed frame w storage and headboard",
+    "category": "Beds",
+    "price": 916,
+    "dimensions": "240 × 16.0 × 51.0 cm"
+  },
+  {
+    "itemId": "20424362",
+    "name": "Day-bed frame",
+    "category": "Beds",
+    "price": 219.6,
+    "dimensions": "88 × 94.0 × ? cm"
+  },
+  {
+    "itemId": "69241097",
+    "name": "Bed frame with 2 storage boxes",
+    "category": "Beds",
+    "price": 228,
+    "dimensions": "153 × 14.0 × 64.0 cm"
+  },
+  {
+    "itemId": "39931609",
+    "name": "Bed frame",
+    "category": "Beds",
+    "price": 378,
+    "dimensions": "156 × ? × 59.0 cm"
+  },
+  {
+    "itemId": "00239233",
+    "name": "Bunk bed frame",
+    "category": "Beds",
+    "price": 190,
+    "dimensions": "96 × 130.0 × ? cm"
+  },
+  {
+    "itemId": "60116960",
+    "name": "Storage box 2-seat sofa-bed",
+    "category": "Beds",
+    "price": 40,
+    "dimensions": "92 × 21.0 × 55.0 cm"
+  },
+  {
+    "itemId": "89019992",
+    "name": "Bed frame",
+    "category": "Beds",
+    "price": 348.4,
+    "dimensions": "148 × ? × ? cm"
+  },
+  {
+    "itemId": "70305700",
+    "name": "Extendable bed",
+    "category": "Beds",
+    "price": 318,
+    "dimensions": "90 × ? × ? cm"
+  },
+  {
+    "itemId": "79129986",
+    "name": "Bed frame",
+    "category": "Beds",
+    "price": 656,
+    "dimensions": "154 × ? × ? cm"
+  },
+  {
+    "itemId": "00360484",
+    "name": "Stackable bed",
+    "category": "Beds",
+    "price": 278,
+    "dimensions": "83 × 2.0 × ? cm"
+  },
+  {
+    "itemId": "44361010",
+    "name": "Net",
+    "category": "Beds",
+    "price": 19.6,
+    "dimensions": null
+  },
+  {
+    "itemId": "80253809",
+    "name": "Reversible bed",
+    "category": "Beds",
+    "price": 298,
+    "dimensions": "99 × 116.0 × ? cm"
+  },
+  {
+    "itemId": "39216754",
+    "name": "Corner sofa-bed with storage",
+    "category": "Beds",
+    "price": 738.4,
+    "dimensions": null
+  },
+  {
+    "itemId": "30160209",
+    "name": "Slatted bed base",
+    "category": "Beds",
+    "price": 40,
+    "dimensions": "80 × 4.0 × ? cm"
+  },
+  {
+    "itemId": "30248537",
+    "name": "Cot",
+    "category": "Beds",
+    "price": 118,
+    "dimensions": "66 × 80.0 × ? cm"
+  },
+  {
+    "itemId": "99239451",
+    "name": "Underbed with storage",
+    "category": "Beds",
+    "price": 248,
+    "dimensions": "95 × 45.0 × 57.0 cm"
+  },
+  {
+    "itemId": "50340163",
+    "name": "Foam mattress",
+    "category": "Beds",
+    "price": 180,
+    "dimensions": "140 × ? × ? cm"
+  },
+  {
+    "itemId": "29291956",
+    "name": "Bed frame w storage+slatted bedbase",
+    "category": "Beds",
+    "price": 558,
+    "dimensions": "96 × 14.0 × 57.0 cm"
+  },
+  {
+    "itemId": "20228709",
+    "name": "Headboard with storage compartment",
+    "category": "Beds",
+    "price": 88,
+    "dimensions": "146 × 111.0 × 28.0 cm"
+  },
+  {
+    "itemId": "49046068",
+    "name": "Ext bed frame with slatted bed base",
+    "category": "Beds",
+    "price": 339.6,
+    "dimensions": null
+  },
+  {
+    "itemId": "20404806",
+    "name": "Ottoman bed",
+    "category": "Beds",
+    "price": 638,
+    "dimensions": "175 × ? × ? cm"
+  },
+  {
+    "itemId": "00102452",
+    "name": "Bunk bed frame",
+    "category": "Beds",
+    "price": 318,
+    "dimensions": null
+  },
+  {
+    "itemId": "40349847",
+    "name": "Bed frame with storage",
+    "category": "Beds",
+    "price": 638,
+    "dimensions": "140 × 16.0 × 51.0 cm"
+  },
+  {
+    "itemId": "90299449",
+    "name": "Loft bed frame",
+    "category": "Beds",
+    "price": 258,
+    "dimensions": "97 × 179.0 × ? cm"
+  },
+  {
+    "itemId": "40411410",
+    "name": "Desk top",
+    "category": "Beds",
+    "price": 80,
+    "dimensions": "95 × 73.0 × 45.0 cm"
+  },
+  {
+    "itemId": "00228705",
+    "name": "Day-bed frame with 2 drawers",
+    "category": "Beds",
+    "price": 438,
+    "dimensions": "86 × 21.0 × 53.0 cm"
+  },
+  {
+    "itemId": "89386070",
+    "name": "Bed frame with 3 storage boxes",
+    "category": "Beds",
+    "price": 504,
+    "dimensions": "96 × 35.0 × 53.0 cm"
+  },
+  {
+    "itemId": "00102065",
+    "name": "Mattress",
+    "category": "Beds",
+    "price": 198,
+    "dimensions": null
+  },
+  {
+    "itemId": "00400692",
+    "name": "Headboard with storage compartment",
+    "category": "Beds",
+    "price": 88,
+    "dimensions": "96 × 110.0 × 28.0 cm"
+  },
+  {
+    "itemId": "90338403",
+    "name": "Bed canopy",
+    "category": "Beds",
+    "price": 22,
+    "dimensions": "90 × ? × ? cm"
+  },
+  {
+    "itemId": "20320128",
+    "name": "Day-bed frame with 2 drawers",
+    "category": "Beds",
+    "price": 598,
+    "dimensions": "88 × 86.0 × ? cm"
+  },
+  {
+    "itemId": "70340567",
+    "name": "3-seat sofa-bed",
+    "category": "Beds",
+    "price": 798,
+    "dimensions": "225 × 74.0 × 86.0 cm"
+  },
+  {
+    "itemId": "80411272",
+    "name": "Bunk bed frame",
+    "category": "Beds",
+    "price": 518,
+    "dimensions": "97 × 162.0 × ? cm"
+  },
+  {
+    "itemId": "80362974",
+    "name": "Storage box with castors",
+    "category": "Beds",
+    "price": 118,
+    "dimensions": "62 × 35.0 × 53.0 cm"
+  },
+  {
+    "itemId": "10372976",
+    "name": "Headboard",
+    "category": "Beds",
+    "price": 278,
+    "dimensions": "240 × 84.0 × ? cm"
+  },
+  {
+    "itemId": "20299688",
+    "name": "Leg",
+    "category": "Beds",
+    "price": 12,
+    "dimensions": "7 × ? × 7.0 cm"
+  },
+  {
+    "itemId": "40299687",
+    "name": "Leg",
+    "category": "Beds",
+    "price": 16,
+    "dimensions": "55 × ? × 55.0 cm"
+  },
+  {
+    "itemId": "69302566",
+    "name": "Loft bed frame with desk top",
+    "category": "Beds",
+    "price": 478,
+    "dimensions": "135 × 195.0 × ? cm"
+  },
+  {
+    "itemId": "10248519",
+    "name": "Cot",
+    "category": "Beds",
+    "price": 238,
+    "dimensions": "66 × 80.0 × ? cm"
+  },
+  {
+    "itemId": "60102067",
+    "name": "Mattress",
+    "category": "Beds",
+    "price": 318,
+    "dimensions": null
+  },
+  {
+    "itemId": "00248567",
+    "name": "Cot",
+    "category": "Beds",
+    "price": 278,
+    "dimensions": "67 × 85.0 × ? cm"
+  },
+  {
+    "itemId": "60431563",
+    "name": "3-seat sofa-bed",
+    "category": "Beds",
+    "price": 738,
+    "dimensions": "225 × 83.0 × 105.0 cm"
+  },
+  {
+    "itemId": "70299695",
+    "name": "Leg",
+    "category": "Beds",
+    "price": 16,
+    "dimensions": null
+  },
+  {
+    "itemId": "50456417",
+    "name": "Headboard",
+    "category": "Beds",
+    "price": 30,
+    "dimensions": "90 × 40.0 × ? cm"
+  },
+  {
+    "itemId": "80309613",
+    "name": "Leg",
+    "category": "Beds",
+    "price": 20,
+    "dimensions": null
+  },
+  {
+    "itemId": "80102066",
+    "name": "Mattress",
+    "category": "Beds",
+    "price": 278,
+    "dimensions": null
+  },
+  {
+    "itemId": "59297141",
+    "name": "Frame with mesh baskets",
+    "category": "Bookcases & shelving units",
+    "price": 54,
+    "dimensions": "25 × 70.0 × 51.0 cm"
+  },
+  {
+    "itemId": "69297287",
+    "name": "Shelving unit",
+    "category": "Bookcases & shelving units",
+    "price": 150,
+    "dimensions": "182 × 160.0 × 51.0 cm"
+  },
+  {
+    "itemId": "70261131",
+    "name": "Bookcase",
+    "category": "Bookcases & shelving units",
+    "price": 38,
+    "dimensions": "60 × 180.0 × 24.0 cm"
+  },
+  {
+    "itemId": "20275814",
+    "name": "Shelving unit",
+    "category": "Bookcases & shelving units",
+    "price": 46,
+    "dimensions": "77 × 77.0 × 39.0 cm"
+  },
+  {
+    "itemId": "60282186",
+    "name": "Wall shelf unit",
+    "category": "Bookcases & shelving units",
+    "price": 79.6,
+    "dimensions": "30 × 190.0 × 28.0 cm"
+  },
+  {
+    "itemId": "00278578",
+    "name": "Shelving unit",
+    "category": "Bookcases & shelving units",
+    "price": 23.6,
+    "dimensions": "60 × 140.0 × 27.0 cm"
+  },
+  {
+    "itemId": "80275887",
+    "name": "Shelving unit",
+    "category": "Bookcases & shelving units",
+    "price": 100,
+    "dimensions": "77 × 147.0 × 39.0 cm"
+  },
+  {
+    "itemId": "50419972",
+    "name": "Shelving unit",
+    "category": "Bookcases & shelving units",
+    "price": 70,
+    "dimensions": "80 × 160.0 × 38.0 cm"
+  },
+  {
+    "itemId": "30428326",
+    "name": "Shelving unit",
+    "category": "Bookcases & shelving units",
+    "price": 15.6,
+    "dimensions": "60 × 74.0 × 27.0 cm"
+  },
+  {
+    "itemId": "90282180",
+    "name": "Wall shelf",
+    "category": "Bookcases & shelving units",
+    "price": 15.6,
+    "dimensions": null
+  },
+  {
+    "itemId": "40178591",
+    "name": "Bookcase",
+    "category": "Bookcases & shelving units",
+    "price": 34,
+    "dimensions": "62 × 165.0 × 24.0 cm"
+  },
+  {
+    "itemId": "00263850",
+    "name": "Bookcase",
+    "category": "Bookcases & shelving units",
+    "price": 74,
+    "dimensions": "80 × 202.0 × 28.0 cm"
+  },
+  {
+    "itemId": "50263838",
+    "name": "Bookcase",
+    "category": "Bookcases & shelving units",
+    "price": 58,
+    "dimensions": "40 × 202.0 × 28.0 cm"
+  },
+  {
+    "itemId": "39318031",
+    "name": "Shelving unit in/outdoor",
+    "category": "Bookcases & shelving units",
+    "price": 54.8,
+    "dimensions": "180 × ? × 27.0 cm"
+  },
+  {
+    "itemId": "30318163",
+    "name": "Shelf",
+    "category": "Bookcases & shelving units",
+    "price": 14,
+    "dimensions": "83 × ? × 30.0 cm"
+  },
+  {
+    "itemId": "00275848",
+    "name": "Shelving unit",
+    "category": "Bookcases & shelving units",
+    "price": 78,
+    "dimensions": "42 × 147.0 × 39.0 cm"
+  },
+  {
+    "itemId": "50214678",
+    "name": "Shelving unit",
+    "category": "Bookcases & shelving units",
+    "price": 90,
+    "dimensions": "51 × 175.0 × 36.0 cm"
+  },
+  {
+    "itemId": "39031411",
+    "name": "1 section",
+    "category": "Bookcases & shelving units",
+    "price": 66,
+    "dimensions": "78 × 171.0 × 31.0 cm"
+  },
+  {
+    "itemId": "40033763",
+    "name": "Cabinet",
+    "category": "Bookcases & shelving units",
+    "price": 118,
+    "dimensions": "80 × 83.0 × 30.0 cm"
+  },
+  {
+    "itemId": "50339292",
+    "name": "Shelving unit",
+    "category": "Bookcases & shelving units",
+    "price": 198,
+    "dimensions": "100 × 95.0 × 36.0 cm"
+  },
+  {
+    "itemId": "80263832",
+    "name": "Bookcase",
+    "category": "Bookcases & shelving units",
+    "price": 38,
+    "dimensions": "40 × 106.0 × 28.0 cm"
+  },
+  {
+    "itemId": "19189030",
+    "name": "Wall-mounted cabinet combination",
+    "category": "Bookcases & shelving units",
+    "price": 262.4,
+    "dimensions": "80 × 210.0 × 35.0 cm"
+  },
+  {
+    "itemId": "80295526",
+    "name": "Shelf",
+    "category": "Bookcases & shelving units",
+    "price": 10,
+    "dimensions": "56 × ? × 16.0 cm"
+  },
+  {
+    "itemId": "50282177",
+    "name": "Wall shelf",
+    "category": "Bookcases & shelving units",
+    "price": 7.6,
+    "dimensions": null
+  },
+  {
+    "itemId": "69281804",
+    "name": "Bookcase with glass-doors",
+    "category": "Bookcases & shelving units",
+    "price": 366,
+    "dimensions": "120 × 202.0 × 30.0 cm"
+  },
+  {
+    "itemId": "00287808",
+    "name": "Shelf",
+    "category": "Bookcases & shelving units",
+    "price": 18,
+    "dimensions": "77 × ? × 28.0 cm"
+  },
+  {
+    "itemId": "10261129",
+    "name": "Bookcase",
+    "category": "Bookcases & shelving units",
+    "price": 59.6,
+    "dimensions": "60 × 180.0 × 24.0 cm"
+  },
+  {
+    "itemId": "29281066",
+    "name": "Bookcase with doors",
+    "category": "Bookcases & shelving units",
+    "price": 154,
+    "dimensions": "80 × 202.0 × 30.0 cm"
+  },
+  {
+    "itemId": "70301542",
+    "name": "Shelving unit",
+    "category": "Bookcases & shelving units",
+    "price": 290,
+    "dimensions": "182 × 182.0 × 39.0 cm"
+  },
+  {
+    "itemId": "79902657",
+    "name": "Shelving unit with laptop table",
+    "category": "Bookcases & shelving units",
+    "price": 221.6,
+    "dimensions": "200 × ? × 36.0 cm"
+  },
+  {
+    "itemId": "70342199",
+    "name": "Shelving unit",
+    "category": "Bookcases & shelving units",
+    "price": 118,
+    "dimensions": "51 × 136.0 × 36.0 cm"
+  },
+  {
+    "itemId": "70364290",
+    "name": "Clip-on basket",
+    "category": "Bookcases & shelving units",
+    "price": 7.6,
+    "dimensions": "13 × 15.0 × ? cm"
+  },
+  {
+    "itemId": "60413502",
+    "name": "Bookcase",
+    "category": "Bookcases & shelving units",
+    "price": 318.4,
+    "dimensions": "90 × 197.0 × 37.0 cm"
+  },
+  {
+    "itemId": "39287398",
+    "name": "Bookcase with glass door",
+    "category": "Bookcases & shelving units",
+    "price": 136,
+    "dimensions": "40 × 202.0 × 30.0 cm"
+  },
+  {
+    "itemId": "60419962",
+    "name": "Wire basket",
+    "category": "Bookcases & shelving units",
+    "price": 6,
+    "dimensions": "25 × 15.0 × 51.0 cm"
+  },
+  {
+    "itemId": "00295554",
+    "name": "Shelf",
+    "category": "Bookcases & shelving units",
+    "price": 10,
+    "dimensions": "56 × ? × 36.0 cm"
+  },
+  {
+    "itemId": "20409936",
+    "name": "Shelving unit",
+    "category": "Bookcases & shelving units",
+    "price": 158,
+    "dimensions": "112 × 147.0 × 39.0 cm"
+  },
+  {
+    "itemId": "90301225",
+    "name": "Bookcase",
+    "category": "Bookcases & shelving units",
+    "price": 178,
+    "dimensions": "60 × 190.0 × 35.0 cm"
+  },
+  {
+    "itemId": "30409295",
+    "name": "Cabinet in/outdoor",
+    "category": "Bookcases & shelving units",
+    "price": 138,
+    "dimensions": "80 × 81.0 × 35.0 cm"
+  },
+  {
+    "itemId": "69281776",
+    "name": "Bookcase with panel/glass doors",
+    "category": "Bookcases & shelving units",
+    "price": 234,
+    "dimensions": "80 × 202.0 × 30.0 cm"
+  },
+  {
+    "itemId": "20345633",
+    "name": "Cabinet in/outdoor",
+    "category": "Bookcases & shelving units",
+    "price": 278,
+    "dimensions": "90 × 161.0 × 35.0 cm"
+  },
+  {
+    "itemId": "99294560",
+    "name": "TV storage combination",
+    "category": "Bookcases & shelving units",
+    "price": 278,
+    "dimensions": "202 × 175.0 × 36.0 cm"
+  },
+  {
+    "itemId": "79017837",
+    "name": "Bookcase",
+    "category": "Bookcases & shelving units",
+    "price": 148,
+    "dimensions": "160 × 202.0 × 28.0 cm"
+  },
+  {
+    "itemId": "79305098",
+    "name": "Frame/wire baskets/top shelf",
+    "category": "Bookcases & shelving units",
+    "price": 72,
+    "dimensions": "50 × 70.0 × 51.0 cm"
+  },
+  {
+    "itemId": "79278250",
+    "name": "Shelving unit with 4 inserts",
+    "category": "Bookcases & shelving units",
+    "price": 238,
+    "dimensions": "147 × 112.0 × 39.0 cm"
+  },
+  {
+    "itemId": "10275862",
+    "name": "Shelving unit",
+    "category": "Bookcases & shelving units",
+    "price": 198,
+    "dimensions": "147 × 147.0 × 39.0 cm"
+  },
+  {
+    "itemId": "69190861",
+    "name": "Cabinet combination with feet",
+    "category": "Bookcases & shelving units",
+    "price": 174,
+    "dimensions": "105 × 107.0 × 35.0 cm"
+  },
+  {
+    "itemId": "39285827",
+    "name": "Wall-mounted shelving unit",
+    "category": "Bookcases & shelving units",
+    "price": 32,
+    "dimensions": "35 × 35.0 × 25.0 cm"
+  },
+  {
+    "itemId": "89248314",
+    "name": "1 section/shelves",
+    "category": "Bookcases & shelving units",
+    "price": 110,
+    "dimensions": "89 × 179.0 × 30.0 cm"
+  },
+  {
+    "itemId": "00334536",
+    "name": "Cabinet with 4 compartments",
+    "category": "Bookcases & shelving units",
+    "price": 94,
+    "dimensions": "70 × 70.0 × 35.0 cm"
+  },
+  {
+    "itemId": "40309573",
+    "name": "Storage case",
+    "category": "Bookcases & shelving units",
+    "price": 14,
+    "dimensions": "55 × 18.0 × 51.0 cm"
+  },
+  {
+    "itemId": "49046978",
+    "name": "4 sections/shelves",
+    "category": "Bookcases & shelving units",
+    "price": 282,
+    "dimensions": "307 × 171.0 × 50.0 cm"
+  },
+  {
+    "itemId": "50343147",
+    "name": "Hook for post",
+    "category": "Bookcases & shelving units",
+    "price": 6,
+    "dimensions": "3 × 7.0 × 5.0 cm"
+  },
+  {
+    "itemId": "59182201",
+    "name": "Bookcase",
+    "category": "Bookcases & shelving units",
+    "price": 114,
+    "dimensions": "80 × 237.0 × 28.0 cm"
+  },
+  {
+    "itemId": "80336433",
+    "name": "Knob",
+    "category": "Bookcases & shelving units",
+    "price": 1.2,
+    "dimensions": null
+  },
+  {
+    "itemId": "19306185",
+    "name": "Frame with mesh baskets/castors",
+    "category": "Bookcases & shelving units",
+    "price": 64,
+    "dimensions": "25 × 73.0 × 51.0 cm"
+  },
+  {
+    "itemId": "69208026",
+    "name": "Storage combination with doors",
+    "category": "Bookcases & shelving units",
+    "price": 690,
+    "dimensions": "180 × 112.0 × 42.0 cm"
+  },
+  {
+    "itemId": "89017832",
+    "name": "Bookcase",
+    "category": "Bookcases & shelving units",
+    "price": 460,
+    "dimensions": "160 × 202.0 × 30.0 cm"
+  },
+  {
+    "itemId": "89287433",
+    "name": "Bookcase w hght ext ut/pnl/glss drs",
+    "category": "Bookcases & shelving units",
+    "price": 202,
+    "dimensions": "40 × 237.0 × 30.0 cm"
+  },
+  {
+    "itemId": "9384051",
+    "name": "Storage combination w doors/drawers",
+    "category": "Bookcases & shelving units",
+    "price": 1594.4,
+    "dimensions": "270 × 197.0 × 37.0 cm"
+  },
+  {
+    "itemId": "89017827",
+    "name": "Bookcase",
+    "category": "Bookcases & shelving units",
+    "price": 318,
+    "dimensions": "200 × 237.0 × 28.0 cm"
+  },
+  {
+    "itemId": "70245952",
+    "name": "Frame",
+    "category": "Bookcases & shelving units",
+    "price": 68,
+    "dimensions": "120 × 38.0 × 40.0 cm"
+  },
+  {
+    "itemId": "10429987",
+    "name": "Adjustable clothes rail",
+    "category": "Bookcases & shelving units",
+    "price": 6,
+    "dimensions": null
+  },
+  {
+    "itemId": "20419964",
+    "name": "Mesh basket",
+    "category": "Bookcases & shelving units",
+    "price": 10,
+    "dimensions": "50 × 15.0 × 51.0 cm"
+  },
+  {
+    "itemId": "99902661",
+    "name": "Shelving unit with laptop table",
+    "category": "Bookcases & shelving units",
+    "price": 243.6,
+    "dimensions": "202 × ? × 36.0 cm"
+  },
+  {
+    "itemId": "90344927",
+    "name": "Cabinet with door",
+    "category": "Bookcases & shelving units",
+    "price": 39.6,
+    "dimensions": "35 × 35.0 × 35.0 cm"
+  },
+  {
+    "itemId": "20278167",
+    "name": "Insert with door",
+    "category": "Bookcases & shelving units",
+    "price": 20,
+    "dimensions": "33 × 33.0 × 37.0 cm"
+  },
+  {
+    "itemId": "59248377",
+    "name": "3 sections/shelves",
+    "category": "Bookcases & shelving units",
+    "price": 318,
+    "dimensions": "259 × 226.0 × 30.0 cm"
+  },
+  {
+    "itemId": "69284987",
+    "name": "Cabinet unit",
+    "category": "Bookcases & shelving units",
+    "price": 168,
+    "dimensions": "60 × 202.0 × 40.0 cm"
+  },
+  {
+    "itemId": "90323393",
+    "name": "Drill template",
+    "category": "Bookcases & shelving units",
+    "price": 2.24,
+    "dimensions": "64 × ? × ? cm"
+  },
+  {
+    "itemId": "9306204",
+    "name": "Frames/clothes rails/shelving units",
+    "category": "Bookcases & shelving units",
+    "price": 234,
+    "dimensions": "148 × 173.0 × 51.0 cm"
+  },
+  {
+    "itemId": "60245957",
+    "name": "Frame",
+    "category": "Bookcases & shelving units",
+    "price": 40,
+    "dimensions": "60 × 38.0 × 20.0 cm"
+  },
+  {
+    "itemId": "87749600",
+    "name": "Cross-brace",
+    "category": "Bookcases & shelving units",
+    "price": 2,
+    "dimensions": null
+  },
+  {
+    "itemId": "9297488",
+    "name": "Frame with mesh baskets",
+    "category": "Bookcases & shelving units",
+    "price": 92,
+    "dimensions": "50 × 104.0 × 51.0 cm"
+  },
+  {
+    "itemId": "49061228",
+    "name": "TV bench",
+    "category": "Bookcases & shelving units",
+    "price": 204,
+    "dimensions": "120 × 48.0 × 40.0 cm"
+  },
+  {
+    "itemId": "19291650",
+    "name": "Shelving unit with 2 cabinets",
+    "category": "Bookcases & shelving units",
+    "price": 506,
+    "dimensions": "171 × 161.0 × 37.0 cm"
+  },
+  {
+    "itemId": "50293604",
+    "name": "Supporting leg",
+    "category": "Bookcases & shelving units",
+    "price": 6,
+    "dimensions": null
+  },
+  {
+    "itemId": "00338412",
+    "name": "Knob",
+    "category": "Bookcases & shelving units",
+    "price": 10.8,
+    "dimensions": "21 × ? × 24.0 cm"
+  },
+  {
+    "itemId": "20348896",
+    "name": "Leather handle",
+    "category": "Bookcases & shelving units",
+    "price": 19.6,
+    "dimensions": "25 × ? × ? cm"
+  },
+  {
+    "itemId": "90294989",
+    "name": "Storage case",
+    "category": "Bookcases & shelving units",
+    "price": 19.6,
+    "dimensions": "69 × 19.0 × 55.0 cm"
+  },
+  {
+    "itemId": "80318165",
+    "name": "Shelf",
+    "category": "Bookcases & shelving units",
+    "price": 19.6,
+    "dimensions": "83 × ? × 50.0 cm"
+  },
+  {
+    "itemId": "30333286",
+    "name": "Work bench",
+    "category": "Bookcases & shelving units",
+    "price": 258,
+    "dimensions": "55 × 88.0 × ? cm"
+  },
+  {
+    "itemId": "19291645",
+    "name": "Shelving unit with cabinet",
+    "category": "Bookcases & shelving units",
+    "price": 228,
+    "dimensions": "80 × 161.0 × 37.0 cm"
+  },
+  {
+    "itemId": "20423720",
+    "name": "Insert with 1 shelf",
+    "category": "Bookcases & shelving units",
+    "price": 30,
+    "dimensions": "33 × 33.0 × ? cm"
+  },
+  {
+    "itemId": "49297491",
+    "name": "Frame with mesh baskets/castors",
+    "category": "Bookcases & shelving units",
+    "price": 78,
+    "dimensions": "50 × 73.0 × 51.0 cm"
+  },
+  {
+    "itemId": "59317554",
+    "name": "Frame/wire baskets/clothes rails",
+    "category": "Bookcases & shelving units",
+    "price": 206,
+    "dimensions": null
+  },
+  {
+    "itemId": "10338421",
+    "name": "Knob",
+    "category": "Bookcases & shelving units",
+    "price": 10.8,
+    "dimensions": "20 × ? × 28.0 cm"
+  },
+  {
+    "itemId": "70391038",
+    "name": "Shelving unit with plinth",
+    "category": "Bookcases & shelving units",
+    "price": 278,
+    "dimensions": "61 × 212.0 × 37.0 cm"
+  },
+  {
+    "itemId": "80344923",
+    "name": "Cabinet with 2 drawers",
+    "category": "Bookcases & shelving units",
+    "price": 150,
+    "dimensions": "70 × 35.0 × 35.0 cm"
+  },
+  {
+    "itemId": "49189203",
+    "name": "Cabinet combination with feet",
+    "category": "Bookcases & shelving units",
+    "price": 206,
+    "dimensions": "105 × 72.0 × 35.0 cm"
+  },
+  {
+    "itemId": "40347508",
+    "name": "Knob",
+    "category": "Bookcases & shelving units",
+    "price": 8.8,
+    "dimensions": null
+  },
+  {
+    "itemId": "80334617",
+    "name": "Connection fittings",
+    "category": "Bookcases & shelving units",
+    "price": 4.8,
+    "dimensions": null
+  },
+  {
+    "itemId": "10318159",
+    "name": "Shelf",
+    "category": "Bookcases & shelving units",
+    "price": 10,
+    "dimensions": "42 × ? × 30.0 cm"
+  },
+  {
+    "itemId": "30269129",
+    "name": "TV bench",
+    "category": "Bookcases & shelving units",
+    "price": 478,
+    "dimensions": "180 × 49.0 × 41.0 cm"
+  },
+  {
+    "itemId": "00286677",
+    "name": "Post",
+    "category": "Bookcases & shelving units",
+    "price": 14,
+    "dimensions": null
+  },
+  {
+    "itemId": "60293566",
+    "name": "Leg",
+    "category": "Bookcases & shelving units",
+    "price": 14,
+    "dimensions": "44 × 100.0 × 44.0 cm"
+  },
+  {
+    "itemId": "39272641",
+    "name": "Shelving unit",
+    "category": "Bookcases & shelving units",
+    "price": 138,
+    "dimensions": "65 × 110.0 × 40.0 cm"
+  },
+  {
+    "itemId": "10265293",
+    "name": "Extra shelf",
+    "category": "Bookcases & shelving units",
+    "price": 12,
+    "dimensions": "36 × ? × 26.0 cm"
+  },
+  {
+    "itemId": "20245959",
+    "name": "Frame",
+    "category": "Bookcases & shelving units",
+    "price": 44,
+    "dimensions": "60 × 64.0 × 20.0 cm"
+  },
+  {
+    "itemId": "60334312",
+    "name": "Handle",
+    "category": "Bookcases & shelving units",
+    "price": 14,
+    "dimensions": null
+  },
+  {
+    "itemId": "70340044",
+    "name": "Foot",
+    "category": "Bookcases & shelving units",
+    "price": 6,
+    "dimensions": "8 × ? × ? cm"
+  },
+  {
+    "itemId": "79189150",
+    "name": "Wall-mounted cabinet combination",
+    "category": "Bookcases & shelving units",
+    "price": 417.6,
+    "dimensions": "175 × 210.0 × 35.0 cm"
+  },
+  {
+    "itemId": "10333287",
+    "name": "Post",
+    "category": "Bookcases & shelving units",
+    "price": 42,
+    "dimensions": null
+  },
+  {
+    "itemId": "40299885",
+    "name": "TV bench",
+    "category": "Bookcases & shelving units",
+    "price": 190,
+    "dimensions": "120 × 64.0 × 40.0 cm"
+  },
+  {
+    "itemId": "40348715",
+    "name": "Drawer runner",
+    "category": "Bookcases & shelving units",
+    "price": 10,
+    "dimensions": null
+  },
+  {
+    "itemId": "39323990",
+    "name": "Frame/mesh baskets/shelving units",
+    "category": "Bookcases & shelving units",
+    "price": 264,
+    "dimensions": "99 × 173.0 × 51.0 cm"
+  },
+  {
+    "itemId": "70347516",
+    "name": "Handle",
+    "category": "Bookcases & shelving units",
+    "price": 14,
+    "dimensions": "17 × ? × 30.0 cm"
+  },
+  {
+    "itemId": "29248374",
+    "name": "3 sections/shelves",
+    "category": "Bookcases & shelving units",
+    "price": 318,
+    "dimensions": "259 × 179.0 × 30.0 cm"
+  },
+  {
+    "itemId": "9305068",
+    "name": "Storage combination with doors",
+    "category": "Bookcases & shelving units",
+    "price": 556,
+    "dimensions": "120 × 202.0 × 42.0 cm"
+  },
+  {
+    "itemId": "30333842",
+    "name": "Shelf",
+    "category": "Bookcases & shelving units",
+    "price": 38,
+    "dimensions": "84 × ? × 54.0 cm"
+  },
+  {
+    "itemId": "39283003",
+    "name": "Shelving unit with cabinet",
+    "category": "Bookcases & shelving units",
+    "price": 342,
+    "dimensions": "85 × 190.0 × 40.0 cm"
+  },
+  {
+    "itemId": "39272655",
+    "name": "Shelving unit",
+    "category": "Bookcases & shelving units",
+    "price": 150,
+    "dimensions": "85 × 110.0 × 55.0 cm"
+  },
+  {
+    "itemId": "80339790",
+    "name": "Knob",
+    "category": "Bookcases & shelving units",
+    "price": 6.8,
+    "dimensions": "24 × ? × 18.0 cm"
+  },
+  {
+    "itemId": "99031408",
+    "name": "3 sections/shelves",
+    "category": "Bookcases & shelving units",
+    "price": 294,
+    "dimensions": "230 × 171.0 × 50.0 cm"
+  },
+  {
+    "itemId": "20245964",
+    "name": "Frame",
+    "category": "Bookcases & shelving units",
+    "price": 54,
+    "dimensions": "60 × 64.0 × 40.0 cm"
+  },
+  {
+    "itemId": "00351248",
+    "name": "Drawer frame",
+    "category": "Bookcases & shelving units",
+    "price": 30,
+    "dimensions": "60 × 25.0 × 40.0 cm"
+  },
+  {
+    "itemId": "70299879",
+    "name": "TV bench",
+    "category": "Bookcases & shelving units",
+    "price": 238,
+    "dimensions": "180 × 64.0 × 40.0 cm"
+  },
+  {
+    "itemId": "00338407",
+    "name": "Handle",
+    "category": "Bookcases & shelving units",
+    "price": 14,
+    "dimensions": "9 × ? × 31.0 cm"
+  },
+  {
+    "itemId": "99291646",
+    "name": "Shelving unit in/outdoor",
+    "category": "Bookcases & shelving units",
+    "price": 180,
+    "dimensions": "80 × 162.0 × 35.0 cm"
+  },
+  {
+    "itemId": "20291630",
+    "name": "Door/drawer front",
+    "category": "Bookcases & shelving units",
+    "price": 50,
+    "dimensions": "60 × 38.0 × ? cm"
+  },
+  {
+    "itemId": "00340047",
+    "name": "Suspension rail",
+    "category": "Bookcases & shelving units",
+    "price": 6,
+    "dimensions": "29 × 4.0 × 1.0 cm"
+  },
+  {
+    "itemId": "10291678",
+    "name": "Drawer front",
+    "category": "Bookcases & shelving units",
+    "price": 18,
+    "dimensions": "60 × 26.0 × ? cm"
+  },
+  {
+    "itemId": "40351246",
+    "name": "Drawer frame",
+    "category": "Bookcases & shelving units",
+    "price": 24,
+    "dimensions": "60 × 15.0 × 40.0 cm"
+  },
+  {
+    "itemId": "70370352",
+    "name": "Drop handle",
+    "category": "Bookcases & shelving units",
+    "price": 11.6,
+    "dimensions": null
+  },
+  {
+    "itemId": "40310208",
+    "name": "Bottle rack",
+    "category": "Bookcases & shelving units",
+    "price": 18,
+    "dimensions": "83 × 3.0 × 30.0 cm"
+  },
+  {
+    "itemId": "50300015",
+    "name": "Cabinet with 2 doors",
+    "category": "Bookcases & shelving units",
+    "price": 198,
+    "dimensions": "76 × 66.0 × 40.0 cm"
+  },
+  {
+    "itemId": "40263853",
+    "name": "Height extension unit",
+    "category": "Bookcases & shelving units",
+    "price": 40,
+    "dimensions": "80 × 35.0 × 28.0 cm"
+  },
+  {
+    "itemId": "90291698",
+    "name": "Door",
+    "category": "Bookcases & shelving units",
+    "price": 70,
+    "dimensions": "60 × 64.0 × ? cm"
+  },
+  {
+    "itemId": "9188842",
+    "name": "Wall-mounted cabinet combination",
+    "category": "Bookcases & shelving units",
+    "price": 165.6,
+    "dimensions": "105 × 120.0 × 35.0 cm"
+  },
+  {
+    "itemId": "19275136",
+    "name": "Storage combination",
+    "category": "Bookcases & shelving units",
+    "price": 894,
+    "dimensions": "142 × 212.0 × 47.0 cm"
+  },
+  {
+    "itemId": "39248359",
+    "name": "2 sections/shelves/cabine",
+    "category": "Bookcases & shelving units",
+    "price": 400,
+    "dimensions": "174 × 179.0 × 30.0 cm"
+  },
+  {
+    "itemId": "69294566",
+    "name": "TV storage combination",
+    "category": "Bookcases & shelving units",
+    "price": 414,
+    "dimensions": "300 × 175.0 × 36.0 cm"
+  },
+  {
+    "itemId": "50275596",
+    "name": "Door",
+    "category": "Bookcases & shelving units",
+    "price": 40,
+    "dimensions": "40 × 97.0 × ? cm"
+  },
+  {
+    "itemId": "90333938",
+    "name": "Cabinet w door and 1 shelf",
+    "category": "Bookcases & shelving units",
+    "price": 100,
+    "dimensions": "35 × 70.0 × 35.0 cm"
+  },
+  {
+    "itemId": "80291632",
+    "name": "Door",
+    "category": "Bookcases & shelving units",
+    "price": 60,
+    "dimensions": "60 × 64.0 × ? cm"
+  },
+  {
+    "itemId": "90347515",
+    "name": "Cup handle",
+    "category": "Bookcases & shelving units",
+    "price": 14,
+    "dimensions": "22 × ? × 30.0 cm"
+  },
+  {
+    "itemId": "00275674",
+    "name": "Panel/glass door",
+    "category": "Bookcases & shelving units",
+    "price": 98,
+    "dimensions": "40 × 192.0 × ? cm"
+  },
+  {
+    "itemId": "10388661",
+    "name": "Plinth",
+    "category": "Bookcases & shelving units",
+    "price": 32,
+    "dimensions": "81 × 12.0 × 37.0 cm"
+  },
+  {
+    "itemId": "29286399",
+    "name": "Wall-mounted cabinet combination",
+    "category": "Bookcases & shelving units",
+    "price": 264.4,
+    "dimensions": "175 × 70.0 × 35.0 cm"
+  },
+  {
+    "itemId": "79265926",
+    "name": "Storage combination w glass doors",
+    "category": "Bookcases & shelving units",
+    "price": 1192,
+    "dimensions": "203 × 212.0 × 47.0 cm"
+  },
+  {
+    "itemId": "79272677",
+    "name": "Shelving unit with cabinets",
+    "category": "Bookcases & shelving units",
+    "price": 534,
+    "dimensions": "161 × 133.0 × 40.0 cm"
+  },
+  {
+    "itemId": "50357002",
+    "name": "Handle",
+    "category": "Bookcases & shelving units",
+    "price": 10,
+    "dimensions": null
+  },
+  {
+    "itemId": "49248354",
+    "name": "2 sections/shelves",
+    "category": "Bookcases & shelving units",
+    "price": 351.2,
+    "dimensions": "174 × 226.0 × 50.0 cm"
+  },
+  {
+    "itemId": "40104109",
+    "name": "Corner fittings",
+    "category": "Bookcases & shelving units",
+    "price": 8,
+    "dimensions": null
+  },
+  {
+    "itemId": "90291858",
+    "name": "Glass door",
+    "category": "Bookcases & shelving units",
+    "price": 60,
+    "dimensions": "60 × 64.0 × ? cm"
+  },
+  {
+    "itemId": "10364523",
+    "name": "Door",
+    "category": "Bookcases & shelving units",
+    "price": 68,
+    "dimensions": "60 × 64.0 × ? cm"
+  },
+  {
+    "itemId": "50425987",
+    "name": "Door/drawer front",
+    "category": "Bookcases & shelving units",
+    "price": 54,
+    "dimensions": "60 × 38.0 × ? cm"
+  },
+  {
+    "itemId": "30425988",
+    "name": "Drawer front",
+    "category": "Bookcases & shelving units",
+    "price": 38,
+    "dimensions": "60 × 26.0 × ? cm"
+  },
+  {
+    "itemId": "70318161",
+    "name": "Shelf",
+    "category": "Bookcases & shelving units",
+    "price": 15.6,
+    "dimensions": "42 × ? × 50.0 cm"
+  },
+  {
+    "itemId": "80340048",
+    "name": "Suspension rail",
+    "category": "Bookcases & shelving units",
+    "price": 8,
+    "dimensions": "63 × 4.0 × 1.0 cm"
+  },
+  {
+    "itemId": "89283005",
+    "name": "Shelving unit with cabinets",
+    "category": "Bookcases & shelving units",
+    "price": 268,
+    "dimensions": "85 × 110.0 × 40.0 cm"
+  },
+  {
+    "itemId": "70428904",
+    "name": "Leg",
+    "category": "Bookcases & shelving units",
+    "price": 30,
+    "dimensions": null
+  },
+  {
+    "itemId": "50275619",
+    "name": "Glass door",
+    "category": "Bookcases & shelving units",
+    "price": 32,
+    "dimensions": "40 × 35.0 × ? cm"
+  },
+  {
+    "itemId": "00333278",
+    "name": "Post",
+    "category": "Bookcases & shelving units",
+    "price": 36,
+    "dimensions": null
+  },
+  {
+    "itemId": "80291854",
+    "name": "Glass door",
+    "category": "Bookcases & shelving units",
+    "price": 40,
+    "dimensions": "60 × 38.0 × ? cm"
+  },
+  {
+    "itemId": "69272649",
+    "name": "Shelving unit",
+    "category": "Bookcases & shelving units",
+    "price": 150,
+    "dimensions": "65 × 110.0 × 55.0 cm"
+  },
+  {
+    "itemId": "60291845",
+    "name": "Door",
+    "category": "Bookcases & shelving units",
+    "price": 40,
+    "dimensions": "60 × 64.0 × ? cm"
+  },
+  {
+    "itemId": "69275718",
+    "name": "Shelving unit with cabinets",
+    "category": "Bookcases & shelving units",
+    "price": 536,
+    "dimensions": "170 × 110.0 × 40.0 cm"
+  },
+  {
+    "itemId": "89297663",
+    "name": "Frame/w bskts/clths rl/shlv uts",
+    "category": "Bookcases & shelving units",
+    "price": 268,
+    "dimensions": "173 × 173.0 × 51.0 cm"
+  },
+  {
+    "itemId": "29248345",
+    "name": "2 sections/shelves",
+    "category": "Bookcases & shelving units",
+    "price": 362.4,
+    "dimensions": "134 × 226.0 × 50.0 cm"
+  },
+  {
+    "itemId": "00423721",
+    "name": "Insert with mirror door",
+    "category": "Bookcases & shelving units",
+    "price": 40,
+    "dimensions": "33 × 33.0 × 38.0 cm"
+  },
+  {
+    "itemId": "79248319",
+    "name": "2 sections/shelves",
+    "category": "Bookcases & shelving units",
+    "price": 176,
+    "dimensions": "134 × 179.0 × 30.0 cm"
+  },
+  {
+    "itemId": "89297677",
+    "name": "Frame/wire baskets/top shelves",
+    "category": "Bookcases & shelving units",
+    "price": 224,
+    "dimensions": "148 × 104.0 × 51.0 cm"
+  },
+  {
+    "itemId": "9291622",
+    "name": "Shelving unit with cabinet",
+    "category": "Bookcases & shelving units",
+    "price": 458,
+    "dimensions": "251 × 161.0 × 37.0 cm"
+  },
+  {
+    "itemId": "59311463",
+    "name": "Frame/mesh baskets/clothes rails",
+    "category": "Bookcases & shelving units",
+    "price": 390,
+    "dimensions": "148 × 207.0 × 51.0 cm"
+  },
+  {
+    "itemId": "79305102",
+    "name": "Frame/wire baskets/clothes rails",
+    "category": "Bookcases & shelving units",
+    "price": 252,
+    "dimensions": null
+  },
+  {
+    "itemId": "70328669",
+    "name": "Cabinet",
+    "category": "Cabinets & cupboards",
+    "price": 70,
+    "dimensions": "60 × 35.0 × 35.0 cm"
+  },
+  {
+    "itemId": "69287392",
+    "name": "Bookcase with door",
+    "category": "Cabinets & cupboards",
+    "price": 78,
+    "dimensions": "40 × 106.0 × 30.0 cm"
+  },
+  {
+    "itemId": "50413507",
+    "name": "Glass-door cabinet with 3 drawers",
+    "category": "Cabinets & cupboards",
+    "price": 638,
+    "dimensions": "90 × 197.0 × 37.0 cm"
+  },
+  {
+    "itemId": "19279177",
+    "name": "Cabinet combination",
+    "category": "Cabinets & cupboards",
+    "price": 140,
+    "dimensions": "120 × 35.0 × 35.0 cm"
+  },
+  {
+    "itemId": "50300666",
+    "name": "Cabinet with doors",
+    "category": "Cabinets & cupboards",
+    "price": 178,
+    "dimensions": "78 × 95.0 × 41.0 cm"
+  },
+  {
+    "itemId": "00359739",
+    "name": "Smart lock",
+    "category": "Cabinets & cupboards",
+    "price": 38,
+    "dimensions": "3 × 7.0 × ? cm"
+  },
+  {
+    "itemId": "19205884",
+    "name": "Storage combination with doors",
+    "category": "Cabinets & cupboards",
+    "price": 748,
+    "dimensions": "120 × 192.0 × 40.0 cm"
+  },
+  {
+    "itemId": "00396416",
+    "name": "Glass-door cabinet",
+    "category": "Cabinets & cupboards",
+    "price": 398,
+    "dimensions": "73 × 175.0 × 42.0 cm"
+  },
+  {
+    "itemId": "59275101",
+    "name": "Cabinet with plinth",
+    "category": "Cabinets & cupboards",
+    "price": 370,
+    "dimensions": "81 × 134.0 × 37.0 cm"
+  },
+  {
+    "itemId": "10251451",
+    "name": "Cabinet",
+    "category": "Cabinets & cupboards",
+    "price": 170,
+    "dimensions": "119 × 63.0 × 40.0 cm"
+  },
+  {
+    "itemId": "29301762",
+    "name": "Storage combination with doors",
+    "category": "Cabinets & cupboards",
+    "price": 418,
+    "dimensions": "120 × 202.0 × 42.0 cm"
+  },
+  {
+    "itemId": "60342072",
+    "name": "Cabinet",
+    "category": "Cabinets & cupboards",
+    "price": 318.4,
+    "dimensions": "118 × 110.0 × 38.0 cm"
+  },
+  {
+    "itemId": "79281790",
+    "name": "Bookcase with panel/glass doors",
+    "category": "Cabinets & cupboards",
+    "price": 372,
+    "dimensions": "120 × 202.0 × 30.0 cm"
+  },
+  {
+    "itemId": "29279186",
+    "name": "Cabinet combination",
+    "category": "Cabinets & cupboards",
+    "price": 280,
+    "dimensions": "120 × 70.0 × 35.0 cm"
+  },
+  {
+    "itemId": "10295539",
+    "name": "Shelf",
+    "category": "Cabinets & cupboards",
+    "price": 10,
+    "dimensions": "56 × ? × 16.0 cm"
+  },
+  {
+    "itemId": "29285776",
+    "name": "Storage combination w sliding doors",
+    "category": "Cabinets & cupboards",
+    "price": 2116,
+    "dimensions": "320 × 120.0 × 45.0 cm"
+  },
+  {
+    "itemId": "50365139",
+    "name": "Cabinet with doors",
+    "category": "Cabinets & cupboards",
+    "price": 378,
+    "dimensions": "80 × 120.0 × 45.0 cm"
+  },
+  {
+    "itemId": "49249396",
+    "name": "Storage combination with doors",
+    "category": "Cabinets & cupboards",
+    "price": 350,
+    "dimensions": "45 × 167.0 × 47.0 cm"
+  },
+  {
+    "itemId": "00245842",
+    "name": "Frame",
+    "category": "Cabinets & cupboards",
+    "price": 90,
+    "dimensions": "60 × 192.0 × 40.0 cm"
+  },
+  {
+    "itemId": "00242278",
+    "name": "Glass-door cabinet",
+    "category": "Cabinets & cupboards",
+    "price": 270.4,
+    "dimensions": "57 × 150.0 × 47.0 cm"
+  },
+  {
+    "itemId": "99266053",
+    "name": "Storage combination w glass-doors",
+    "category": "Cabinets & cupboards",
+    "price": 760,
+    "dimensions": "162 × 134.0 × 37.0 cm"
+  },
+  {
+    "itemId": "59249409",
+    "name": "Storage combination with doors",
+    "category": "Cabinets & cupboards",
+    "price": 260,
+    "dimensions": "45 × 142.0 × 47.0 cm"
+  },
+  {
+    "itemId": "70388620",
+    "name": "Cabinet with plinth",
+    "category": "Cabinets & cupboards",
+    "price": 398,
+    "dimensions": "121 × 89.0 × 47.0 cm"
+  },
+  {
+    "itemId": "30428915",
+    "name": "Cabinet with 2 drawers",
+    "category": "Cabinets & cupboards",
+    "price": 78,
+    "dimensions": "35 × 35.0 × 35.0 cm"
+  },
+  {
+    "itemId": "49265999",
+    "name": "Storage combination",
+    "category": "Cabinets & cupboards",
+    "price": 496,
+    "dimensions": "81 × 212.0 × 47.0 cm"
+  },
+  {
+    "itemId": "30342078",
+    "name": "Glass-door cabinet",
+    "category": "Cabinets & cupboards",
+    "price": 542.4,
+    "dimensions": "118 × 203.0 × 38.0 cm"
+  },
+  {
+    "itemId": "40363621",
+    "name": "Cabinet",
+    "category": "Cabinets & cupboards",
+    "price": 130,
+    "dimensions": "45 × 75.0 × 47.0 cm"
+  },
+  {
+    "itemId": "00347510",
+    "name": "Knob",
+    "category": "Cabinets & cupboards",
+    "price": 8.8,
+    "dimensions": null
+  },
+  {
+    "itemId": "70247376",
+    "name": "Frame",
+    "category": "Cabinets & cupboards",
+    "price": 90,
+    "dimensions": "120 × 64.0 × 40.0 cm"
+  },
+  {
+    "itemId": "50363729",
+    "name": "Cabinet",
+    "category": "Cabinets & cupboards",
+    "price": 110,
+    "dimensions": "45 × 50.0 × 47.0 cm"
+  },
+  {
+    "itemId": "30365135",
+    "name": "Cabinet with sliding doors",
+    "category": "Cabinets & cupboards",
+    "price": 1018,
+    "dimensions": "160 × 120.0 × 45.0 cm"
+  },
+  {
+    "itemId": "20347514",
+    "name": "Handle",
+    "category": "Cabinets & cupboards",
+    "price": 14,
+    "dimensions": "17 × ? × 30.0 cm"
+  },
+  {
+    "itemId": "70247381",
+    "name": "Frame",
+    "category": "Cabinets & cupboards",
+    "price": 54,
+    "dimensions": "60 × 64.0 × 40.0 cm"
+  },
+  {
+    "itemId": "29204431",
+    "name": "Cabinet combination for TV",
+    "category": "Cabinets & cupboards",
+    "price": 587.6,
+    "dimensions": "180 × 170.0 × 40.0 cm"
+  },
+  {
+    "itemId": "99249520",
+    "name": "Storage combination with doors",
+    "category": "Cabinets & cupboards",
+    "price": 630,
+    "dimensions": "90 × 167.0 × 47.0 cm"
+  },
+  {
+    "itemId": "19266033",
+    "name": "Storage comb w sliding glass doors",
+    "category": "Cabinets & cupboards",
+    "price": 1058,
+    "dimensions": "283 × 134.0 × 37.0 cm"
+  },
+  {
+    "itemId": "79282544",
+    "name": "Storage unit on castors",
+    "category": "Cabinets & cupboards",
+    "price": 542,
+    "dimensions": "61 × 101.0 × 45.0 cm"
+  },
+  {
+    "itemId": "89291312",
+    "name": "Storage combination with doors",
+    "category": "Cabinets & cupboards",
+    "price": 130,
+    "dimensions": "45 × 67.0 × 47.0 cm"
+  },
+  {
+    "itemId": "10299877",
+    "name": "TV bench",
+    "category": "Cabinets & cupboards",
+    "price": 238,
+    "dimensions": "180 × 64.0 × 40.0 cm"
+  },
+  {
+    "itemId": "40245840",
+    "name": "Frame",
+    "category": "Cabinets & cupboards",
+    "price": 78,
+    "dimensions": "60 × 128.0 × 40.0 cm"
+  },
+  {
+    "itemId": "49265895",
+    "name": "Storage comb w sliding glass doors",
+    "category": "Cabinets & cupboards",
+    "price": 1832,
+    "dimensions": "242 × 212.0 × 47.0 cm"
+  },
+  {
+    "itemId": "40296311",
+    "name": "Glass door",
+    "category": "Cabinets & cupboards",
+    "price": 50,
+    "dimensions": "60 × 38.0 × ? cm"
+  },
+  {
+    "itemId": "19291315",
+    "name": "Storage combination with doors",
+    "category": "Cabinets & cupboards",
+    "price": 150,
+    "dimensions": "45 × 92.0 × 47.0 cm"
+  },
+  {
+    "itemId": "69286806",
+    "name": "Storage unit with smart lock",
+    "category": "Cabinets & cupboards",
+    "price": 400,
+    "dimensions": "41 × 61.0 × 45.0 cm"
+  },
+  {
+    "itemId": "90338422",
+    "name": "Knob",
+    "category": "Cabinets & cupboards",
+    "price": 10.8,
+    "dimensions": "21 × ? × 24.0 cm"
+  },
+  {
+    "itemId": "39276682",
+    "name": "Storage combination with doors",
+    "category": "Cabinets & cupboards",
+    "price": 1110,
+    "dimensions": "135 × 192.0 × 47.0 cm"
+  },
+  {
+    "itemId": "49280754",
+    "name": "Bookcase w height extension ut/drs",
+    "category": "Cabinets & cupboards",
+    "price": 548,
+    "dimensions": "160 × 237.0 × 30.0 cm"
+  },
+  {
+    "itemId": "20351515",
+    "name": "Drawer frame",
+    "category": "Cabinets & cupboards",
+    "price": 30,
+    "dimensions": "60 × 25.0 × 40.0 cm"
+  },
+  {
+    "itemId": "10338416",
+    "name": "Knob",
+    "category": "Cabinets & cupboards",
+    "price": 10.8,
+    "dimensions": "20 × ? × 28.0 cm"
+  },
+  {
+    "itemId": "00296313",
+    "name": "Glass door",
+    "category": "Cabinets & cupboards",
+    "price": 60,
+    "dimensions": "60 × 64.0 × ? cm"
+  },
+  {
+    "itemId": "39297514",
+    "name": "TV bench with doors and drawers",
+    "category": "Cabinets & cupboards",
+    "price": 588,
+    "dimensions": "240 × 74.0 × 42.0 cm"
+  },
+  {
+    "itemId": "79249328",
+    "name": "Storage combination with doors",
+    "category": "Cabinets & cupboards",
+    "price": 240,
+    "dimensions": "45 × 117.0 × 47.0 cm"
+  },
+  {
+    "itemId": "9265920",
+    "name": "Storage combination w glass doors",
+    "category": "Cabinets & cupboards",
+    "price": 1192,
+    "dimensions": "203 × 212.0 × 47.0 cm"
+  },
+  {
+    "itemId": "80295300",
+    "name": "Top panel for TV",
+    "category": "Cabinets & cupboards",
+    "price": 40,
+    "dimensions": "120 × ? × 40.0 cm"
+  },
+  {
+    "itemId": "19275235",
+    "name": "Storage comb w sliding glass doors",
+    "category": "Cabinets & cupboards",
+    "price": 1472,
+    "dimensions": "243 × 212.0 × 47.0 cm"
+  },
+  {
+    "itemId": "79286896",
+    "name": "Storage unit with smart lock",
+    "category": "Cabinets & cupboards",
+    "price": 480,
+    "dimensions": "41 × 101.0 × 45.0 cm"
+  },
+  {
+    "itemId": "99234255",
+    "name": "Storage combination w doors/drawers",
+    "category": "Cabinets & cupboards",
+    "price": 1066.4,
+    "dimensions": "188 × 197.0 × 37.0 cm"
+  },
+  {
+    "itemId": "30338420",
+    "name": "Knob",
+    "category": "Cabinets & cupboards",
+    "price": 8.8,
+    "dimensions": "13 × ? × 24.0 cm"
+  },
+  {
+    "itemId": "30428901",
+    "name": "Glass door",
+    "category": "Cabinets & cupboards",
+    "price": 18,
+    "dimensions": "32 × 32.0 × ? cm"
+  },
+  {
+    "itemId": "9266024",
+    "name": "Storage combination w glass-doors",
+    "category": "Cabinets & cupboards",
+    "price": 1010,
+    "dimensions": "243 × 134.0 × 37.0 cm"
+  },
+  {
+    "itemId": "10363632",
+    "name": "Pair of legs",
+    "category": "Cabinets & cupboards",
+    "price": 20,
+    "dimensions": "45 × 29.0 × 2.0 cm"
+  },
+  {
+    "itemId": "29336356",
+    "name": "Wall cabinet with glass door",
+    "category": "Cabinets & cupboards",
+    "price": 50,
+    "dimensions": "35 × 35.0 × 25.0 cm"
+  },
+  {
+    "itemId": "29336380",
+    "name": "Wall-mounted storage combination",
+    "category": "Cabinets & cupboards",
+    "price": 153.6,
+    "dimensions": "105 × 70.0 × 35.0 cm"
+  },
+  {
+    "itemId": "99265911",
+    "name": "Storage comb w sliding glass doors",
+    "category": "Cabinets & cupboards",
+    "price": 916,
+    "dimensions": "121 × 212.0 × 47.0 cm"
+  },
+  {
+    "itemId": "49329331",
+    "name": "TV bench",
+    "category": "Cabinets & cupboards",
+    "price": 356,
+    "dimensions": "180 × 39.0 × 42.0 cm"
+  },
+  {
+    "itemId": "79275138",
+    "name": "Storage combination",
+    "category": "Cabinets & cupboards",
+    "price": 894,
+    "dimensions": "142 × 212.0 × 47.0 cm"
+  },
+  {
+    "itemId": "9329390",
+    "name": "Wall-mounted cabinet combination",
+    "category": "Cabinets & cupboards",
+    "price": 310.8,
+    "dimensions": "175 × 70.0 × 35.0 cm"
+  },
+  {
+    "itemId": "40291851",
+    "name": "Drawer front",
+    "category": "Cabinets & cupboards",
+    "price": 20,
+    "dimensions": "60 × 26.0 × ? cm"
+  },
+  {
+    "itemId": "60428990",
+    "name": "Bench",
+    "category": "Café furniture",
+    "price": 118,
+    "dimensions": "29 × 45.0 × ? cm"
+  },
+  {
+    "itemId": "00428974",
+    "name": "Stool",
+    "category": "Café furniture",
+    "price": 58,
+    "dimensions": "45 × 45.0 × 29.0 cm"
+  },
+  {
+    "itemId": "30428982",
+    "name": "Table",
+    "category": "Café furniture",
+    "price": 238.4,
+    "dimensions": "74 × 74.0 × ? cm"
+  },
+  {
+    "itemId": "89323921",
+    "name": "Table",
+    "category": "Café furniture",
+    "price": 180,
+    "dimensions": "70 × 75.0 × ? cm"
+  },
+  {
+    "itemId": "60246080",
+    "name": "Chair",
+    "category": "Café furniture",
+    "price": 72,
+    "dimensions": "50 × 76.0 × 46.0 cm"
+  },
+  {
+    "itemId": "10422504",
+    "name": "Chair",
+    "category": "Café furniture",
+    "price": 138,
+    "dimensions": "46 × 79.0 × 49.0 cm"
+  },
+  {
+    "itemId": "80417636",
+    "name": "Chair",
+    "category": "Café furniture",
+    "price": 158,
+    "dimensions": "53 × 71.0 × 51.0 cm"
+  },
+  {
+    "itemId": "80280515",
+    "name": "Chair with armrests",
+    "category": "Café furniture",
+    "price": 90,
+    "dimensions": "54 × 76.0 × 46.0 cm"
+  },
+  {
+    "itemId": "49011766",
+    "name": "Table and 2 chairs",
+    "category": "Chairs",
+    "price": 71.6,
+    "dimensions": "75 × 72.0 × ? cm"
+  },
+  {
+    "itemId": "10209202",
+    "name": "Chair cushion",
+    "category": "Chairs",
+    "price": 10,
+    "dimensions": null
+  },
+  {
+    "itemId": "50078464",
+    "name": "Armchair",
+    "category": "Chairs",
+    "price": 78,
+    "dimensions": "67 × 96.0 × 85.0 cm"
+  },
+  {
+    "itemId": "59297184",
+    "name": "Recliner",
+    "category": "Chairs",
+    "price": 558,
+    "dimensions": "85 × 97.0 × 94.0 cm"
+  },
+  {
+    "itemId": "50434312",
+    "name": "Chair with armrests",
+    "category": "Chairs",
+    "price": 158,
+    "dimensions": "57 × 82.0 × 57.0 cm"
+  },
+  {
+    "itemId": "50058376",
+    "name": "Chair",
+    "category": "Chairs",
+    "price": 98,
+    "dimensions": "58 × 79.0 × 56.0 cm"
+  },
+  {
+    "itemId": "10219178",
+    "name": "Chair",
+    "category": "Chairs",
+    "price": 16,
+    "dimensions": "39 × 77.0 × 47.0 cm"
+  },
+  {
+    "itemId": "90184047",
+    "name": "Stool",
+    "category": "Chairs",
+    "price": 10,
+    "dimensions": "40 × ? × ? cm"
+  },
+  {
+    "itemId": "60217799",
+    "name": "Folding chair",
+    "category": "Chairs",
+    "price": 12,
+    "dimensions": "41 × 78.0 × 45.0 cm"
+  },
+  {
+    "itemId": "10233532",
+    "name": "Easy chair",
+    "category": "Chairs",
+    "price": 70,
+    "dimensions": "64 × 75.0 × 75.0 cm"
+  },
+  {
+    "itemId": "70392542",
+    "name": "Children's armchair",
+    "category": "Chairs",
+    "price": 198,
+    "dimensions": "56 × 71.0 × 62.0 cm"
+  },
+  {
+    "itemId": "70103250",
+    "name": "Chair",
+    "category": "Chairs",
+    "price": 78,
+    "dimensions": "43 × 91.0 × 52.0 cm"
+  },
+  {
+    "itemId": "00152282",
+    "name": "Stool",
+    "category": "Chairs",
+    "price": 70,
+    "dimensions": "39 × 45.0 × 30.0 cm"
+  },
+  {
+    "itemId": "70261150",
+    "name": "Office chair",
+    "category": "Chairs",
+    "price": 318,
+    "dimensions": "62 × ? × 60.0 cm"
+  },
+  {
+    "itemId": "60178887",
+    "name": "Step stool",
+    "category": "Chairs",
+    "price": 23.6,
+    "dimensions": "43 × 50.0 × 39.0 cm"
+  },
+  {
+    "itemId": "90435324",
+    "name": "Chair",
+    "category": "Chairs",
+    "price": 198,
+    "dimensions": "60 × 82.0 × 56.0 cm"
+  },
+  {
+    "itemId": "50463502",
+    "name": "Stool cover",
+    "category": "Chairs",
+    "price": 20,
+    "dimensions": null
+  },
+  {
+    "itemId": "60416925",
+    "name": "Stool",
+    "category": "Chairs",
+    "price": 24,
+    "dimensions": "42 × 45.0 × 48.0 cm"
+  },
+  {
+    "itemId": "90350937",
+    "name": "Chair",
+    "category": "Chairs",
+    "price": 38,
+    "dimensions": "46 × 80.0 × 54.0 cm"
+  },
+  {
+    "itemId": "90342688",
+    "name": "Chair",
+    "category": "Chairs",
+    "price": 31.68,
+    "dimensions": "41 × 90.0 × 47.0 cm"
+  },
+  {
+    "itemId": "49228474",
+    "name": "Chair",
+    "category": "Chairs",
+    "price": 110,
+    "dimensions": null
+  },
+  {
+    "itemId": "80349671",
+    "name": "Chair",
+    "category": "Chairs",
+    "price": 138,
+    "dimensions": "55 × 82.0 × 56.0 cm"
+  },
+  {
+    "itemId": "29272712",
+    "name": "Armchair",
+    "category": "Chairs",
+    "price": 218,
+    "dimensions": "79 × 78.0 × 69.0 cm"
+  },
+  {
+    "itemId": "10407136",
+    "name": "Swivel armchair",
+    "category": "Chairs",
+    "price": 138,
+    "dimensions": "59 × 75.0 × 62.0 cm"
+  },
+  {
+    "itemId": "59337670",
+    "name": "Children's desk chair",
+    "category": "Chairs",
+    "price": 38,
+    "dimensions": "56 × ? × 56.0 cm"
+  },
+  {
+    "itemId": "60441779",
+    "name": "Children's desk chair",
+    "category": "Chairs",
+    "price": 78,
+    "dimensions": "53 × ? × 53.0 cm"
+  },
+  {
+    "itemId": "50211104",
+    "name": "Table and 4 chairs",
+    "category": "Chairs",
+    "price": 219.6,
+    "dimensions": null
+  },
+  {
+    "itemId": "19304006",
+    "name": "Chair with chair pad",
+    "category": "Chairs",
+    "price": 169.6,
+    "dimensions": "57 × 82.0 × 57.0 cm"
+  },
+  {
+    "itemId": "30115066",
+    "name": "Folding chair",
+    "category": "Chairs",
+    "price": 19.6,
+    "dimensions": "45 × 76.0 × 47.0 cm"
+  },
+  {
+    "itemId": "00262879",
+    "name": "Armchair",
+    "category": "Chairs",
+    "price": 278,
+    "dimensions": "70 × 75.0 × 73.0 cm"
+  },
+  {
+    "itemId": "40240989",
+    "name": "Foot-rest",
+    "category": "Chairs",
+    "price": 27.6,
+    "dimensions": "38 × 15.0 × ? cm"
+  },
+  {
+    "itemId": "30396655",
+    "name": "Storage bench w towel rail/4 hooks",
+    "category": "Chairs",
+    "price": 198,
+    "dimensions": "64 × 173.0 × 37.0 cm"
+  },
+  {
+    "itemId": "40455654",
+    "name": "High-back armchair",
+    "category": "Chairs",
+    "price": 278,
+    "dimensions": "70 × 101.0 × 58.0 cm"
+  },
+  {
+    "itemId": "90434310",
+    "name": "Armchair",
+    "category": "Chairs",
+    "price": 178,
+    "dimensions": "67 × 76.0 × 74.0 cm"
+  },
+  {
+    "itemId": "60248418",
+    "name": "Children's stool",
+    "category": "Chairs",
+    "price": 6,
+    "dimensions": "37 × 13.0 × 24.0 cm"
+  },
+  {
+    "itemId": "90175000",
+    "name": "Chair pad",
+    "category": "Chairs",
+    "price": 7.6,
+    "dimensions": null
+  },
+  {
+    "itemId": "79325223",
+    "name": "Stool",
+    "category": "Chairs",
+    "price": 90,
+    "dimensions": "39 × 49.0 × 51.0 cm"
+  },
+  {
+    "itemId": "29252549",
+    "name": "Conference chair with armrests",
+    "category": "Chairs",
+    "price": 258,
+    "dimensions": "67 × ? × 67.0 cm"
+  },
+  {
+    "itemId": "00410101",
+    "name": "Chair cushion",
+    "category": "Chairs",
+    "price": 11.6,
+    "dimensions": "38 × ? × 38.0 cm"
+  },
+  {
+    "itemId": "29067293",
+    "name": "Highchair with tray",
+    "category": "Chairs",
+    "price": 44,
+    "dimensions": "56 × 90.0 × 62.0 cm"
+  },
+  {
+    "itemId": "10424353",
+    "name": "Children's desk chair",
+    "category": "Chairs",
+    "price": 119.6,
+    "dimensions": "62 × ? × 59.0 cm"
+  },
+  {
+    "itemId": "90325518",
+    "name": "Swivel chair",
+    "category": "Chairs",
+    "price": 88,
+    "dimensions": "58 × ? × 58.0 cm"
+  },
+  {
+    "itemId": "90190411",
+    "name": "Stepladder",
+    "category": "Chairs",
+    "price": 58,
+    "dimensions": null
+  },
+  {
+    "itemId": "30346986",
+    "name": "Padded seat cover for highchair",
+    "category": "Chairs",
+    "price": 20,
+    "dimensions": "22 × 40.0 × 21.0 cm"
+  },
+  {
+    "itemId": "00418376",
+    "name": "Active sit/stand support",
+    "category": "Chairs",
+    "price": 140,
+    "dimensions": "60 × ? × ? cm"
+  },
+  {
+    "itemId": "39261874",
+    "name": "Office chair with armrests",
+    "category": "Chairs",
+    "price": 318,
+    "dimensions": "68 × ? × 68.0 cm"
+  },
+  {
+    "itemId": "39296901",
+    "name": "Table and 2 chairs",
+    "category": "Chairs",
+    "price": 115.6,
+    "dimensions": "75 × ? × ? cm"
+  },
+  {
+    "itemId": "60341015",
+    "name": "Chair",
+    "category": "Chairs",
+    "price": 90,
+    "dimensions": "43 × 95.0 × 51.0 cm"
+  },
+  {
+    "itemId": "60265163",
+    "name": "Step stool",
+    "category": "Chairs",
+    "price": 8.8,
+    "dimensions": "44 × ? × 35.0 cm"
+  },
+  {
+    "itemId": "70434311",
+    "name": "Armchair",
+    "category": "Chairs",
+    "price": 230,
+    "dimensions": "72 × 42.0 × 63.0 cm"
+  },
+  {
+    "itemId": "39240787",
+    "name": "Armchair",
+    "category": "Chairs",
+    "price": 170,
+    "dimensions": "68 × 100.0 × 82.0 cm"
+  },
+  {
+    "itemId": "00243800",
+    "name": "Bench with shoe storage",
+    "category": "Chairs",
+    "price": 118,
+    "dimensions": "85 × 65.0 × 32.0 cm"
+  },
+  {
+    "itemId": "00385069",
+    "name": "Chair frame",
+    "category": "Chairs",
+    "price": 60,
+    "dimensions": "50 × 45.0 × 50.0 cm"
+  },
+  {
+    "itemId": "29917307",
+    "name": "Table and 4 chairs",
+    "category": "Chairs",
+    "price": 690,
+    "dimensions": "87 × 74.0 × ? cm"
+  },
+  {
+    "itemId": "50357785",
+    "name": "Children's stool",
+    "category": "Chairs",
+    "price": 10,
+    "dimensions": null
+  },
+  {
+    "itemId": "99011764",
+    "name": "Table and 2 stools",
+    "category": "Chairs",
+    "price": 59.6,
+    "dimensions": "75 × 72.0 × ? cm"
+  },
+  {
+    "itemId": "70273092",
+    "name": "Chair",
+    "category": "Chairs",
+    "price": 104,
+    "dimensions": "47 × 83.0 × 51.0 cm"
+  },
+  {
+    "itemId": "19305044",
+    "name": "Table and 4 chairs",
+    "category": "Chairs",
+    "price": 1390,
+    "dimensions": "85 × 74.0 × ? cm"
+  },
+  {
+    "itemId": "10421665",
+    "name": "Chest of 4 drawers",
+    "category": "Chairs",
+    "price": 254.4,
+    "dimensions": "159 × 50.0 × 44.0 cm"
+  },
+  {
+    "itemId": "40466389",
+    "name": "Recliner",
+    "category": "Chairs",
+    "price": 378,
+    "dimensions": "66 × 96.0 × 84.0 cm"
+  },
+  {
+    "itemId": "50320565",
+    "name": "Pair of armrests",
+    "category": "Chairs",
+    "price": 40,
+    "dimensions": "15 × 32.0 × 27.0 cm"
+  },
+  {
+    "itemId": "49031774",
+    "name": "Armchair",
+    "category": "Chairs",
+    "price": 798,
+    "dimensions": "89 × 78.0 × 89.0 cm"
+  },
+  {
+    "itemId": "79269180",
+    "name": "Chaise longue",
+    "category": "Chairs",
+    "price": 1000,
+    "dimensions": "78 × 78.0 × 158.0 cm"
+  },
+  {
+    "itemId": "40369109",
+    "name": "Chair",
+    "category": "Chairs",
+    "price": 90,
+    "dimensions": "44 × 97.0 × 56.0 cm"
+  },
+  {
+    "itemId": "90471581",
+    "name": "Storage bench",
+    "category": "Chairs",
+    "price": 150,
+    "dimensions": "70 × 51.0 × 47.0 cm"
+  },
+  {
+    "itemId": "29221256",
+    "name": "Table and 4 chairs",
+    "category": "Chairs",
+    "price": 231.6,
+    "dimensions": "75 × 72.0 × ? cm"
+  },
+  {
+    "itemId": "70253541",
+    "name": "Junior chair",
+    "category": "Chairs",
+    "price": 78,
+    "dimensions": "41 × 79.0 × 43.0 cm"
+  },
+  {
+    "itemId": "69161482",
+    "name": "Table and 4 chairs",
+    "category": "Chairs",
+    "price": 718,
+    "dimensions": "80 × 74.0 × ? cm"
+  },
+  {
+    "itemId": "19277036",
+    "name": "Table and 6 chairs",
+    "category": "Chairs",
+    "price": 1658,
+    "dimensions": "100 × 74.0 × ? cm"
+  },
+  {
+    "itemId": "10461010",
+    "name": "Lumbar cushion",
+    "category": "Chairs",
+    "price": 19.6,
+    "dimensions": "23 × ? × ? cm"
+  },
+  {
+    "itemId": "89041709",
+    "name": "Highchair with safety belt",
+    "category": "Chairs",
+    "price": 34,
+    "dimensions": "56 × 90.0 × 59.0 cm"
+  },
+  {
+    "itemId": "20013073",
+    "name": "Chair pad",
+    "category": "Chairs",
+    "price": 11.6,
+    "dimensions": "42 × ? × 41.0 cm"
+  },
+  {
+    "itemId": "39279567",
+    "name": "Table and 6 chairs",
+    "category": "Chairs",
+    "price": 938,
+    "dimensions": null
+  },
+  {
+    "itemId": "89221475",
+    "name": "Table and 2 chairs",
+    "category": "Chairs",
+    "price": 434,
+    "dimensions": null
+  },
+  {
+    "itemId": "69297292",
+    "name": "Table and 4 chairs",
+    "category": "Chairs",
+    "price": 1030,
+    "dimensions": "90 × ? × ? cm"
+  },
+  {
+    "itemId": "9259702",
+    "name": "Table and 4 chairs",
+    "category": "Chairs",
+    "price": 750,
+    "dimensions": "78 × 74.0 × ? cm"
+  },
+  {
+    "itemId": "10330811",
+    "name": "Seat shell for highchair",
+    "category": "Chairs",
+    "price": 44,
+    "dimensions": "35 × 40.0 × 37.0 cm"
+  },
+  {
+    "itemId": "40340762",
+    "name": "Bench",
+    "category": "Chairs",
+    "price": 158,
+    "dimensions": "36 × 45.0 × ? cm"
+  },
+  {
+    "itemId": "44881100",
+    "name": "Floor protector",
+    "category": "Chairs",
+    "price": 60,
+    "dimensions": "120 × ? × ? cm"
+  },
+  {
+    "itemId": "40273593",
+    "name": "Children's stool",
+    "category": "Chairs",
+    "price": 35.6,
+    "dimensions": "24 × ? × 24.0 cm"
+  },
+  {
+    "itemId": "70330813",
+    "name": "Highchair tray",
+    "category": "Chairs",
+    "price": 22,
+    "dimensions": "44 × ? × 42.0 cm"
+  },
+  {
+    "itemId": "90246291",
+    "name": "Chair with armrests",
+    "category": "Chairs",
+    "price": 178,
+    "dimensions": "57 × 99.0 × 63.0 cm"
+  },
+  {
+    "itemId": "49252553",
+    "name": "Junior/highchair with tray",
+    "category": "Chairs",
+    "price": 160,
+    "dimensions": "56 × 87.0 × 61.0 cm"
+  },
+  {
+    "itemId": "60353838",
+    "name": "Junior chair",
+    "category": "Chairs",
+    "price": 88,
+    "dimensions": "41 × 77.0 × 45.0 cm"
+  },
+  {
+    "itemId": "89304791",
+    "name": "Table and 4 chairs",
+    "category": "Chairs",
+    "price": 638,
+    "dimensions": "80 × ? × ? cm"
+  },
+  {
+    "itemId": "89907452",
+    "name": "Conference chair",
+    "category": "Chairs",
+    "price": 88,
+    "dimensions": "45 × 81.0 × 51.0 cm"
+  },
+  {
+    "itemId": "50346985",
+    "name": "Padded seat cover for junior chair",
+    "category": "Chairs",
+    "price": 14,
+    "dimensions": "56 × 36.0 × 60.0 cm"
+  },
+  {
+    "itemId": "19297157",
+    "name": "Table and 4 chairs",
+    "category": "Chairs",
+    "price": 690,
+    "dimensions": null
+  },
+  {
+    "itemId": "39161488",
+    "name": "Table and 4 chairs",
+    "category": "Chairs",
+    "price": 367.6,
+    "dimensions": "75 × 72.0 × ? cm"
+  },
+  {
+    "itemId": "50223625",
+    "name": "Bench",
+    "category": "Chairs",
+    "price": 158,
+    "dimensions": "37 × 53.0 × ? cm"
+  },
+  {
+    "itemId": "79912760",
+    "name": "Table and 1 chair",
+    "category": "Chairs",
+    "price": 129.6,
+    "dimensions": "74 × ? × 60.0 cm"
+  },
+  {
+    "itemId": "80371520",
+    "name": "Children's step stool",
+    "category": "Chairs",
+    "price": 35.6,
+    "dimensions": "40 × 33.0 × 38.0 cm"
+  },
+  {
+    "itemId": "80290779",
+    "name": "Children's bench",
+    "category": "Chairs",
+    "price": 55.6,
+    "dimensions": "55 × 45.0 × 38.0 cm"
+  },
+  {
+    "itemId": "80418056",
+    "name": "Children's armchair frame",
+    "category": "Chairs",
+    "price": 53.6,
+    "dimensions": "47 × 68.0 × 56.0 cm"
+  },
+  {
+    "itemId": "39297118",
+    "name": "Table and 4 chairs",
+    "category": "Chairs",
+    "price": 830,
+    "dimensions": "78 × ? × ? cm"
+  },
+  {
+    "itemId": "79288032",
+    "name": "Table and 6 armchairs",
+    "category": "Chairs",
+    "price": 2186,
+    "dimensions": "100 × ? × ? cm"
+  },
+  {
+    "itemId": "89221319",
+    "name": "Table and 6 chairs",
+    "category": "Chairs",
+    "price": 1226,
+    "dimensions": null
+  },
+  {
+    "itemId": "60403150",
+    "name": "Chair",
+    "category": "Chairs",
+    "price": 238,
+    "dimensions": "49 × 83.0 × 57.0 cm"
+  },
+  {
+    "itemId": "20153068",
+    "name": "Chair",
+    "category": "Chairs",
+    "price": 298,
+    "dimensions": "49 × 77.0 × 50.0 cm"
+  },
+  {
+    "itemId": "49305165",
+    "name": "Table and 4 chairs",
+    "category": "Chairs",
+    "price": 958,
+    "dimensions": "95 × ? × ? cm"
+  },
+  {
+    "itemId": "50165079",
+    "name": "Highchair with tray",
+    "category": "Chairs",
+    "price": 150,
+    "dimensions": "52 × 93.0 × 53.0 cm"
+  },
+  {
+    "itemId": "59221189",
+    "name": "Table and 4 chairs",
+    "category": "Chairs",
+    "price": 370,
+    "dimensions": null
+  },
+  {
+    "itemId": "00165213",
+    "name": "Junior chair",
+    "category": "Chairs",
+    "price": 90,
+    "dimensions": "45 × 79.0 × 48.0 cm"
+  },
+  {
+    "itemId": "39297236",
+    "name": "Table and 4 chairs",
+    "category": "Chairs",
+    "price": 654.4,
+    "dimensions": "74 × ? × ? cm"
+  },
+  {
+    "itemId": "19252615",
+    "name": "Junior chair",
+    "category": "Chairs",
+    "price": 94,
+    "dimensions": "56 × 82.0 × 61.0 cm"
+  },
+  {
+    "itemId": "20396420",
+    "name": "Conference chair with castors",
+    "category": "Chairs",
+    "price": 398,
+    "dimensions": "71 × ? × 71.0 cm"
+  },
+  {
+    "itemId": "29259838",
+    "name": "Table and 6 chairs",
+    "category": "Chairs",
+    "price": 1898,
+    "dimensions": "100 × 74.0 × ? cm"
+  },
+  {
+    "itemId": "29304765",
+    "name": "Table and 6 chairs",
+    "category": "Chairs",
+    "price": 1338,
+    "dimensions": "105 × ? × ? cm"
+  },
+  {
+    "itemId": "39307706",
+    "name": "Table and 6 chairs",
+    "category": "Chairs",
+    "price": 2346,
+    "dimensions": "105 × ? × ? cm"
+  },
+  {
+    "itemId": "49221321",
+    "name": "Table and 6 chairs",
+    "category": "Chairs",
+    "price": 1106,
+    "dimensions": null
+  },
+  {
+    "itemId": "59161492",
+    "name": "Table and 6 chairs",
+    "category": "Chairs",
+    "price": 1622,
+    "dimensions": "100 × 74.0 × ? cm"
+  },
+  {
+    "itemId": "59305061",
+    "name": "Table and 6 chairs",
+    "category": "Chairs",
+    "price": 1706,
+    "dimensions": "100 × ? × ? cm"
+  },
+  {
+    "itemId": "69305174",
+    "name": "Table and 4 chairs",
+    "category": "Chairs",
+    "price": 1014,
+    "dimensions": "95 × ? × ? cm"
+  },
+  {
+    "itemId": "79277019",
+    "name": "Table and 6 chairs",
+    "category": "Chairs",
+    "price": 1706,
+    "dimensions": "100 × 74.0 × ? cm"
+  },
+  {
+    "itemId": "89297229",
+    "name": "Table and 4 chairs",
+    "category": "Chairs",
+    "price": 790.4,
+    "dimensions": "74 × ? × ? cm"
+  },
+  {
+    "itemId": "80389148",
+    "name": "Seat shell",
+    "category": "Chairs",
+    "price": 50,
+    "dimensions": null
+  },
+  {
+    "itemId": "89305168",
+    "name": "Table and 4 chairs",
+    "category": "Chairs",
+    "price": 1150,
+    "dimensions": "95 × ? × ? cm"
+  },
+  {
+    "itemId": "20341970",
+    "name": "Drawer unit on castors",
+    "category": "Chests of drawers & drawer units",
+    "price": 70,
+    "dimensions": "28 × 69.0 × 44.0 cm"
+  },
+  {
+    "itemId": "30326177",
+    "name": "Drawer unit",
+    "category": "Chests of drawers & drawer units",
+    "price": 19.6,
+    "dimensions": "30 × 56.0 × 34.0 cm"
+  },
+  {
+    "itemId": "60403584",
+    "name": "Chest of 6 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 222,
+    "dimensions": "160 × 78.0 × 48.0 cm"
+  },
+  {
+    "itemId": "75305709",
+    "name": "Chest of 3 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 55.6,
+    "dimensions": "62 × 70.0 × 30.0 cm"
+  },
+  {
+    "itemId": "20403562",
+    "name": "Chest of 3 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 118,
+    "dimensions": "80 × 78.0 × 48.0 cm"
+  },
+  {
+    "itemId": "10239280",
+    "name": "Chest of 8 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 438,
+    "dimensions": "160 × 96.0 × 50.0 cm"
+  },
+  {
+    "itemId": "60322130",
+    "name": "Chest of 2 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 35.6,
+    "dimensions": "35 × 49.0 × 40.0 cm"
+  },
+  {
+    "itemId": "60403602",
+    "name": "Chest of 6 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 198,
+    "dimensions": "80 × 123.0 × 48.0 cm"
+  },
+  {
+    "itemId": "00392041",
+    "name": "Chest of 3 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 130,
+    "dimensions": "78 × 95.0 × 46.0 cm"
+  },
+  {
+    "itemId": "50293722",
+    "name": "Chest of 3 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 46,
+    "dimensions": "55 × 62.0 × 36.0 cm"
+  },
+  {
+    "itemId": "30403571",
+    "name": "Chest of 4 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 170,
+    "dimensions": "80 × 100.0 × 48.0 cm"
+  },
+  {
+    "itemId": "40393661",
+    "name": "Chest of 5 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 119.6,
+    "dimensions": "70 × 112.0 × 40.0 cm"
+  },
+  {
+    "itemId": "70403593",
+    "name": "Chest of 6 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 198,
+    "dimensions": "40 × 123.0 × 48.0 cm"
+  },
+  {
+    "itemId": "80391325",
+    "name": "Chest of 4 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 378,
+    "dimensions": "87 × 76.0 × 54.0 cm"
+  },
+  {
+    "itemId": "20293714",
+    "name": "Chest of 6 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 418,
+    "dimensions": "127 × 81.0 × 49.0 cm"
+  },
+  {
+    "itemId": "70407299",
+    "name": "Chest of 5 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 518,
+    "dimensions": "90 × 90.0 × 47.0 cm"
+  },
+  {
+    "itemId": "90213078",
+    "name": "Drawer unit on castors",
+    "category": "Chests of drawers & drawer units",
+    "price": 98,
+    "dimensions": "35 × 75.0 × 50.0 cm"
+  },
+  {
+    "itemId": "89239507",
+    "name": "Chest of 9 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 520,
+    "dimensions": "160 × 76.0 × 47.0 cm"
+  },
+  {
+    "itemId": "00430019",
+    "name": "Glass top",
+    "category": "Chests of drawers & drawer units",
+    "price": 28,
+    "dimensions": "38 × ? × ? cm"
+  },
+  {
+    "itemId": "79239490",
+    "name": "Chest of 12 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 744,
+    "dimensions": "160 × 145.0 × 47.0 cm"
+  },
+  {
+    "itemId": "80433486",
+    "name": "Chest of 3 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 118,
+    "dimensions": "60 × 64.0 × 40.0 cm"
+  },
+  {
+    "itemId": "29239497",
+    "name": "Chest of 6 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 368,
+    "dimensions": "120 × 54.0 × 47.0 cm"
+  },
+  {
+    "itemId": "9287291",
+    "name": "Drawer unit with smart lock",
+    "category": "Chests of drawers & drawer units",
+    "price": 276,
+    "dimensions": "42 × 61.0 × 47.0 cm"
+  },
+  {
+    "itemId": "49239496",
+    "name": "Chest of 4 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 360,
+    "dimensions": "160 × 54.0 × 47.0 cm"
+  },
+  {
+    "itemId": "39239835",
+    "name": "Chest of 3 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 184,
+    "dimensions": "40 × 76.0 × 47.0 cm"
+  },
+  {
+    "itemId": "10391324",
+    "name": "Chest of 4 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 378,
+    "dimensions": "67 × 102.0 × 49.0 cm"
+  },
+  {
+    "itemId": "99239489",
+    "name": "Chest of 12 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 752,
+    "dimensions": "120 × 145.0 × 47.0 cm"
+  },
+  {
+    "itemId": "60366789",
+    "name": "Chest of 4 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 238,
+    "dimensions": "82 × 104.0 × 50.0 cm"
+  },
+  {
+    "itemId": "9239498",
+    "name": "Chest of 6 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 368,
+    "dimensions": "120 × 76.0 × 47.0 cm"
+  },
+  {
+    "itemId": "99239494",
+    "name": "Chest of 2 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 200,
+    "dimensions": "80 × 54.0 × 47.0 cm"
+  },
+  {
+    "itemId": "9239827",
+    "name": "Chest of 2 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 152,
+    "dimensions": "40 × 54.0 × 47.0 cm"
+  },
+  {
+    "itemId": "10383461",
+    "name": "Modular chest of 2 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 128,
+    "dimensions": "80 × 45.0 × 47.0 cm"
+  },
+  {
+    "itemId": "89239499",
+    "name": "Chest of 6 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 392,
+    "dimensions": "80 × 145.0 × 47.0 cm"
+  },
+  {
+    "itemId": "29239505",
+    "name": "Chest of 8 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 616,
+    "dimensions": "160 × 99.0 × 47.0 cm"
+  },
+  {
+    "itemId": "79239843",
+    "name": "Chest of 4 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 248,
+    "dimensions": "40 × 99.0 × 47.0 cm"
+  },
+  {
+    "itemId": "90383457",
+    "name": "Modular chest of 2 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 96,
+    "dimensions": "40 × 45.0 × 47.0 cm"
+  },
+  {
+    "itemId": "90365161",
+    "name": "Drawer unit",
+    "category": "Chests of drawers & drawer units",
+    "price": 718,
+    "dimensions": "80 × 80.0 × 45.0 cm"
+  },
+  {
+    "itemId": "20383465",
+    "name": "Modular chest of 3 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 128,
+    "dimensions": "40 × 68.0 × 47.0 cm"
+  },
+  {
+    "itemId": "69239495",
+    "name": "Chest of 3 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 232,
+    "dimensions": "80 × 76.0 × 47.0 cm"
+  },
+  {
+    "itemId": "40383474",
+    "name": "Top and plinth",
+    "category": "Chests of drawers & drawer units",
+    "price": 80,
+    "dimensions": "120 × 8.0 × 47.0 cm"
+  },
+  {
+    "itemId": "29276550",
+    "name": "Chest of 5 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 424,
+    "dimensions": "80 × 122.0 × 47.0 cm"
+  },
+  {
+    "itemId": "79282426",
+    "name": "Storage unit on castors",
+    "category": "Chests of drawers & drawer units",
+    "price": 362,
+    "dimensions": "41 × 61.0 × 45.0 cm"
+  },
+  {
+    "itemId": "40383469",
+    "name": "Modular chest of 3 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 160,
+    "dimensions": "80 × 68.0 × 47.0 cm"
+  },
+  {
+    "itemId": "69276633",
+    "name": "Chest of 6 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 528,
+    "dimensions": "120 × 99.0 × 47.0 cm"
+  },
+  {
+    "itemId": "9248006",
+    "name": "Chest of 7 drawers",
+    "category": "Chests of drawers & drawer units",
+    "price": 432,
+    "dimensions": "80 × 99.0 × 47.0 cm"
+  },
+  {
+    "itemId": "10460888",
+    "name": "Wardrobe",
+    "category": "Children's furniture",
+    "price": 198,
+    "dimensions": "80 × 187.0 × 50.0 cm"
+  },
+  {
+    "itemId": "50365177",
+    "name": "Children's table",
+    "category": "Children's furniture",
+    "price": 51.6,
+    "dimensions": "55 × 48.0 × ? cm"
+  },
+  {
+    "itemId": "40365371",
+    "name": "Children's chair",
+    "category": "Children's furniture",
+    "price": 23.6,
+    "dimensions": "39 × 67.0 × 36.0 cm"
+  },
+  {
+    "itemId": "90365180",
+    "name": "Children's table",
+    "category": "Children's furniture",
+    "price": 59.6,
+    "dimensions": null
+  },
+  {
+    "itemId": "60357737",
+    "name": "Children's table",
+    "category": "Children's furniture",
+    "price": 18,
+    "dimensions": "42 × 43.0 × ? cm"
+  },
+  {
+    "itemId": "29042877",
+    "name": "Storage combination",
+    "category": "Children's furniture",
+    "price": 146,
+    "dimensions": "99 × 94.0 × 44.0 cm"
+  },
+  {
+    "itemId": "30213076",
+    "name": "Desk",
+    "category": "Children's furniture",
+    "price": 70,
+    "dimensions": "73 × 75.0 × 50.0 cm"
+  },
+  {
+    "itemId": "50298418",
+    "name": "Children's table",
+    "category": "Children's furniture",
+    "price": 139.6,
+    "dimensions": "58 × 48.0 × ? cm"
+  },
+  {
+    "itemId": "9903014",
+    "name": "Desk",
+    "category": "Children's furniture",
+    "price": 180.4,
+    "dimensions": "105 × 140.0 × 50.0 cm"
+  },
+  {
+    "itemId": "79898306",
+    "name": "Wall storage",
+    "category": "Children's furniture",
+    "price": 62,
+    "dimensions": "99 × 30.0 × 21.0 cm"
+  },
+  {
+    "itemId": "19102659",
+    "name": "Storage combination",
+    "category": "Children's furniture",
+    "price": 158,
+    "dimensions": "94 × 52.0 × 44.0 cm"
+  },
+  {
+    "itemId": "80213074",
+    "name": "Desk",
+    "category": "Children's furniture",
+    "price": 110.4,
+    "dimensions": "105 × 75.0 × 50.0 cm"
+  },
+  {
+    "itemId": "70228325",
+    "name": "Children's picnic table",
+    "category": "Children's furniture",
+    "price": 82,
+    "dimensions": "89 × 49.0 × ? cm"
+  },
+  {
+    "itemId": "49102304",
+    "name": "Wall storage",
+    "category": "Children's furniture",
+    "price": 78,
+    "dimensions": null
+  },
+  {
+    "itemId": "29228470",
+    "name": "Storage combination",
+    "category": "Children's furniture",
+    "price": 146,
+    "dimensions": "99 × 56.0 × 44.0 cm"
+  },
+  {
+    "itemId": "99228476",
+    "name": "Storage combination",
+    "category": "Children's furniture",
+    "price": 100,
+    "dimensions": "46 × 145.0 × 30.0 cm"
+  },
+  {
+    "itemId": "10269696",
+    "name": "Wardrobe",
+    "category": "Children's furniture",
+    "price": 438,
+    "dimensions": "80 × 171.0 × 50.0 cm"
+  },
+  {
+    "itemId": "95685100",
+    "name": "Storage box",
+    "category": "Children's furniture",
+    "price": 6,
+    "dimensions": "30 × 23.0 × ? cm"
+  },
+  {
+    "itemId": "20273594",
+    "name": "Children's desk",
+    "category": "Children's furniture",
+    "price": 179.6,
+    "dimensions": "92 × ? × 67.0 cm"
+  },
+  {
+    "itemId": "90091454",
+    "name": "Shelf",
+    "category": "Children's furniture",
+    "price": 12,
+    "dimensions": "30 × ? × ? cm"
+  },
+  {
+    "itemId": "89102095",
+    "name": "Storage combination",
+    "category": "Children's furniture",
+    "price": 190,
+    "dimensions": "94 × 91.0 × 44.0 cm"
+  },
+  {
+    "itemId": "50308002",
+    "name": "Storage box",
+    "category": "Children's furniture",
+    "price": 4,
+    "dimensions": "30 × 10.0 × ? cm"
+  },
+  {
+    "itemId": "20089242",
+    "name": "Storage box",
+    "category": "Children's furniture",
+    "price": 10,
+    "dimensions": "30 × 36.0 × ? cm"
+  },
+  {
+    "itemId": "30091452",
+    "name": "Frame",
+    "category": "Children's furniture",
+    "price": 60,
+    "dimensions": "46 × 94.0 × 30.0 cm"
+  },
+  {
+    "itemId": "29103007",
+    "name": "Storage combination",
+    "category": "Children's furniture",
+    "price": 96,
+    "dimensions": "44 × 91.0 × 30.0 cm"
+  },
+  {
+    "itemId": "20308701",
+    "name": "Wall storage",
+    "category": "Children's furniture",
+    "price": 66,
+    "dimensions": "93 × 30.0 × 21.0 cm"
+  },
+  {
+    "itemId": "00091415",
+    "name": "Lid",
+    "category": "Children's furniture",
+    "price": 2,
+    "dimensions": "28 × ? × ? cm"
+  },
+  {
+    "itemId": "40466285",
+    "name": "Storage box",
+    "category": "Children's furniture",
+    "price": 4,
+    "dimensions": "42 × 10.0 × 30.0 cm"
+  },
+  {
+    "itemId": "30466281",
+    "name": "Storage box",
+    "category": "Children's furniture",
+    "price": 6,
+    "dimensions": "42 × 23.0 × 30.0 cm"
+  },
+  {
+    "itemId": "99323614",
+    "name": "Changing tbl/bookshelf w 1 shlf ut",
+    "category": "Nursery furniture",
+    "price": 148,
+    "dimensions": "60 × 91.0 × 40.0 cm"
+  },
+  {
+    "itemId": "30199283",
+    "name": "Stor baskets changing tbl set of 4",
+    "category": "Nursery furniture",
+    "price": 23.6,
+    "dimensions": "27 × 26.0 × 23.0 cm"
+  },
+  {
+    "itemId": "20045205",
+    "name": "Changing table",
+    "category": "Nursery furniture",
+    "price": 58,
+    "dimensions": "53 × 87.0 × ? cm"
+  },
+  {
+    "itemId": "20400243",
+    "name": "Nursing pillow",
+    "category": "Nursery furniture",
+    "price": 35.6,
+    "dimensions": "50 × 18.0 × ? cm"
+  },
+  {
+    "itemId": "20307037",
+    "name": "Changing table",
+    "category": "Nursery furniture",
+    "price": 318,
+    "dimensions": "82 × 93.0 × 54.0 cm"
+  },
+  {
+    "itemId": "30465489",
+    "name": "Shelf unit",
+    "category": "Nursery furniture",
+    "price": 38,
+    "dimensions": "29 × 88.0 × 25.0 cm"
+  },
+  {
+    "itemId": "89335976",
+    "name": "Storage combination",
+    "category": "Nursery furniture",
+    "price": 78,
+    "dimensions": "46 × 94.0 × 30.0 cm"
+  },
+  {
+    "itemId": "69898415",
+    "name": "Table+2 chairs",
+    "category": "Outdoor furniture",
+    "price": 79.6,
+    "dimensions": null
+  },
+  {
+    "itemId": "10411440",
+    "name": "Storage box",
+    "category": "Outdoor furniture",
+    "price": 70,
+    "dimensions": "129 × 79.0 × 44.0 cm"
+  },
+  {
+    "itemId": "80336466",
+    "name": "Coffee table",
+    "category": "Outdoor furniture",
+    "price": 70,
+    "dimensions": null
+  },
+  {
+    "itemId": "39286153",
+    "name": "Table+2 chairs",
+    "category": "Outdoor furniture",
+    "price": 186,
+    "dimensions": null
+  },
+  {
+    "itemId": "20411425",
+    "name": "Stool",
+    "category": "Outdoor furniture",
+    "price": 50,
+    "dimensions": "35 × 43.0 × ? cm"
+  },
+  {
+    "itemId": "50285265",
+    "name": "Cover for furniture set",
+    "category": "Outdoor furniture",
+    "price": 41.2,
+    "dimensions": "70 × 90.0 × ? cm"
+  },
+  {
+    "itemId": "70095429",
+    "name": "Table",
+    "category": "Outdoor furniture",
+    "price": 35.6,
+    "dimensions": "54 × 70.0 × ? cm"
+  },
+  {
+    "itemId": "70234185",
+    "name": "Armchair",
+    "category": "Outdoor furniture",
+    "price": 71.6,
+    "dimensions": "79 × 71.0 × 81.0 cm"
+  },
+  {
+    "itemId": "90095428",
+    "name": "Chair",
+    "category": "Outdoor furniture",
+    "price": 22,
+    "dimensions": "39 × 79.0 × 40.0 cm"
+  },
+  {
+    "itemId": "40411047",
+    "name": "Back cushion",
+    "category": "Outdoor furniture",
+    "price": 18,
+    "dimensions": "62 × ? × ? cm"
+  },
+  {
+    "itemId": "49898435",
+    "name": "Table+2 chairs",
+    "category": "Outdoor furniture",
+    "price": 197.2,
+    "dimensions": null
+  },
+  {
+    "itemId": "60240035",
+    "name": "Table",
+    "category": "Outdoor furniture",
+    "price": 59.6,
+    "dimensions": "60 × 73.0 × ? cm"
+  },
+  {
+    "itemId": "10255307",
+    "name": "Chair",
+    "category": "Outdoor furniture",
+    "price": 23.6,
+    "dimensions": "44 × 89.0 × 42.0 cm"
+  },
+  {
+    "itemId": "70391712",
+    "name": "Cover for back cushion",
+    "category": "Outdoor furniture",
+    "price": 15.6,
+    "dimensions": "62 × ? × ? cm"
+  },
+  {
+    "itemId": "40411108",
+    "name": "Seat cushion",
+    "category": "Outdoor furniture",
+    "price": 30,
+    "dimensions": "62 × ? × 62.0 cm"
+  },
+  {
+    "itemId": "40151841",
+    "name": "Table",
+    "category": "Outdoor furniture",
+    "price": 78,
+    "dimensions": null
+  },
+  {
+    "itemId": "40391718",
+    "name": "Cover for seat cushion",
+    "category": "Outdoor furniture",
+    "price": 26,
+    "dimensions": "62 × ? × 62.0 cm"
+  },
+  {
+    "itemId": "59253123",
+    "name": "Seat/back cushion",
+    "category": "Outdoor furniture",
+    "price": 60,
+    "dimensions": "45 × ? × ? cm"
+  },
+  {
+    "itemId": "50240031",
+    "name": "Chair",
+    "category": "Outdoor furniture",
+    "price": 51.6,
+    "dimensions": "36 × 87.0 × 49.0 cm"
+  },
+  {
+    "itemId": "00411087",
+    "name": "Chair cushion",
+    "category": "Outdoor furniture",
+    "price": 15.6,
+    "dimensions": "44 × ? × 44.0 cm"
+  },
+  {
+    "itemId": "80391839",
+    "name": "Inner cushion for chair cushion",
+    "category": "Outdoor furniture",
+    "price": 6,
+    "dimensions": null
+  },
+  {
+    "itemId": "20411067",
+    "name": "Chair cushion",
+    "category": "Outdoor furniture",
+    "price": 11.6,
+    "dimensions": "36 × ? × 32.0 cm"
+  },
+  {
+    "itemId": "10391833",
+    "name": "Inner cushion for back cushion",
+    "category": "Outdoor furniture",
+    "price": 19.6,
+    "dimensions": "62 × ? × ? cm"
+  },
+  {
+    "itemId": "69253108",
+    "name": "Back cushion",
+    "category": "Outdoor furniture",
+    "price": 35.2,
+    "dimensions": "62 × ? × ? cm"
+  },
+  {
+    "itemId": "90417909",
+    "name": "Chair cushion",
+    "category": "Outdoor furniture",
+    "price": 19.6,
+    "dimensions": "50 × ? × 50.0 cm"
+  },
+  {
+    "itemId": "80391844",
+    "name": "Inner cushion for chair cushion",
+    "category": "Outdoor furniture",
+    "price": 12,
+    "dimensions": "44 × ? × 44.0 cm"
+  },
+  {
+    "itemId": "60424586",
+    "name": "Armrest section",
+    "category": "Outdoor furniture",
+    "price": 198,
+    "dimensions": "18 × 53.0 × 82.0 cm"
+  },
+  {
+    "itemId": "30391714",
+    "name": "Cover for seat/back cushion",
+    "category": "Outdoor furniture",
+    "price": 30,
+    "dimensions": "45 × ? × ? cm"
+  },
+  {
+    "itemId": "59253439",
+    "name": "Chair cushion",
+    "category": "Outdoor furniture",
+    "price": 23.6,
+    "dimensions": "44 × ? × 44.0 cm"
+  },
+  {
+    "itemId": "50391850",
+    "name": "Inner cushion for seat cushion",
+    "category": "Outdoor furniture",
+    "price": 32,
+    "dimensions": "62 × ? × 62.0 cm"
+  },
+  {
+    "itemId": "39253077",
+    "name": "Seat cushion",
+    "category": "Outdoor furniture",
+    "price": 58,
+    "dimensions": "62 × ? × 62.0 cm"
+  },
+  {
+    "itemId": "60151840",
+    "name": "Chair",
+    "category": "Outdoor furniture",
+    "price": 59.6,
+    "dimensions": "42 × 87.0 × 52.0 cm"
+  },
+  {
+    "itemId": "60417897",
+    "name": "Inner cushion for chair cushion",
+    "category": "Outdoor furniture",
+    "price": 14,
+    "dimensions": "50 × ? × 50.0 cm"
+  },
+  {
+    "itemId": "70301537",
+    "name": "Shelving unit",
+    "category": "Room dividers",
+    "price": 290,
+    "dimensions": "182 × 182.0 × 39.0 cm"
+  },
+  {
+    "itemId": "30275861",
+    "name": "Shelving unit",
+    "category": "Room dividers",
+    "price": 198,
+    "dimensions": "147 × 147.0 × 39.0 cm"
+  },
+  {
+    "itemId": "9208029",
+    "name": "Storage combination with doors",
+    "category": "Sideboards, buffets & console tables",
+    "price": 660,
+    "dimensions": "180 × 112.0 × 42.0 cm"
+  },
+  {
+    "itemId": "89265836",
+    "name": "Storage combination",
+    "category": "Sideboards, buffets & console tables",
+    "price": 620,
+    "dimensions": "162 × 134.0 × 37.0 cm"
+  },
+  {
+    "itemId": "79275119",
+    "name": "Glass-door cabinet with plinth",
+    "category": "Sideboards, buffets & console tables",
+    "price": 558,
+    "dimensions": "121 × 134.0 × 37.0 cm"
+  },
+  {
+    "itemId": "9251777",
+    "name": "2-seat sofa",
+    "category": "Sofas & armchairs",
+    "price": 398,
+    "dimensions": "180 × 66.0 × 88.0 cm"
+  },
+  {
+    "itemId": "00385314",
+    "name": "Pouffe",
+    "category": "Sofas & armchairs",
+    "price": 98,
+    "dimensions": null
+  },
+  {
+    "itemId": "20033919",
+    "name": "Stool",
+    "category": "Sofas & armchairs",
+    "price": 78,
+    "dimensions": null
+  },
+  {
+    "itemId": "59270274",
+    "name": "2-seat sofa",
+    "category": "Sofas & armchairs",
+    "price": 798,
+    "dimensions": "164 × 78.0 × 89.0 cm"
+  },
+  {
+    "itemId": "50360009",
+    "name": "Footstool",
+    "category": "Sofas & armchairs",
+    "price": 120,
+    "dimensions": "60 × 44.0 × 40.0 cm"
+  },
+  {
+    "itemId": "40266682",
+    "name": "Footstool with storage",
+    "category": "Sofas & armchairs",
+    "price": 38,
+    "dimensions": "36 × 36.0 × ? cm"
+  },
+  {
+    "itemId": "89272667",
+    "name": "3-seat sofa",
+    "category": "Sofas & armchairs",
+    "price": 1518,
+    "dimensions": "242 × 78.0 × ? cm"
+  },
+  {
+    "itemId": "10434309",
+    "name": "Footstool with storage",
+    "category": "Sofas & armchairs",
+    "price": 130,
+    "dimensions": null
+  },
+  {
+    "itemId": "79150751",
+    "name": "Corner sofa-bed",
+    "category": "Sofas & armchairs",
+    "price": 1198,
+    "dimensions": "230 × 96.0 × 151.0 cm"
+  },
+  {
+    "itemId": "9270295",
+    "name": "3-seat sofa",
+    "category": "Sofas & armchairs",
+    "price": 1398,
+    "dimensions": "204 × 78.0 × 89.0 cm"
+  },
+  {
+    "itemId": "40399314",
+    "name": "2-seat sofa",
+    "category": "Sofas & armchairs",
+    "price": 518,
+    "dimensions": "177 × 66.0 × 88.0 cm"
+  },
+  {
+    "itemId": "80245051",
+    "name": "Three-seat sofa",
+    "category": "Sofas & armchairs",
+    "price": 2672,
+    "dimensions": "211 × 80.0 × 88.0 cm"
+  },
+  {
+    "itemId": "20394317",
+    "name": "Armchair cushion",
+    "category": "Sofas & armchairs",
+    "price": 68.8,
+    "dimensions": null
+  },
+  {
+    "itemId": "00385309",
+    "name": "Pouffe",
+    "category": "Sofas & armchairs",
+    "price": 138,
+    "dimensions": null
+  },
+  {
+    "itemId": "30442662",
+    "name": "Cover for recliner",
+    "category": "Sofas & armchairs",
+    "price": 100,
+    "dimensions": "85 × 97.0 × 94.0 cm"
+  },
+  {
+    "itemId": "40410335",
+    "name": "Armchair cover",
+    "category": "Sofas & armchairs",
+    "price": 58,
+    "dimensions": null
+  },
+  {
+    "itemId": "49269983",
+    "name": "5-seat sofa",
+    "category": "Sofas & armchairs",
+    "price": 2438,
+    "dimensions": "360 × 78.0 × ? cm"
+  },
+  {
+    "itemId": "50363970",
+    "name": "Pouffe",
+    "category": "Sofas & armchairs",
+    "price": 178,
+    "dimensions": null
+  },
+  {
+    "itemId": "30292399",
+    "name": "Leg",
+    "category": "Sofas & armchairs",
+    "price": 40,
+    "dimensions": null
+  },
+  {
+    "itemId": "59270354",
+    "name": "4-seat sofa",
+    "category": "Sofas & armchairs",
+    "price": 2398,
+    "dimensions": "282 × 78.0 × 158.0 cm"
+  },
+  {
+    "itemId": "80454493",
+    "name": "Corner section cover",
+    "category": "Sofas & armchairs",
+    "price": 180,
+    "dimensions": null
+  },
+  {
+    "itemId": "39306368",
+    "name": "3-seat sofa-bed",
+    "category": "Sofas & armchairs",
+    "price": 478,
+    "dimensions": "200 × 90.0 × 97.0 cm"
+  },
+  {
+    "itemId": "79258308",
+    "name": "Headrest",
+    "category": "Sofas & armchairs",
+    "price": 60,
+    "dimensions": "70 × 20.0 × ? cm"
+  },
+  {
+    "itemId": "30105901",
+    "name": "Armchair cushion",
+    "category": "Sofas & armchairs",
+    "price": 314,
+    "dimensions": "56 × 7.0 × ? cm"
+  },
+  {
+    "itemId": "60289324",
+    "name": "Legs for bench",
+    "category": "Sofas & armchairs",
+    "price": 40,
+    "dimensions": null
+  },
+  {
+    "itemId": "70410089",
+    "name": "Cover for headrest",
+    "category": "Sofas & armchairs",
+    "price": 20,
+    "dimensions": null
+  },
+  {
+    "itemId": "49270260",
+    "name": "Chaise longue",
+    "category": "Sofas & armchairs",
+    "price": 720,
+    "dimensions": "78 × 78.0 × 158.0 cm"
+  },
+  {
+    "itemId": "20387939",
+    "name": "Cover for corner sofa-bed",
+    "category": "Sofas & armchairs",
+    "price": 220,
+    "dimensions": null
+  },
+  {
+    "itemId": "39286855",
+    "name": "Cabinet combination for TV",
+    "category": "TV & media furniture",
+    "price": 631.2,
+    "dimensions": "300 × 210.0 × 42.0 cm"
+  },
+  {
+    "itemId": "00450088",
+    "name": "TV bench",
+    "category": "TV & media furniture",
+    "price": 20,
+    "dimensions": "90 × 45.0 × 26.0 cm"
+  },
+  {
+    "itemId": "50409874",
+    "name": "TV bench",
+    "category": "TV & media furniture",
+    "price": 238,
+    "dimensions": "180 × 53.0 × 41.0 cm"
+  },
+  {
+    "itemId": "80227797",
+    "name": "TV bench",
+    "category": "TV & media furniture",
+    "price": 190.4,
+    "dimensions": "160 × 45.0 × 42.0 cm"
+  },
+  {
+    "itemId": "70303428",
+    "name": "TV bench",
+    "category": "TV & media furniture",
+    "price": 98,
+    "dimensions": "100 × 53.0 × 36.0 cm"
+  },
+  {
+    "itemId": "60245844",
+    "name": "Frame",
+    "category": "TV & media furniture",
+    "price": 68,
+    "dimensions": "120 × 38.0 × 40.0 cm"
+  },
+  {
+    "itemId": "50413526",
+    "name": "TV bench",
+    "category": "TV & media furniture",
+    "price": 398,
+    "dimensions": "148 × 57.0 × 47.0 cm"
+  },
+  {
+    "itemId": "40337694",
+    "name": "TV bench",
+    "category": "TV & media furniture",
+    "price": 170,
+    "dimensions": "120 × 53.0 × 41.0 cm"
+  },
+  {
+    "itemId": "60239715",
+    "name": "TV bench",
+    "category": "TV & media furniture",
+    "price": 678,
+    "dimensions": "160 × 50.0 × 40.0 cm"
+  },
+  {
+    "itemId": "19299571",
+    "name": "TV storage combination",
+    "category": "TV & media furniture",
+    "price": 1354.4,
+    "dimensions": "326 × 197.0 × ? cm"
+  },
+  {
+    "itemId": "39184343",
+    "name": "TV storage combination",
+    "category": "TV & media furniture",
+    "price": 348,
+    "dimensions": "180 × 190.0 × 41.0 cm"
+  },
+  {
+    "itemId": "29278219",
+    "name": "TV storage combination",
+    "category": "TV & media furniture",
+    "price": 554,
+    "dimensions": "336 × 95.0 × 41.0 cm"
+  },
+  {
+    "itemId": "89299539",
+    "name": "TV storage combination",
+    "category": "TV & media furniture",
+    "price": 954,
+    "dimensions": "245 × 197.0 × ? cm"
+  },
+  {
+    "itemId": "90295540",
+    "name": "Shelf",
+    "category": "TV & media furniture",
+    "price": 10,
+    "dimensions": "56 × ? × 36.0 cm"
+  },
+  {
+    "itemId": "59184337",
+    "name": "TV storage combination",
+    "category": "TV & media furniture",
+    "price": 328,
+    "dimensions": "200 × 95.0 × 41.0 cm"
+  },
+  {
+    "itemId": "99278225",
+    "name": "TV storage combination/glass doors",
+    "category": "TV & media furniture",
+    "price": 506,
+    "dimensions": "276 × 95.0 × 41.0 cm"
+  },
+  {
+    "itemId": "50291676",
+    "name": "Door",
+    "category": "TV & media furniture",
+    "price": 22,
+    "dimensions": "60 × 64.0 × ? cm"
+  },
+  {
+    "itemId": "20334309",
+    "name": "Handle",
+    "category": "TV & media furniture",
+    "price": 30,
+    "dimensions": null
+  },
+  {
+    "itemId": "50347517",
+    "name": "Cup handle",
+    "category": "TV & media furniture",
+    "price": 14,
+    "dimensions": "22 × ? × 30.0 cm"
+  },
+  {
+    "itemId": "40291629",
+    "name": "Drawer front",
+    "category": "TV & media furniture",
+    "price": 24,
+    "dimensions": "60 × 26.0 × ? cm"
+  },
+  {
+    "itemId": "80338413",
+    "name": "Handle",
+    "category": "TV & media furniture",
+    "price": 14,
+    "dimensions": "9 × ? × 31.0 cm"
+  },
+  {
+    "itemId": "40299890",
+    "name": "TV bench",
+    "category": "TV & media furniture",
+    "price": 190,
+    "dimensions": "120 × 64.0 × 40.0 cm"
+  },
+  {
+    "itemId": "80338408",
+    "name": "Knob",
+    "category": "TV & media furniture",
+    "price": 10.8,
+    "dimensions": "20 × ? × 28.0 cm"
+  },
+  {
+    "itemId": "70351513",
+    "name": "Drawer frame",
+    "category": "TV & media furniture",
+    "price": 24,
+    "dimensions": "60 × 15.0 × 40.0 cm"
+  },
+  {
+    "itemId": "50291624",
+    "name": "Door/drawer front",
+    "category": "TV & media furniture",
+    "price": 50,
+    "dimensions": "60 × 38.0 × ? cm"
+  },
+  {
+    "itemId": "00291848",
+    "name": "Door/drawer front",
+    "category": "TV & media furniture",
+    "price": 30,
+    "dimensions": "60 × 38.0 × ? cm"
+  },
+  {
+    "itemId": "19011777",
+    "name": "Table",
+    "category": "Tables & desks",
+    "price": 79.6,
+    "dimensions": "75 × 74.0 × ? cm"
+  },
+  {
+    "itemId": "60214159",
+    "name": "Desk",
+    "category": "Tables & desks",
+    "price": 190,
+    "dimensions": "140 × 73.0 × 65.0 cm"
+  },
+  {
+    "itemId": "50411990",
+    "name": "Tray table",
+    "category": "Tables & desks",
+    "price": 23.6,
+    "dimensions": null
+  },
+  {
+    "itemId": "90449905",
+    "name": "Coffee table",
+    "category": "Tables & desks",
+    "price": 35.6,
+    "dimensions": "55 × 45.0 × ? cm"
+  },
+  {
+    "itemId": "10203610",
+    "name": "Dressing table",
+    "category": "Tables & desks",
+    "price": 150,
+    "dimensions": "120 × 78.0 × 41.0 cm"
+  },
+  {
+    "itemId": "00433895",
+    "name": "Side table",
+    "category": "Tables & desks",
+    "price": 34,
+    "dimensions": null
+  },
+  {
+    "itemId": "80213309",
+    "name": "Coffee table",
+    "category": "Tables & desks",
+    "price": 71.6,
+    "dimensions": null
+  },
+  {
+    "itemId": "80449901",
+    "name": "Coffee table",
+    "category": "Tables & desks",
+    "price": 59.6,
+    "dimensions": "78 × 45.0 × ? cm"
+  },
+  {
+    "itemId": "80221352",
+    "name": "Laptop table",
+    "category": "Tables & desks",
+    "price": 63.6,
+    "dimensions": "100 × 74.0 × 36.0 cm"
+  },
+  {
+    "itemId": "00250249",
+    "name": "Laptop stand",
+    "category": "Tables & desks",
+    "price": 51.6,
+    "dimensions": "35 × 65.0 × 55.0 cm"
+  },
+  {
+    "itemId": "50322239",
+    "name": "Storage table",
+    "category": "Tables & desks",
+    "price": 78,
+    "dimensions": null
+  },
+  {
+    "itemId": "29932181",
+    "name": "Table",
+    "category": "Tables & desks",
+    "price": 47.6,
+    "dimensions": "60 × 74.0 × ? cm"
+  },
+  {
+    "itemId": "90278277",
+    "name": "Desk",
+    "category": "Tables & desks",
+    "price": 250,
+    "dimensions": "49 × 74.0 × 32.0 cm"
+  },
+  {
+    "itemId": "50434307",
+    "name": "Trolley table with storage",
+    "category": "Tables & desks",
+    "price": 110,
+    "dimensions": "50 × 66.0 × ? cm"
+  },
+  {
+    "itemId": "30413495",
+    "name": "Coffee table",
+    "category": "Tables & desks",
+    "price": 198,
+    "dimensions": "90 × 46.0 × ? cm"
+  },
+  {
+    "itemId": "90214308",
+    "name": "Desk",
+    "category": "Tables & desks",
+    "price": 158,
+    "dimensions": "142 × 75.0 × 50.0 cm"
+  },
+  {
+    "itemId": "20382932",
+    "name": "Trolley",
+    "category": "Tables & desks",
+    "price": 75.6,
+    "dimensions": "45 × 78.0 × ? cm"
+  },
+  {
+    "itemId": "90471519",
+    "name": "Coffee table",
+    "category": "Tables & desks",
+    "price": 78,
+    "dimensions": null
+  },
+  {
+    "itemId": "80215332",
+    "name": "Nest of tables",
+    "category": "Tables & desks",
+    "price": 99.6,
+    "dimensions": "50 × 50.0 × ? cm"
+  },
+  {
+    "itemId": "50244741",
+    "name": "Corner workstation",
+    "category": "Tables & desks",
+    "price": 276,
+    "dimensions": null
+  },
+  {
+    "itemId": "50161321",
+    "name": "Storage table",
+    "category": "Tables & desks",
+    "price": 158,
+    "dimensions": "50 × 50.0 × ? cm"
+  },
+  {
+    "itemId": "10457999",
+    "name": "Holder for mobile phone/tablet",
+    "category": "Tables & desks",
+    "price": 3.6,
+    "dimensions": "8 × ? × ? cm"
+  },
+  {
+    "itemId": "30339735",
+    "name": "Laptop table",
+    "category": "Tables & desks",
+    "price": 118,
+    "dimensions": "100 × 75.0 × 36.0 cm"
+  },
+  {
+    "itemId": "30374413",
+    "name": "Dressing table with mirror",
+    "category": "Tables & desks",
+    "price": 238,
+    "dimensions": "100 × 159.0 × 50.0 cm"
+  },
+  {
+    "itemId": "60340389",
+    "name": "Side table",
+    "category": "Tables & desks",
+    "price": 51.6,
+    "dimensions": null
+  },
+  {
+    "itemId": "80270125",
+    "name": "Side table",
+    "category": "Tables & desks",
+    "price": 119.6,
+    "dimensions": "39 × 51.0 × ? cm"
+  },
+  {
+    "itemId": "90423887",
+    "name": "Gateleg table",
+    "category": "Tables & desks",
+    "price": 359.6,
+    "dimensions": "80 × 74.0 × ? cm"
+  },
+  {
+    "itemId": "60214183",
+    "name": "Desk with pull-out panel",
+    "category": "Tables & desks",
+    "price": 258,
+    "dimensions": "151 × 73.0 × 65.0 cm"
+  },
+  {
+    "itemId": "10351441",
+    "name": "Coffee table",
+    "category": "Tables & desks",
+    "price": 103.6,
+    "dimensions": "55 × 48.0 × ? cm"
+  },
+  {
+    "itemId": "60447677",
+    "name": "Bedside table",
+    "category": "Tables & desks",
+    "price": 98,
+    "dimensions": "40 × 67.0 × 40.0 cm"
+  },
+  {
+    "itemId": "30302299",
+    "name": "Desk",
+    "category": "Tables & desks",
+    "price": 118,
+    "dimensions": "90 × 73.0 × 52.0 cm"
+  },
+  {
+    "itemId": "70399020",
+    "name": "Side table",
+    "category": "Tables & desks",
+    "price": 63.6,
+    "dimensions": "45 × 55.0 × ? cm"
+  },
+  {
+    "itemId": "14630009",
+    "name": "Table",
+    "category": "Tables & desks",
+    "price": 110,
+    "dimensions": "75 × 73.0 × ? cm"
+  },
+  {
+    "itemId": "20359984",
+    "name": "Dressing table",
+    "category": "Tables & desks",
+    "price": 300,
+    "dimensions": "120 × 86.0 × 51.0 cm"
+  },
+  {
+    "itemId": "00251135",
+    "name": "Table top",
+    "category": "Tables & desks",
+    "price": 23.6,
+    "dimensions": "60 × ? × ? cm"
+  },
+  {
+    "itemId": "20439472",
+    "name": "Dressing table",
+    "category": "Tables & desks",
+    "price": 190.4,
+    "dimensions": "76 × 79.0 × 47.0 cm"
+  },
+  {
+    "itemId": "60150176",
+    "name": "Laptop support",
+    "category": "Tables & desks",
+    "price": 6,
+    "dimensions": "42 × 9.0 × 31.0 cm"
+  },
+  {
+    "itemId": "70455412",
+    "name": "Side table",
+    "category": "Tables & desks",
+    "price": 78,
+    "dimensions": "50 × 63.0 × 35.0 cm"
+  },
+  {
+    "itemId": "40217069",
+    "name": "Extendable table",
+    "category": "Tables & desks",
+    "price": 578,
+    "dimensions": null
+  },
+  {
+    "itemId": "19282844",
+    "name": "Corner desk left",
+    "category": "Tables & desks",
+    "price": 548,
+    "dimensions": null
+  },
+  {
+    "itemId": "90217972",
+    "name": "Leg",
+    "category": "Tables & desks",
+    "price": 6,
+    "dimensions": null
+  },
+  {
+    "itemId": "70294339",
+    "name": "Table",
+    "category": "Tables & desks",
+    "price": 278,
+    "dimensions": "78 × 74.0 × ? cm"
+  },
+  {
+    "itemId": "70245339",
+    "name": "Desk",
+    "category": "Tables & desks",
+    "price": 358,
+    "dimensions": "120 × 74.0 × 40.0 cm"
+  },
+  {
+    "itemId": "80430746",
+    "name": "Dressing table",
+    "category": "Tables & desks",
+    "price": 238,
+    "dimensions": "100 × 78.0 × 48.0 cm"
+  },
+  {
+    "itemId": "70367444",
+    "name": "Bedside table",
+    "category": "Tables & desks",
+    "price": 62,
+    "dimensions": "42 × 55.0 × 40.0 cm"
+  },
+  {
+    "itemId": "30299070",
+    "name": "Desk",
+    "category": "Tables & desks",
+    "price": 298,
+    "dimensions": "118 × 74.0 × 45.0 cm"
+  },
+  {
+    "itemId": "00349444",
+    "name": "Side table on castors",
+    "category": "Tables & desks",
+    "price": 59.6,
+    "dimensions": "50 × 45.0 × ? cm"
+  },
+  {
+    "itemId": "70299959",
+    "name": "Bedside table",
+    "category": "Tables & desks",
+    "price": 130,
+    "dimensions": "51 × 59.0 × 40.0 cm"
+  },
+  {
+    "itemId": "90180025",
+    "name": "Add-on unit high",
+    "category": "Tables & desks",
+    "price": 70,
+    "dimensions": "105 × 65.0 × 16.0 cm"
+  },
+  {
+    "itemId": "20400276",
+    "name": "Coffee table",
+    "category": "Tables & desks",
+    "price": 258,
+    "dimensions": "70 × 40.0 × ? cm"
+  },
+  {
+    "itemId": "80217524",
+    "name": "Wall-mounted drop-leaf table",
+    "category": "Tables & desks",
+    "price": 90,
+    "dimensions": "90 × ? × 50.0 cm"
+  },
+  {
+    "itemId": "90372454",
+    "name": "Castor",
+    "category": "Tables & desks",
+    "price": 44,
+    "dimensions": null
+  },
+  {
+    "itemId": "30264301",
+    "name": "Leg",
+    "category": "Tables & desks",
+    "price": 20,
+    "dimensions": null
+  },
+  {
+    "itemId": "10253025",
+    "name": "Left-hand corner table top",
+    "category": "Tables & desks",
+    "price": 200,
+    "dimensions": "110 × ? × ? cm"
+  },
+  {
+    "itemId": "50414210",
+    "name": "Nest of tables",
+    "category": "Tables & desks",
+    "price": 178,
+    "dimensions": null
+  },
+  {
+    "itemId": "70407360",
+    "name": "Bedside table",
+    "category": "Tables & desks",
+    "price": 158,
+    "dimensions": "48 × 8.0 × 38.0 cm"
+  },
+  {
+    "itemId": "19282085",
+    "name": "Desk sit/stand",
+    "category": "Tables & desks",
+    "price": 1180,
+    "dimensions": "80 × ? × ? cm"
+  },
+  {
+    "itemId": "00293772",
+    "name": "Table",
+    "category": "Tables & desks",
+    "price": 998,
+    "dimensions": "100 × 74.0 × ? cm"
+  },
+  {
+    "itemId": "80278273",
+    "name": "Leg cone-shaped",
+    "category": "Tables & desks",
+    "price": 40,
+    "dimensions": null
+  },
+  {
+    "itemId": "50219044",
+    "name": "Desk",
+    "category": "Tables & desks",
+    "price": 438,
+    "dimensions": null
+  },
+  {
+    "itemId": "10297656",
+    "name": "Side table",
+    "category": "Tables & desks",
+    "price": 118,
+    "dimensions": "45 × 45.0 × ? cm"
+  },
+  {
+    "itemId": "19022808",
+    "name": "Desk",
+    "category": "Tables & desks",
+    "price": 448,
+    "dimensions": null
+  },
+  {
+    "itemId": "80361564",
+    "name": "Extendable table",
+    "category": "Tables & desks",
+    "price": 218,
+    "dimensions": "75 × 73.0 × ? cm"
+  },
+  {
+    "itemId": "20293766",
+    "name": "Table",
+    "category": "Tables & desks",
+    "price": 998,
+    "dimensions": "100 × 74.0 × ? cm"
+  },
+  {
+    "itemId": "30260807",
+    "name": "Coffee table",
+    "category": "Tables & desks",
+    "price": 318,
+    "dimensions": "65 × 52.0 × ? cm"
+  },
+  {
+    "itemId": "60261037",
+    "name": "Desk",
+    "category": "Tables & desks",
+    "price": 378,
+    "dimensions": "140 × 74.0 × 70.0 cm"
+  },
+  {
+    "itemId": "90388978",
+    "name": "Bedside table",
+    "category": "Tables & desks",
+    "price": 158,
+    "dimensions": "60 × 7.0 × 39.0 cm"
+  },
+  {
+    "itemId": "70340807",
+    "name": "Extendable table",
+    "category": "Tables & desks",
+    "price": 318,
+    "dimensions": "80 × 75.0 × ? cm"
+  },
+  {
+    "itemId": "9282547",
+    "name": "Storage unit on castors",
+    "category": "Tables & desks",
+    "price": 502,
+    "dimensions": "61 × 101.0 × 45.0 cm"
+  },
+  {
+    "itemId": "70221423",
+    "name": "Extendable table",
+    "category": "Tables & desks",
+    "price": 378,
+    "dimensions": "87 × 74.0 × ? cm"
+  },
+  {
+    "itemId": "70419264",
+    "name": "Dining table",
+    "category": "Tables & desks",
+    "price": 798,
+    "dimensions": "100 × 73.0 × ? cm"
+  },
+  {
+    "itemId": "90297657",
+    "name": "Coffee table",
+    "category": "Tables & desks",
+    "price": 158,
+    "dimensions": "70 × 50.0 × ? cm"
+  },
+  {
+    "itemId": "19281024",
+    "name": "Desk",
+    "category": "Tables & desks",
+    "price": 518,
+    "dimensions": "70 × ? × ? cm"
+  },
+  {
+    "itemId": "30250257",
+    "name": "Leg with castor",
+    "category": "Tables & desks",
+    "price": 30,
+    "dimensions": null
+  },
+  {
+    "itemId": "40368713",
+    "name": "Extendable table",
+    "category": "Tables & desks",
+    "price": 798,
+    "dimensions": "105 × 75.0 × ? cm"
+  },
+  {
+    "itemId": "70340765",
+    "name": "Extendable table",
+    "category": "Tables & desks",
+    "price": 398,
+    "dimensions": "90 × 75.0 × ? cm"
+  },
+  {
+    "itemId": "60416138",
+    "name": "Extendable table",
+    "category": "Tables & desks",
+    "price": 278,
+    "dimensions": "80 × 75.0 × ? cm"
+  },
+  {
+    "itemId": "39931845",
+    "name": "Table",
+    "category": "Tables & desks",
+    "price": 358,
+    "dimensions": "85 × 75.0 × ? cm"
+  },
+  {
+    "itemId": "50386245",
+    "name": "Table",
+    "category": "Tables & desks",
+    "price": 918,
+    "dimensions": "85 × 75.0 × ? cm"
+  },
+  {
+    "itemId": "80397916",
+    "name": "Underframe for table top",
+    "category": "Tables & desks",
+    "price": 338,
+    "dimensions": "67 × 76.0 × ? cm"
+  },
+  {
+    "itemId": "20206806",
+    "name": "Drop-leaf table",
+    "category": "Tables & desks",
+    "price": 358,
+    "dimensions": "80 × 74.0 × ? cm"
+  },
+  {
+    "itemId": "60403881",
+    "name": "Table top",
+    "category": "Tables & desks",
+    "price": 240,
+    "dimensions": "80 × ? × ? cm"
+  },
+  {
+    "itemId": "79288230",
+    "name": "Table",
+    "category": "Tables & desks",
+    "price": 180,
+    "dimensions": null
+  },
+  {
+    "itemId": "20368714",
+    "name": "Extendable table",
+    "category": "Tables & desks",
+    "price": 598,
+    "dimensions": "95 × 75.0 × ? cm"
+  },
+  {
+    "itemId": "89286805",
+    "name": "Storage unit with smart lock",
+    "category": "Tables & desks",
+    "price": 400,
+    "dimensions": "41 × 61.0 × 45.0 cm"
+  },
+  {
+    "itemId": "80346583",
+    "name": "Table",
+    "category": "Tables & desks",
+    "price": 398,
+    "dimensions": "90 × 74.0 × ? cm"
+  },
+  {
+    "itemId": "10412171",
+    "name": "Underframe sit/stand f table tp",
+    "category": "Tables & desks",
+    "price": 958,
+    "dimensions": "70 × 124.0 × ? cm"
+  },
+  {
+    "itemId": "39286898",
+    "name": "Storage unit with smart lock",
+    "category": "Tables & desks",
+    "price": 440,
+    "dimensions": "41 × 101.0 × 45.0 cm"
+  },
+  {
+    "itemId": "50420386",
+    "name": "Dining table",
+    "category": "Tables & desks",
+    "price": 918,
+    "dimensions": "105 × 75.0 × ? cm"
+  },
+  {
+    "itemId": "20399777",
+    "name": "Trolley",
+    "category": "Trolleys",
+    "price": 39.6,
+    "dimensions": "30 × 83.0 × ? cm"
+  },
+  {
+    "itemId": "20463056",
+    "name": "Trolley",
+    "category": "Trolleys",
+    "price": 50,
+    "dimensions": "28 × 65.0 × ? cm"
+  },
+  {
+    "itemId": "59276228",
+    "name": "Kitchen island with rack",
+    "category": "Trolleys",
+    "price": 918,
+    "dimensions": "126 × 90.0 × 79.0 cm"
+  },
+  {
+    "itemId": "40391657",
+    "name": "Kitchen island",
+    "category": "Trolleys",
+    "price": 598,
+    "dimensions": "77 × 90.0 × ? cm"
+  },
+  {
+    "itemId": "00393371",
+    "name": "Kitchen island",
+    "category": "Trolleys",
+    "price": 398,
+    "dimensions": "72 × 90.0 × 52.0 cm"
+  },
+  {
+    "itemId": "80334924",
+    "name": "Kitchen trolley",
+    "category": "Trolleys",
+    "price": 278,
+    "dimensions": "40 × 90.0 × ? cm"
+  },
+  {
+    "itemId": "90399284",
+    "name": "Work bench",
+    "category": "Trolleys",
+    "price": 798,
+    "dimensions": "63 × 92.0 × ? cm"
+  },
+  {
+    "itemId": "30240348",
+    "name": "Kitchen trolley",
+    "category": "Trolleys",
+    "price": 118,
+    "dimensions": "50 × 85.0 × ? cm"
+  },
+  {
+    "itemId": "80402381",
+    "name": "Rack for kitchen island",
+    "category": "Trolleys",
+    "price": 160,
+    "dimensions": "143 × 146.0 × 32.0 cm"
+  },
+  {
+    "itemId": "40201916",
+    "name": "Kitchen trolley",
+    "category": "Trolleys",
+    "price": 318,
+    "dimensions": "43 × 90.0 × ? cm"
+  },
+  {
+    "itemId": "90446619",
+    "name": "Chopping board",
+    "category": "Trolleys",
+    "price": 19.6,
+    "dimensions": "30 × ? × ? cm"
+  },
+  {
+    "itemId": "29385672",
+    "name": "Wardrobe combination",
+    "category": "Wardrobes",
+    "price": 336,
+    "dimensions": "150 × 201.0 × 58.0 cm"
+  },
+  {
+    "itemId": "59336270",
+    "name": "Wardrobe with 2 doors+3 drawers",
+    "category": "Wardrobes",
+    "price": 503.6,
+    "dimensions": "160 × 181.0 × 42.0 cm"
+  },
+  {
+    "itemId": "19323929",
+    "name": "Wardrobe with 3 doors",
+    "category": "Wardrobes",
+    "price": 356.8,
+    "dimensions": "140 × 161.0 × 42.0 cm"
+  },
+  {
+    "itemId": "00441758",
+    "name": "Wardrobe with 3 doors",
+    "category": "Wardrobes",
+    "price": 179.6,
+    "dimensions": "117 × 176.0 × 55.0 cm"
+  },
+  {
+    "itemId": "80331973",
+    "name": "Wardrobe",
+    "category": "Wardrobes",
+    "price": 19.6,
+    "dimensions": "74 × 149.0 × 51.0 cm"
+  },
+  {
+    "itemId": "49246468",
+    "name": "Wardrobe",
+    "category": "Wardrobes",
+    "price": 604,
+    "dimensions": "150 × 201.0 × 60.0 cm"
+  },
+  {
+    "itemId": "40400478",
+    "name": "Wardrobe with 2 doors",
+    "category": "Wardrobes",
+    "price": 190,
+    "dimensions": "78 × 190.0 × 50.0 cm"
+  },
+  {
+    "itemId": "69128567",
+    "name": "Wardrobe",
+    "category": "Wardrobes",
+    "price": 512,
+    "dimensions": "175 × 201.0 × 58.0 cm"
+  },
+  {
+    "itemId": "00439468",
+    "name": "Open wardrobe with sliding door",
+    "category": "Wardrobes",
+    "price": 398,
+    "dimensions": "120 × 186.0 × 47.0 cm"
+  },
+  {
+    "itemId": "39127710",
+    "name": "Wardrobe",
+    "category": "Wardrobes",
+    "price": 350,
+    "dimensions": "100 × 236.0 × 60.0 cm"
+  },
+  {
+    "itemId": "39304128",
+    "name": "Wardrobe",
+    "category": "Wardrobes",
+    "price": 998,
+    "dimensions": "200 × 236.0 × 60.0 cm"
+  },
+  {
+    "itemId": "19127297",
+    "name": "Wardrobe",
+    "category": "Wardrobes",
+    "price": 720,
+    "dimensions": "150 × 236.0 × 60.0 cm"
+  },
+  {
+    "itemId": "59218342",
+    "name": "Corner wardrobe",
+    "category": "Wardrobes",
+    "price": 640,
+    "dimensions": "87 × 236.0 × ? cm"
+  },
+  {
+    "itemId": "30439476",
+    "name": "Open wardrobe with sliding door",
+    "category": "Wardrobes",
+    "price": 358,
+    "dimensions": "120 × 123.0 × 47.0 cm"
+  },
+  {
+    "itemId": "20449517",
+    "name": "Shelf",
+    "category": "Wardrobes",
+    "price": 18,
+    "dimensions": "76 × ? × 50.0 cm"
+  },
+  {
+    "itemId": "59328897",
+    "name": "Wardrobe combination",
+    "category": "Wardrobes",
+    "price": 734,
+    "dimensions": "200 × 236.0 × 38.0 cm"
+  },
+  {
+    "itemId": "39218512",
+    "name": "Corner wardrobe",
+    "category": "Wardrobes",
+    "price": 564,
+    "dimensions": "110 × 236.0 × ? cm"
+  },
+  {
+    "itemId": "00298128",
+    "name": "Wardrobe",
+    "category": "Wardrobes",
+    "price": 658,
+    "dimensions": "88 × 208.0 × 58.0 cm"
+  },
+  {
+    "itemId": "49324946",
+    "name": "Wardrobe combination",
+    "category": "Wardrobes",
+    "price": 2426,
+    "dimensions": "250 × 236.0 × 60.0 cm"
+  },
+  {
+    "itemId": "49325371",
+    "name": "Wall storage",
+    "category": "Wardrobes",
+    "price": 174,
+    "dimensions": "240 × 40.0 × 40.0 cm"
+  },
+  {
+    "itemId": "89325289",
+    "name": "Open shelving unit",
+    "category": "Wardrobes",
+    "price": 180,
+    "dimensions": null
+  },
+  {
+    "itemId": "99329140",
+    "name": "Wardrobe combination",
+    "category": "Wardrobes",
+    "price": 900,
+    "dimensions": "100 × 236.0 × 60.0 cm"
+  },
+  {
+    "itemId": "39157387",
+    "name": "3 sections",
+    "category": "Wardrobes",
+    "price": 1062.4,
+    "dimensions": "258 × ? × 50.0 cm"
+  },
+  {
+    "itemId": "59324385",
+    "name": "Storage comb w 6 doors+3 drawers",
+    "category": "Wardrobes",
+    "price": 1245.2,
+    "dimensions": "420 × 241.0 × 42.0 cm"
+  },
+  {
+    "itemId": "29320732",
+    "name": "Wardrobe combination",
+    "category": "Wardrobes",
+    "price": 1276,
+    "dimensions": "150 × 236.0 × 60.0 cm"
+  },
+  {
+    "itemId": "9325047",
+    "name": "Wardrobe combination",
+    "category": "Wardrobes",
+    "price": 2722,
+    "dimensions": "300 × 236.0 × 60.0 cm"
+  },
+  {
+    "itemId": "59326469",
+    "name": "Wardrobe with 2 doors+3 drawers",
+    "category": "Wardrobes",
+    "price": 314,
+    "dimensions": "80 × 221.0 × 42.0 cm"
+  },
+  {
+    "itemId": "29324711",
+    "name": "Wardrobe combination",
+    "category": "Wardrobes",
+    "price": 706,
+    "dimensions": "100 × 201.0 × 60.0 cm"
+  },
+  {
+    "itemId": "59324248",
+    "name": "Wardrobe combination",
+    "category": "Wardrobes",
+    "price": 1084,
+    "dimensions": "150 × 236.0 × 58.0 cm"
+  },
+  {
+    "itemId": "29324320",
+    "name": "Wardrobe with 6 drawers",
+    "category": "Wardrobes",
+    "price": 642.4,
+    "dimensions": "140 × 241.0 × 42.0 cm"
+  },
+  {
+    "itemId": "39329299",
+    "name": "Wardrobe combination",
+    "category": "Wardrobes",
+    "price": 504,
+    "dimensions": "75 × 201.0 × 60.0 cm"
+  },
+  {
+    "itemId": "79302995",
+    "name": "2 sections",
+    "category": "Wardrobes",
+    "price": 644.4,
+    "dimensions": "175 × ? × 50.0 cm"
+  },
+  {
+    "itemId": "99157902",
+    "name": "1 section",
+    "category": "Wardrobes",
+    "price": 300,
+    "dimensions": "91 × ? × 50.0 cm"
+  },
+  {
+    "itemId": "9158152",
+    "name": "2 sections",
+    "category": "Wardrobes",
+    "price": 628.8,
+    "dimensions": "135 × ? × 50.0 cm"
+  }
+]

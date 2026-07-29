@@ -79,17 +79,32 @@ are both wrapped in try/catch so nothing here can crash the page. See
 discrepancy between the Participant Guide's example request and the API's
 actual schema that's worth knowing about before touching this code again.
 
-**`/assistant` is a real tool-calling agent (GPT-5 mini via Azure OpenAI,
-`AZURE_OPENAI_*` env vars), not a canned response.** `app/api/agent/chat/route.js`
-runs the loop over the four tools in `lib/agentTools.js`
-(`search_catalogue`, `get_product_detail`, `check_balance`, `place_order`).
-The important part: `place_order` is never actually executed by the
-agent — the route intercepts that tool call, resolves the model's chosen
-`item_id` to a local `Product`, and hands it to the client as a
-`pendingPurchase`. Nothing is charged until a human clicks **Confirm**,
-which calls `app/api/agent/confirm-purchase/route.js` — that route (and
-the catalogue's Buy button, via `app/api/orders/route.js`) both go through
-the one real order-placement path, `lib/orderService.js`'s
+**`/assistant` is GPT-5 mini via Azure OpenAI (`AZURE_OPENAI_*` env vars)
+doing classic retrieve-then-generate RAG, not a canned response and not
+tool-calling for search.** Catalogue search used to be two tools the model
+called; now `app/api/agent/chat/route.js` retrieves candidate products
+*before* calling the model, via `lib/rag.js`'s `retrieveProducts()` — an
+in-memory cosine-similarity scan over embeddings built from a 762-product
+PDF catalogue (`scripts/extract-catalogue-pdf.mjs` → `data/catalogue-parsed.json`
+→ `scripts/build-embeddings.mjs` → `data/catalogue-embeddings.json`, using
+a local `@xenova/transformers` model since Azure has no embeddings
+deployment configured). Retrieved candidates are injected as context, and
+only `check_balance`/`place_order` remain real tools in `lib/agentTools.js`.
+This PDF-derived source has no colour field at all — a genuine gap versus
+the old live-API version, not a prompting choice — so the system prompt
+tells the model to say so rather than guess. See "Shopping assistant
+agent: RAG over the PDF catalogue" in [architecture.md](./architecture.md)
+for the full pipeline, including why retrieval uses recent conversation
+history (not just the latest message) as its query — a bare "yes, place
+the order" carries no furniture content to retrieve on otherwise.
+
+The important part that *hasn't* changed: `place_order` is never actually
+executed by the agent — the route intercepts that tool call, resolves the
+model's chosen `item_id` to a local `Product`, and hands it to the client
+as a `pendingPurchase`. Nothing is charged until a human clicks
+**Confirm**, which calls `app/api/agent/confirm-purchase/route.js` — that
+route (and the catalogue's Buy button, via `app/api/orders/route.js`) both
+go through the one real order-placement path, `lib/orderService.js`'s
 `attemptPurchase()`. Don't "simplify" this by having the agent call
 `placeHackathonOrder()` directly — that would remove the one thing
 standing between a model's tool call and a real charge.
@@ -100,11 +115,8 @@ confirmation (no extra model call). On failure, it hands the already-
 friendly error string plus the conversation history to the model (no
 `TOOL_SCHEMAS` this time — it should only produce text, not try to call
 `place_order` again) and asks it to explain plainly and suggest one
-concrete alternative. See "Shopping assistant agent" in
-[architecture.md](./architecture.md) for the full design, including two
-more Participant Guide inaccuracies caught by testing (product dimensions
-*are* available via `GET /catalogue/{item_id}`, despite the guide's claim
-otherwise).
+concrete alternative. See "Shopping assistant agent: RAG over the PDF
+catalogue" in [architecture.md](./architecture.md) for the full design.
 
 ## Folder structure
 
@@ -113,7 +125,13 @@ prisma/
   schema.prisma       data model
   seed.js             demo login only (demo@example.com / password123) — no products
 scripts/
-  import-catalog.mjs   loads the real catalog from MongoDB (npm run import:catalog)
+  import-catalog.mjs           loads the real catalog from MongoDB (npm run import:catalog)
+  extract-catalogue-pdf.mjs     parses data/source/*.pdf -> data/catalogue-parsed.json
+  build-embeddings.mjs           embeds data/catalogue-parsed.json -> data/catalogue-embeddings.json
+data/
+  source/                gitignored — the input PDF for the RAG pipeline
+  catalogue-parsed.json         762 structured products (committed)
+  catalogue-embeddings.json     the same, plus embeddings (committed)
 app/
   layout.js           root layout, nav bar, wraps children in the session provider
   page.js             home page (redirects to /catalogue if already logged in)
@@ -121,15 +139,24 @@ app/
   register/page.js     sign-up form (creates a user, then logs them in)
   catalogue/           browse products + place an order (checked against budget)
   orders/page.js        past order history
+  assistant/            RAG-based shopping assistant chat UI
   api/
     auth/[...nextauth]/route.js   NextAuth handler
     register/route.js             creates a new user (hashes password)
     orders/route.js                validates + creates an order
     products/[id]/image/route.js   streams one product's photo
+    agent/
+      chat/route.js                 retrieves candidates, runs the model loop
+      confirm-purchase/route.js     places the real order after a human click
 components/           Navbar, SessionProvider wrapper
 lib/
   prisma.js           Prisma client singleton
   auth.js             NextAuth config (authOptions)
+  hackathonApi.js       hackathon API client (balance, real order placement)
+  orderService.js        shared attemptPurchase() — the one real order-placement path
+  agentTools.js          tool schemas (check_balance, place_order) + dispatch
+  azureOpenAI.js         Azure OpenAI chat-completions client
+  rag.js                 in-memory embedding retrieval (retrieveProducts())
 ```
 
 ## Commands

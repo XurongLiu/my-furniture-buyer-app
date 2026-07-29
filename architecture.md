@@ -37,6 +37,8 @@ Next.js app (single process)
 | ORM | Prisma | 6.19.3 (pinned) | Pinned below the 7.x line deliberately — Prisma 7 made driver adapters mandatory even for SQLite, adding a config file and adapter package with no benefit for a local single-file database |
 | Auth | next-auth | 4.24.15 (pinned) | Pinned to the v4 line deliberately — confirmed via the npm registry that v4 is still the `latest`-tagged, genuinely stable release; the rewritten "Auth.js v5" most current tutorials show is still published only under the `beta` tag |
 | Password hashing | bcryptjs | 3.0.3 | Pure JS, no native build step required |
+| PDF text extraction | pdf-parse | 2.4.5 | One-off script use only (`scripts/extract-catalogue-pdf.mjs`), not a runtime dependency of the app itself |
+| Embeddings | @xenova/transformers | 2.17.2 (`Xenova/all-MiniLM-L6-v2`) | Runs fully locally — no API key, no per-query cost, no vector DB needed at 762 products; chosen after the configured Azure OpenAI resource returned 404 for every embeddings deployment name tried |
 
 ## Data model
 
@@ -269,25 +271,114 @@ hackathon's side, it is not a local simulation.
   asked; the invoice endpoint is there if a receipt view is wanted later —
   `Order.externalOrderId` already has what it'd need.
 
-## Shopping assistant agent
+## Shopping assistant agent: RAG over the PDF catalogue
 
-`/assistant` is a plain-English chat interface backed by an actual
-tool-calling agent (GPT-5 mini via Azure OpenAI — `lib/azureOpenAI.js`),
-built around the four tools designed earlier: `search_catalogue`,
-`get_product_detail`, `check_balance`, `place_order` (schemas and
-descriptions live in `lib/agentTools.js`). `app/api/agent/chat/route.js`
-runs the tool-calling loop (system prompt, up to 6 rounds of tool calls per
-user message before giving up).
+`/assistant` is a plain-English chat interface backed by GPT-5 mini (Azure
+OpenAI — `lib/azureOpenAI.js`). Catalogue search used to be two tools the
+model called (`search_catalogue`, `get_product_detail`); it's now classic
+retrieve-then-generate RAG instead — the server retrieves candidate
+products by embedding similarity *before* calling the model at all, and
+hands them to it as plain context. Only `check_balance` and `place_order`
+remain as tools (schemas in `lib/agentTools.js`), since those are actions,
+not lookups.
 
-- **The model does its own reasoning over exact-match results — this is
-  the point of the exercise, not a limitation.** `search_catalogue` only
-  supports an exact category match; the system prompt tells the model this
-  explicitly and instructs it to fetch a category's results and judge
-  price/colour/style itself, saying so plainly. Verified live: asked "What
-  are the cheapest bar stools you have?" and it responded "The catalogue
-  can't filter by price, so I fetched the 'Bar furniture' category and
-  scanned the results myself" — unprompted beyond the system prompt,
-  followed by a correctly price-sorted list.
+**Why RAG instead of tool-calling for search:** the live search
+API/database is still there for the catalogue page, but the assistant's
+retrieval is now built from a completely different source — a 762-product,
+64-page print-catalogue PDF the source data was also provided as. The
+pipeline, in order:
+
+1. **`scripts/extract-catalogue-pdf.mjs`** parses `data/source/Full-Product-Catalogue.pdf`
+   (gitignored — large binary input) into `data/catalogue-parsed.json`, 762
+   structured records: `{itemId, name, category, price, dimensions}`. The
+   PDF's raw text (via `pdf-parse` v2's `PDFParse`/`getText()` API — a
+   different shape from v1's plain function call) comes out as a flat
+   sequence per product (name, category, price, optional dimensions,
+   item_id); the 17 known category strings (from the live API's
+   `/catalogue/categories`) anchor where one product ends and the next
+   begins. Cross-validated against the existing Prisma `Product` table
+   after parsing: 762/762 found, 0 price mismatches, 0 category
+   mismatches, 1 benign name truncation traced to the source PDF itself.
+2. **`scripts/build-embeddings.mjs`** chunks **per product** (the
+   catalogue's natural unit — not a fixed character count) into one
+   sentence per product (name, category, price, dimensions), embeds each
+   with a local model, and writes `data/catalogue-embeddings.json` — 762
+   records, each the original structured fields *plus* `text` and a
+   384-dim `embedding` array. Keeping the structured fields alongside the
+   embedding (not just the chunk text) is what lets `lib/rag.js` hand the
+   model real fields to reason over, rather than a blob of prose it'd have
+   to re-parse.
+3. **Embedding model: local, not Azure.** `text-embedding-3-small/-large`
+   and `ada-002` were all tested directly against the configured Azure
+   OpenAI resource first — all returned `404 DeploymentNotFound` — so
+   embeddings use `@xenova/transformers`'s `Xenova/all-MiniLM-L6-v2`
+   (384-dim, runs fully locally, no API key, no per-query cost). This also
+   fits the "no vector database needed" framing directly: at 762 products,
+   the whole embedding set is a few MB, comfortably held in memory.
+4. **`lib/rag.js`'s `retrieveProducts(query, topK)`** loads
+   `catalogue-embeddings.json` once (module-level cache) and does a plain
+   linear scan: embed the query with the same model, cosine-similarity
+   against all 762 vectors (a dot product alone, since every vector is
+   L2-normalized at embed time), sort, return the top K with their full
+   structured fields. No index, no vector DB — an unnecessary complexity
+   at this scale.
+5. **Retrieval was verified standalone before wiring up generation** — a
+   throwaway script ran 5 representative queries ("cheap bar stools",
+   "something white for a kid's bedroom", "a sturdy office chair",
+   "outdoor dining table", "storage for a small bathroom") and printed the
+   top-8 results by eye. All 5 returned topically correct results (e.g.
+   bar stools/tables scoring ~0.67–0.71 for the bar-stool query; Office
+   chairs topping the office-chair query) before any model call was
+   involved.
+
+**How retrieval feeds generation** — `app/api/agent/chat/route.js`:
+before each model call, it retrieves the top 15 products for the *current
+turn's context* and injects them as a `CATALOGUE CANDIDATES` system
+message (name, category, price, dimensions, item_id per candidate). The
+system prompt tells the model to only reference products from that list,
+and spells out what retrieval can't do:
+
+- **It's topical similarity, not an exact filter.** For "cheap bar stools"
+  (price *within* a topic), the model scans the price field across
+  candidates itself and says so plainly — verified live, and it does
+  exactly that, then returns a correctly price-sorted list.
+- **"The cheapest thing you have" (no topic at all) is a different
+  problem, and embeddings genuinely can't solve it.** Semantic search only
+  returns items that *resemble the query text* — the actual cheapest
+  product in the catalogue (found during smoke-testing to be a $1.20
+  furniture knob) has no reason to resemble the phrase "cheapest item," so
+  it was never in the top-15 candidates at all. The model would (and did,
+  before this was caught) confidently report "the cheapest item" while
+  only having seen 15 topically-arbitrary products — an answer that's
+  wrong in a way that looks right. Fixed with a second, non-semantic path:
+  `lib/rag.js`'s `getPriceExtremes()` sorts the full in-memory 762-record
+  list directly by price (no embedding call at all) and returns the true
+  N cheapest/priciest. `app/api/agent/chat/route.js` detects
+  price-superlative language in the message (`cheapest`, `most expensive`,
+  `most affordable`, etc.) and injects this as a separate `GLOBAL PRICE
+  EXTREMES` context block alongside the normal candidates, with the system
+  prompt telling the model to prefer it for whole-catalogue questions.
+  Verified live: "please find the cheapest item" now correctly returns the
+  $1.20 knob (matching a direct sort of the data file), while "cheapest
+  bar stool" still correctly reasons over just the bar-stool candidates
+  rather than jumping to the unrelated global minimum.
+- **There is no colour data at all in this source.** Unlike the live
+  API/MongoDB catalogue (which has a `colours` field), the PDF simply
+  doesn't print colour per product — so this is a genuine capability gap
+  versus the old tool-based version, not a prompting choice. The model is
+  told to say "I don't have that information" rather than guess, and does.
+- **The retrieval query is the recent conversation, not just the latest
+  message.** A short confirmation reply like "yes, place the order" carries
+  no furniture content on its own — retrieving on it alone returned
+  unrelated candidates and dropped the item the user had just agreed to,
+  breaking the purchase flow (caught live during testing: the model
+  correctly refused to place an order for an item_id no longer in its
+  candidate list, but that meant the *whole plan fell through* on a plain
+  "yes"). Fixed by building the retrieval query from the last few history
+  turns plus the new message, so a confirmation stays anchored to whatever
+  the last couple of turns were actually about.
+- **The model does its own reasoning over retrieved results — this is
+  the point of the exercise, not a limitation.**
 - **Real purchases are gated architecturally, not just by prompting.**
   The system prompt tells the model to confirm with the user in
   conversation before calling `place_order` — and in practice it reliably
@@ -302,23 +393,15 @@ user message before giving up).
   button. This means the agent never talks to the real order-placing
   endpoint directly; only a human click does, through code that already
   had its own error-handling and safety review.
-- **Product images never reach the model.** `get_product_detail` strips
-  the base64 `image_url` field before the result is returned as a tool
-  result — the model only ever sees text (name, category, price,
-  dimensions, colours).
-- **Two more Participant Guide inaccuracies, found by testing rather than
-  trusting the docs** (in addition to the `POST /orders` body-shape one
-  found earlier): the guide's "direct database access" section claims
-  product dimensions (`width`/`height`/`depth`) are "not available through
-  any API endpoint" — they are; `GET /catalogue/{item_id}` returns them
-  directly, confirmed by calling it. Worth remembering: verify this guide
-  empirically before relying on a specific claim in it again.
+- **Product images never reach the model.** The PDF-derived candidates only
+  ever carry text fields (name, category, price, dimensions, item_id) —
+  there was never an image to strip in the first place, unlike the old
+  `get_product_detail` tool result.
 - **Conversation history is kept lean on purpose.** Only the user-visible
   text turns (user asks, assistant replies) persist across separate chat
-  messages, sent up fresh by the client each time. The intermediate tool
-  calls/results within a single message's reasoning are not carried
-  forward once that message gets its final reply — otherwise, context size
-  would grow unboundedly over a longer conversation.
+  messages, sent up fresh by the client each time — this is also what the
+  retrieval query is built from (see above), so it doubles as the source
+  of retrieval context, not just display history.
 - **Defensive basics matching the rest of the app:** the whole route
   handler is wrapped in try/catch, client-supplied `history` is sanitized
   (only `user`/`assistant` roles, capped length) before being spliced into
@@ -394,7 +477,13 @@ prisma/
   schema.prisma        data model
   seed.js               demo login only (no products — see scripts/)
 scripts/
-  import-catalog.mjs    loads the real catalog from MongoDB, replacing Product rows
+  import-catalog.mjs           loads the real catalog from MongoDB, replacing Product rows
+  extract-catalogue-pdf.mjs     parses data/source/*.pdf into data/catalogue-parsed.json
+  build-embeddings.mjs           embeds data/catalogue-parsed.json into data/catalogue-embeddings.json
+data/
+  source/                gitignored — the input PDF
+  catalogue-parsed.json         762 structured products (committed)
+  catalogue-embeddings.json     the same, plus embeddings (committed)
 app/
   layout.js             root layout, nav bar, session provider
   page.js               home page
@@ -416,8 +505,9 @@ lib/
   auth.js               NextAuth config
   hackathonApi.js        hackathon API client (balance, order, search, detail)
   orderService.js         shared attemptPurchase() — the one real order-placement path
-  agentTools.js           tool schemas + read-only tool dispatch for the agent
+  agentTools.js           tool schemas (check_balance, place_order) + dispatch
   azureOpenAI.js          Azure OpenAI chat-completions client
+  rag.js                  in-memory embedding retrieval (retrieveProducts())
 ```
 
 ## Local development
@@ -428,4 +518,14 @@ npm run db:migrate      # create/update the SQLite database from schema.prisma
 npm run db:seed         # create a demo account
 npm run import:catalog  # load the real catalog (needs MONGODB_URI in .env)
 npm run dev              # http://localhost:3000
+```
+
+The assistant's RAG data (`data/catalogue-parsed.json`,
+`data/catalogue-embeddings.json`) is already committed, so a fresh clone
+doesn't need to regenerate it. To rebuild from scratch (e.g. after a
+catalogue change), with the source PDF at `data/source/Full-Product-Catalogue.pdf`:
+
+```bash
+node scripts/extract-catalogue-pdf.mjs   # -> data/catalogue-parsed.json
+node scripts/build-embeddings.mjs        # -> data/catalogue-embeddings.json (downloads the ~90MB model on first run)
 ```

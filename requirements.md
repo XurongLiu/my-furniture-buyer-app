@@ -91,14 +91,14 @@ shop-owner management screen — this is a buyer-facing app only.
 
 - FR6.1 A logged-in user can type a plain-English request into a chat
   interface (`/assistant`) instead of browsing the catalogue manually.
-- FR6.2 The assistant can search the catalogue, look up one product's
-  detail, check the real balance, and place a real order, using the same
-  four hackathon API actions as the rest of the app.
-- FR6.3 For anything the catalogue search can't do server-side (matching
-  by price, colour, or general "vibe" rather than an exact category), the
-  assistant fetches the closest category and applies that judgment itself
-  over the plain results — and says so, rather than implying the API did
-  the filtering.
+- FR6.2 The assistant can search the catalogue (via retrieval over a local,
+  pre-built embedding index — see architecture.md — not a live API call
+  per search), check the real balance, and place a real order.
+- FR6.3 For anything retrieval can't do on its own (matching by price
+  rather than by topic, or filtering by colour, which isn't present in
+  this data source at all), the assistant applies that judgment itself
+  over the retrieved candidates' price/name/category fields — and says so,
+  rather than implying the search already filtered on it.
 - FR6.4 The assistant never places a real order without the user's
   explicit confirmation. Even if it decides to attempt one, the app pauses
   for an explicit human confirmation click before anything is actually

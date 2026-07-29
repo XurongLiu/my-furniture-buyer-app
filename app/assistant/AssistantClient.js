@@ -7,7 +7,7 @@ export default function AssistantClient() {
     {
       role: "assistant",
       content:
-        "Hi! Ask me things like \"cheap bar stools\" or \"something white for a dining room\" — the catalogue only matches exact categories, so I'll fetch the closest category and judge price/colour myself.",
+        "Hi! Ask me things like \"cheap bar stools\" or \"a sturdy office chair\" — I search the catalogue by meaning (not exact keywords), then reason over price myself. Note: this catalogue doesn't include colour, so I can't filter or judge by colour.",
     },
   ]);
   const [input, setInput] = useState("");
