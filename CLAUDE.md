@@ -91,6 +91,27 @@ lib/
   `MONGODB_URI` in `.env`; never hardcode that connection string)
 - `npm run db:studio` — open a browser-based table view of the database
 
+## Exposing the app publicly (e.g. for a phone demo)
+
+Useful for showing the app to judges or testing on a real phone over
+mobile data, not just localhost. Two Next.js/NextAuth-specific gotchas,
+beyond just running `ngrok http 3000`:
+
+1. **`next.config.js`'s `allowedDevOrigins`** must list the tunnel's
+   hostname, or the dev server rejects the requests as cross-origin. The
+   value has to be updated each time (free-tier ngrok assigns a new random
+   `*.ngrok-free.dev` subdomain per session).
+2. **`.env`'s `NEXTAUTH_URL`** must match the current public URL (also
+   updated per session), and `lib/auth.js` sets `trustHost: true` — without
+   both, login redirects bounce back to `localhost` instead of the tunnel.
+
+Both require restarting `npm run dev` to take effect (next.config.js and
+.env are only read at startup).
+
+Free-tier ngrok also shows a one-time "you are about to visit..." warning
+interstitial (`ERR_NGROK_6024`) to browser visitors — expected, not a bug;
+click "Visit Site" once to get through to the actual app.
+
 ## Conventions
 
 - Plain JavaScript, no TypeScript.

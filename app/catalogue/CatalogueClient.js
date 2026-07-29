@@ -52,10 +52,28 @@ export default function CatalogueClient({ products, budget, spent, remaining }) 
 
   return (
     <div>
-      <div className="mb-6 rounded border border-stone-200 bg-white p-4">
-        <p className="text-sm text-stone-600">Total budget: ${budget.toFixed(2)}</p>
-        <p className="text-sm text-stone-600">Spent so far: ${spent.toFixed(2)}</p>
-        <p className="font-semibold text-stone-900">Remaining: ${remaining.toFixed(2)}</p>
+      <div className="sticky top-16 z-10 mb-6 rounded border border-stone-200 bg-white p-4 shadow-sm">
+        <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2">
+          <div className="text-sm">
+            <span className="text-stone-500">Budget ${budget.toFixed(2)}</span>
+            <span className="mx-2 text-stone-300">·</span>
+            <span className="text-stone-500">Spent ${spent.toFixed(2)}</span>
+            <span className="mx-2 text-stone-300">·</span>
+            <span className="font-semibold text-stone-900">Remaining ${remaining.toFixed(2)}</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <span className="text-sm font-medium">Order total: ${cartTotal.toFixed(2)}</span>
+            <button
+              onClick={handlePlaceOrder}
+              disabled={submitting}
+              className="rounded bg-stone-900 px-5 py-2 text-white hover:bg-stone-700 disabled:opacity-50"
+            >
+              {submitting ? "Placing order..." : "Place order"}
+            </button>
+          </div>
+        </div>
+        {error && <p className="mt-2 text-sm text-red-600">{error}</p>}
+        {message && <p className="mt-2 text-sm text-green-600">{message}</p>}
       </div>
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
@@ -89,19 +107,6 @@ export default function CatalogueClient({ products, budget, spent, remaining }) 
             />
           </div>
         ))}
-      </div>
-
-      <div className="mt-6 rounded border border-stone-200 bg-white p-4">
-        <p className="font-semibold">Order total: ${cartTotal.toFixed(2)}</p>
-        {error && <p className="mt-2 text-sm text-red-600">{error}</p>}
-        {message && <p className="mt-2 text-sm text-green-600">{message}</p>}
-        <button
-          onClick={handlePlaceOrder}
-          disabled={submitting}
-          className="mt-3 rounded bg-stone-900 px-5 py-2 text-white hover:bg-stone-700 disabled:opacity-50"
-        >
-          {submitting ? "Placing order..." : "Place order"}
-        </button>
       </div>
     </div>
   );
