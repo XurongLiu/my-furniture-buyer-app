@@ -269,6 +269,85 @@ hackathon's side, it is not a local simulation.
   asked; the invoice endpoint is there if a receipt view is wanted later —
   `Order.externalOrderId` already has what it'd need.
 
+## Shopping assistant agent
+
+`/assistant` is a plain-English chat interface backed by an actual
+tool-calling agent (GPT-5 mini via Azure OpenAI — `lib/azureOpenAI.js`),
+built around the four tools designed earlier: `search_catalogue`,
+`get_product_detail`, `check_balance`, `place_order` (schemas and
+descriptions live in `lib/agentTools.js`). `app/api/agent/chat/route.js`
+runs the tool-calling loop (system prompt, up to 6 rounds of tool calls per
+user message before giving up).
+
+- **The model does its own reasoning over exact-match results — this is
+  the point of the exercise, not a limitation.** `search_catalogue` only
+  supports an exact category match; the system prompt tells the model this
+  explicitly and instructs it to fetch a category's results and judge
+  price/colour/style itself, saying so plainly. Verified live: asked "What
+  are the cheapest bar stools you have?" and it responded "The catalogue
+  can't filter by price, so I fetched the 'Bar furniture' category and
+  scanned the results myself" — unprompted beyond the system prompt,
+  followed by a correctly price-sorted list.
+- **Real purchases are gated architecturally, not just by prompting.**
+  The system prompt tells the model to confirm with the user in
+  conversation before calling `place_order` — and in practice it reliably
+  does (it asked in plain text, then asked again for an explicit "yes"
+  even when told "yes" in the same message as the buy request). But the
+  route handler does **not** rely on that alone: any `place_order` tool
+  call is intercepted before anything executes. The model's chosen
+  `item_id`/`quantity` are resolved to a local `Product` (via
+  `externalId`) and returned to the client as a `pendingPurchase` — no
+  purchase happens until the human clicks **Confirm**, which calls the
+  *same, already-tested* `POST /api/orders` used by the catalogue's Buy
+  button. This means the agent never talks to the real order-placing
+  endpoint directly; only a human click does, through code that already
+  had its own error-handling and safety review.
+- **Product images never reach the model.** `get_product_detail` strips
+  the base64 `image_url` field before the result is returned as a tool
+  result — the model only ever sees text (name, category, price,
+  dimensions, colours).
+- **Two more Participant Guide inaccuracies, found by testing rather than
+  trusting the docs** (in addition to the `POST /orders` body-shape one
+  found earlier): the guide's "direct database access" section claims
+  product dimensions (`width`/`height`/`depth`) are "not available through
+  any API endpoint" — they are; `GET /catalogue/{item_id}` returns them
+  directly, confirmed by calling it. Worth remembering: verify this guide
+  empirically before relying on a specific claim in it again.
+- **Conversation history is kept lean on purpose.** Only the user-visible
+  text turns (user asks, assistant replies) persist across separate chat
+  messages, sent up fresh by the client each time. The intermediate tool
+  calls/results within a single message's reasoning are not carried
+  forward once that message gets its final reply — otherwise, context size
+  would grow unboundedly over a longer conversation.
+- **Defensive basics matching the rest of the app:** the whole route
+  handler is wrapped in try/catch, client-supplied `history` is sanitized
+  (only `user`/`assistant` roles, capped length) before being spliced into
+  the prompt, and an `Idempotency-Key` is still sent on the real
+  `POST /orders` call (inherited from `placeHackathonOrder()`), so a
+  double-click on Confirm can't double-charge.
+- **A failed purchase attempt is explained by the model, not surfaced as a
+  raw error.** The actual order-placement logic (product lookup, calling
+  `placeHackathonOrder`, the friendly 402/404 messages) was pulled out of
+  `app/api/orders/route.js` into `lib/orderService.js`'s
+  `attemptPurchase()`, shared by both the catalogue's Buy button and the
+  assistant's Confirm click — one real order-placement path either way. On
+  **success**, the assistant's confirm route (`app/api/agent/confirm-purchase/route.js`)
+  replies with a plain, pre-formatted confirmation directly — no extra
+  model call needed for that. On **failure** (insufficient balance, item
+  no longer available, or anything else `attemptPurchase` returns), the
+  already-friendly error string is handed to the model — along with the
+  conversation history for context — with instructions to explain it
+  plainly and suggest one concrete alternative, rather than the raw
+  message being dropped into the chat as-is. Verified live: asking to buy
+  100,000 bar tables got rejected with a message explaining the real
+  $4,769.60 balance and proposing "you can afford up to 11 tables" as a
+  concrete next step; a request for an item with no matching local product
+  got "that item sold or was removed — want me to search for something
+  similar?" Both confirmed to leave the real balance untouched. This model
+  call for the failure path doesn't include `TOOL_SCHEMAS` — it only needs
+  to produce text, not call more tools, and skipping tools here also rules
+  out it trying to call `place_order` again mid-explanation.
+
 ## Authentication
 
 - **Strategy:** NextAuth's Credentials provider with **JWT sessions** — no
@@ -322,15 +401,23 @@ app/
   login/, register/      auth forms
   catalogue/             browse + place an order
   orders/page.js          order history
+  assistant/              plain-English shopping assistant chat UI
   api/
     auth/[...nextauth]/route.js
     register/route.js
-    orders/route.js
-    products/[id]/image/route.js   streams one product's photo
+    orders/route.js                    the catalogue's Buy button
+    products/[id]/image/route.js       streams one product's photo
+    agent/
+      chat/route.js                     the assistant's tool-calling loop
+      confirm-purchase/route.js          attempts the purchase, explains failures via the model
 components/             Navbar, SessionProvider wrapper
 lib/
   prisma.js             Prisma client singleton
   auth.js               NextAuth config
+  hackathonApi.js        hackathon API client (balance, order, search, detail)
+  orderService.js         shared attemptPurchase() — the one real order-placement path
+  agentTools.js           tool schemas + read-only tool dispatch for the agent
+  azureOpenAI.js          Azure OpenAI chat-completions client
 ```
 
 ## Local development

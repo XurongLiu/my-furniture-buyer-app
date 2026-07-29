@@ -17,6 +17,7 @@ export default function Navbar() {
             <>
               <Link href="/catalogue" className="hover:underline">Catalogue</Link>
               <Link href="/orders" className="hover:underline">My Orders</Link>
+              <Link href="/assistant" className="hover:underline">Assistant</Link>
               <span className="text-stone-500">{session.user.name}</span>
               <button
                 onClick={() => signOut({ callbackUrl: "/" })}

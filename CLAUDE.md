@@ -79,6 +79,33 @@ are both wrapped in try/catch so nothing here can crash the page. See
 discrepancy between the Participant Guide's example request and the API's
 actual schema that's worth knowing about before touching this code again.
 
+**`/assistant` is a real tool-calling agent (GPT-5 mini via Azure OpenAI,
+`AZURE_OPENAI_*` env vars), not a canned response.** `app/api/agent/chat/route.js`
+runs the loop over the four tools in `lib/agentTools.js`
+(`search_catalogue`, `get_product_detail`, `check_balance`, `place_order`).
+The important part: `place_order` is never actually executed by the
+agent — the route intercepts that tool call, resolves the model's chosen
+`item_id` to a local `Product`, and hands it to the client as a
+`pendingPurchase`. Nothing is charged until a human clicks **Confirm**,
+which calls `app/api/agent/confirm-purchase/route.js` — that route (and
+the catalogue's Buy button, via `app/api/orders/route.js`) both go through
+the one real order-placement path, `lib/orderService.js`'s
+`attemptPurchase()`. Don't "simplify" this by having the agent call
+`placeHackathonOrder()` directly — that would remove the one thing
+standing between a model's tool call and a real charge.
+
+**A failed confirm gets explained by the model, not shown as a raw
+error.** On success, `confirm-purchase` replies with a plain pre-formatted
+confirmation (no extra model call). On failure, it hands the already-
+friendly error string plus the conversation history to the model (no
+`TOOL_SCHEMAS` this time — it should only produce text, not try to call
+`place_order` again) and asks it to explain plainly and suggest one
+concrete alternative. See "Shopping assistant agent" in
+[architecture.md](./architecture.md) for the full design, including two
+more Participant Guide inaccuracies caught by testing (product dimensions
+*are* available via `GET /catalogue/{item_id}`, despite the guide's claim
+otherwise).
+
 ## Folder structure
 
 ```

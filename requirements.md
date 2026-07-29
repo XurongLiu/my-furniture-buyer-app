@@ -87,6 +87,33 @@ shop-owner management screen — this is a buyer-facing app only.
   (product, quantity, price at purchase).
 - FR5.3 A user only ever sees their own orders, never another user's.
 
+### 6. Shopping assistant
+
+- FR6.1 A logged-in user can type a plain-English request into a chat
+  interface (`/assistant`) instead of browsing the catalogue manually.
+- FR6.2 The assistant can search the catalogue, look up one product's
+  detail, check the real balance, and place a real order, using the same
+  four hackathon API actions as the rest of the app.
+- FR6.3 For anything the catalogue search can't do server-side (matching
+  by price, colour, or general "vibe" rather than an exact category), the
+  assistant fetches the closest category and applies that judgment itself
+  over the plain results — and says so, rather than implying the API did
+  the filtering.
+- FR6.4 The assistant never places a real order without the user's
+  explicit confirmation. Even if it decides to attempt one, the app pauses
+  for an explicit human confirmation click before anything is actually
+  charged — this doesn't depend on the assistant remembering to ask.
+- FR6.5 A confirmed purchase through the assistant behaves identically to
+  one made via the catalogue's Buy button (real order, recorded locally,
+  balance updates, friendly errors) — it reuses the same order-placement
+  path rather than a separate one.
+- FR6.6 If a confirmed purchase fails — not enough real balance, or the
+  item is no longer available — the assistant explains why in plain
+  language and suggests something concrete to try instead (a smaller
+  quantity, a cheaper item, searching again), rather than showing the raw
+  error as-is. A successful purchase doesn't need this — the confirmation
+  is already clear on its own.
+
 ## Non-functional requirements
 
 - NFR1 — The running app itself needs no cloud accounts or paid APIs — data
