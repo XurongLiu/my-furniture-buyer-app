@@ -156,6 +156,119 @@ database.
   the natural next step if the list feels heavy — not built now to avoid
   a shopping-cart redesign that wasn't asked for.
 
+## Home page: live hackathon API integration
+
+Separate from the MongoDB-backed `/catalogue` above, the home page
+(`app/page.js`) calls the hackathon's own **Product Search / Order / Balance
+API** (from the Day 1 Participant Guide) live, on every request — this is a
+real HTTP call at page-render time, not a one-off import into our database.
+
+- **Endpoint used:** `GET /catalogue/search-index?limit=12` — explicitly the
+  endpoint the guide says to use for browsing. The guide is emphatic that
+  plain `GET /catalogue` (which embeds every product's image as base64) is
+  the wrong choice here: against the real event catalogue it can take 20+
+  seconds and has a much stricter rate limit. `search-index` returns the
+  same fields minus images, fast.
+- **No auth needed** for catalogue endpoints — confirmed in the guide
+  ("The catalogue endpoints need no auth — they're public"), so this call
+  sends no `X-Api-Key` header.
+- **Env vars** (`.env`, gitignored): `HACKATHON_API_BASE_URL`,
+  `HACKATHON_USER_ID`, `HACKATHON_API_KEY`. Only the base URL is used by
+  this particular feature; the user ID and key are used by the balance
+  integration below.
+- **Caching:** `fetch(..., { next: { revalidate: 60 } })` — refreshes at
+  most once a minute, so the home page doesn't hit the external API on
+  every single visitor, but still shows real, near-live data.
+- **Fails soft:** if the external API is slow, down, or errors, the fetch
+  is wrapped in try/catch and returns `[]` — the "A few things in the
+  catalogue" section just doesn't render rather than breaking the whole
+  home page. The API being external and outside this app's control makes
+  that degradation deliberate, not an oversight.
+
+## Catalogue page: real balance, and real order placement
+
+The catalogue page's balance figure comes from the hackathon API's `GET
+/users/{id}` (`lib/hackathonApi.js`'s `getHackathonBalance()`), not from
+the `User.budget` field or a locally-summed `Order` total. Clicking **Buy**
+on a product calls the same API's real `POST /orders` — this genuinely
+debits the event-tracked balance and creates a real order on the
+hackathon's side, it is not a local simulation.
+
+- **Why this is one balance, not per-buyer:** this app supports many local
+  accounts (anyone can sign up), but the hackathon API recognizes exactly
+  one account — `HACKATHON_USER_ID`, authenticated by `HACKATHON_API_KEY`.
+  It has no idea our app's `User` table exists. Every buyer logged into
+  this app sees and spends against the *same* real balance — the hackathon
+  participant's, not "this buyer's." That's a direct consequence of there
+  being one hackathon account and many local ones, not a bug.
+- **One item per click, not a multi-item cart.** The UI is a quantity input
+  + Buy button per product card, matching how `POST /orders` is actually
+  used here (one `item_id` per request). The real endpoint's schema
+  (`OrderRequest`, confirmed against the API's own `/openapi.json`) does
+  technically accept multiple `items` in one call — this app just doesn't
+  build a multi-item cart around that, to keep "click Buy on a product"
+  literal and the blast radius of one click obvious.
+- **The Participant Guide's example request body is wrong for the actual
+  deployed API.** The guide shows `{"user_id": ..., "item_id": ...,
+  "quantity": ...}`; the real schema (per `/openapi.json`) is `{"user_id":
+  ..., "items": [{"item_id": ..., "quantity": ...}]}`. This was caught by
+  testing a harmless malformed/bogus-item-id request *before* writing code
+  against the guide's example verbatim — worth remembering if the guide
+  gets used for anything else. Error bodies are FastAPI's own
+  `{"detail": "message"}` (or, for request-validation failures, `{"detail":
+  [...]}` — an array of Pydantic error objects), not `{"error": ...}`;
+  `extractDetail()` in `lib/hackathonApi.js` handles both shapes.
+- **`Idempotency-Key` header** (a fresh `crypto.randomUUID()` per click) is
+  sent on every `POST /orders` call. The API docs its own semantics as
+  "resending the same order with the same key returns the original result
+  instead of charging again" — this makes a double-click or a retried
+  request after a dropped connection safe rather than a duplicate charge.
+- **Order history is still local.** A successful real order also creates an
+  `Order` + one `OrderItem` row here (`Order.externalOrderId` stores the
+  real `order_id` for traceability), so "My Orders" keeps working
+  unchanged. `product.externalId` (the same field the MongoDB import
+  populated) is what's sent as `item_id` — this only works for products
+  that have one, which is all of them post-import, but is checked
+  defensively anyway.
+- **Always fetched fresh** (`cache: "no-store"`) — a stale balance here
+  would be a correctness bug (ordering against a number that's no longer
+  true), not just staleness.
+- **Fails closed, not soft:** if the initial balance fetch fails, the
+  catalogue page shows "Real balance unavailable" and disables every Buy
+  button; if `POST /orders` itself fails, the specific product's card shows
+  a clear error inline, and no local `Order` row is created. Guessing at
+  spending power, or silently recording an order that wasn't actually
+  placed, would both be worse than an honest error here.
+- **Specific, friendly messages for the two failure modes buyers actually
+  hit**, rather than the API's raw `{"detail": ...}` text (which the API
+  itself logs server-side via `console.error` for debugging, but never
+  shows to the user):
+  - **Insufficient balance (`402`)** — `app/api/orders/route.js` fetches
+    the current balance again and shows the real numbers: "You don't have
+    enough balance for this order — it costs $X, but only $Y is
+    available."
+  - **Product no longer available (`404`, or the local `productId` doesn't
+    even resolve to a `Product` anymore)** — both collapse to the same
+    "This item is no longer available." Whether the gap is on our side (a
+    stale client holding a deleted product) or theirs (the real catalogue
+    item is gone) isn't something a buyer needs to distinguish.
+  - Every other failure (auth/config issues, rate limiting, network errors,
+    an unexpected exception anywhere in the handler) is caught and turned
+    into a clean JSON error response — `POST /api/orders`'s whole handler
+    body is wrapped in try/catch specifically so nothing here can surface
+    as a raw 500 or an unhandled exception. The client mirrors this: the
+    fetch/parse in `handleBuy()` is also wrapped, so a dropped connection
+    or a non-JSON response sets a normal per-card error state instead of
+    leaving the button stuck on "Buying..." or throwing uncaught.
+- **`User.budget`** (the field collected at sign-up) remains unused for
+  enforcement — a known loose end, left as-is to keep this change scoped to
+  what was asked.
+- **Not built:** fetching/displaying the real PDF invoice (`GET
+  /orders/{order_id}/invoice`) that the hackathon API generates per order.
+  The inline confirmation (order id, amount, new balance) covers what was
+  asked; the invoice endpoint is there if a receipt view is wanted later —
+  `Order.externalOrderId` already has what it'd need.
+
 ## Authentication
 
 - **Strategy:** NextAuth's Credentials provider with **JWT sessions** — no

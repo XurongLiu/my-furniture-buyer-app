@@ -19,7 +19,10 @@ shop-owner management screen — this is a buyer-facing app only.
 ### 1. Accounts & authentication
 
 - FR1.1 A visitor can create an account with name, email, password, and an
-  optional starting budget (defaults to $1000 if left blank).
+  optional starting budget (defaults to $1000 if left blank). This stored
+  number is no longer used to gate spending (see FR3.1) — it's a leftover
+  from before the real-balance integration, kept only because removing the
+  field wasn't part of this change.
 - FR1.2 Email must be unique; sign-up fails with a clear error if the email
   is already registered.
 - FR1.3 Password must be at least 6 characters.
@@ -38,23 +41,43 @@ shop-owner management screen — this is a buyer-facing app only.
 
 ### 3. Budget tracking
 
-- FR3.1 Each user has a total budget (set at sign-up).
-- FR3.2 The system tracks how much of that budget has been spent, computed
-  as the sum of the user's placed orders.
-- FR3.3 Remaining budget = total budget − spent so far, always visible on
-  the catalogue page.
+- FR3.1 The spending limit is the buyer's **real balance from the hackathon's
+  Product Search / Order / Balance API** (`GET /users/{id}`), fetched live —
+  not a number tracked locally per app-account. Every buyer logged into this
+  app currently sees the same real balance, since the hackathon API only
+  knows about one account (the credentials in `.env`), not our app's
+  individual sign-ups. See architecture.md for the full rationale.
+- FR3.2 The app also tracks how much a buyer has spent *through this app*,
+  computed as the sum of their placed orders — shown alongside the real
+  balance for reference, but no longer subtracted from it locally.
+- FR3.3 The real balance is always visible on the catalogue page; if it
+  can't be fetched, the app says so and disables ordering rather than
+  guessing or falling back to a stale number.
 
 ### 4. Placing orders
 
-- FR4.1 A user can choose a quantity for one or more products and submit
-  them together as a single order.
-- FR4.2 An order's total is the sum of (price × quantity) across its items.
-- FR4.3 An order is rejected if its total would exceed the user's remaining
-  budget; the user sees a clear error stating the order total and their
-  remaining budget.
-- FR4.4 An order that fits within budget is saved immediately and reflected
-  in the remaining budget shown on screen.
-- FR4.5 Price is locked in at the time of purchase (later catalogue price
+- FR4.1 A user picks a quantity and clicks **Buy** on one product at a
+  time — not a multi-item cart checkout.
+- FR4.2 Buying places a **real order through the hackathon's own API**
+  (`POST /orders`), which genuinely debits the real, event-tracked balance
+  and creates a real order on their side.
+- FR4.3 If an order is rejected for costing more than the real balance, the
+  buyer sees a clear "you don't have enough balance" message (with the
+  actual order cost and available balance), not a generic error. If a
+  product is no longer available for real purchase — whether it's been
+  removed from the real catalogue, or the local product record is gone —
+  the buyer sees a friendly "this item is no longer available" message.
+  Neither failure crashes the page or leaves anything stuck; nothing is
+  recorded locally for a failed attempt.
+- FR4.4 A successful real order is also recorded in this app's own order
+  history immediately (for "My Orders"), including the real order id for
+  traceability.
+- FR4.5 After a successful purchase, the user sees a confirmation (item,
+  quantity, amount, real order id) and the catalogue's displayed real
+  balance updates immediately to the new value the hackathon API returned.
+- FR4.6 Retrying the same buy action (e.g. an accidental double-click) is
+  safe — it won't place or charge for a second order.
+- FR4.7 Price is locked in at the time of purchase (later catalogue price
   changes don't retroactively change past orders' recorded totals).
 
 ### 5. Order history

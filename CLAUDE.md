@@ -5,9 +5,9 @@ See [requirements.md](./requirements.md) for the full feature scope and
 stays focused on conventions and commands for working in the codebase.
 
 A hackathon (Day 1) web app for a furniture shop. A user creates an account,
-logs in, browses a product catalogue, and places orders against a personal
-spending budget. Orders that would exceed the user's remaining budget are
-rejected server-side.
+logs in, browses a product catalogue, and places orders against a real
+balance fetched live from the hackathon's own API. Orders that would exceed
+that balance are rejected server-side.
 
 ## Tech stack
 
@@ -37,7 +37,8 @@ predates it was an unnecessary risk. Instead, each protected page
 
 ## Data model (`prisma/schema.prisma`)
 
-- `User` — name, email, password hash, `budget` (starting spending limit).
+- `User` — name, email, password hash, `budget` (collected at sign-up, no
+  longer used to gate spending — see below).
 - `Product` — name, description, price, category, plus `imageData`/
   `imageMimeType` (real product photo, when the source has one),
   `emoji` (fallback placeholder art), `externalId`/`sourceUrl` (provenance
@@ -47,14 +48,36 @@ predates it was an unnecessary risk. Instead, each protected page
 - `OrderItem` — links an `Order` to a `Product`, with quantity and the price
   at the time of purchase (so later price changes don't rewrite history).
 
-A user's remaining budget = `budget` − sum of their past orders' totals.
-This is computed on the fly, not stored.
-
 Products are loaded from a real external catalog (762 IKEA items from
 MongoDB), not hand-written — see "Product catalog source" in
 [architecture.md](./architecture.md) for the import script, field-mapping
 quirks, and why images are served through `/api/products/[id]/image`
 instead of being inlined into the page.
+
+The home page (`app/page.js`) is separate: it calls the hackathon's own
+live API (`HACKATHON_API_BASE_URL`'s `/catalogue/search-index`) on every
+request, not the local database — see "Home page: live hackathon API
+integration" in [architecture.md](./architecture.md).
+
+**Buying a product places a real order through the hackathon API — this is
+not a simulation.** `POST /api/orders` calls `lib/hackathonApi.js`'s
+`placeHackathonOrder()`, which hits the real `POST /orders` with
+`{user_id, items: [{item_id, quantity}]}` and an `Idempotency-Key` header
+(so a double-click can't double-charge). This genuinely debits the real,
+event-tracked balance shown on the catalogue page (from `GET /users/{id}`)
+and creates a real order + invoice on the hackathon's side. A local `Order`
+row is also created on success (storing the real `order_id` in
+`externalOrderId`) so "My Orders" keeps working. Insufficient-balance (402)
+and product-not-found (404, or a locally-missing product) both get their
+own specific, friendly messages rather than the API's raw `{"detail":
+...}` text — see `ORDER_ERROR_MESSAGES` / `NOT_AVAILABLE` — and
+`app/api/orders/route.js`'s whole handler plus the client's `handleBuy()`
+are both wrapped in try/catch so nothing here can crash the page. See
+"Catalogue page: real balance, and real order placement" in
+[architecture.md](./architecture.md)
+— including the one-balance-for-every-local-buyer caveat, and a real
+discrepancy between the Participant Guide's example request and the API's
+actual schema that's worth knowing about before touching this code again.
 
 ## Folder structure
 
