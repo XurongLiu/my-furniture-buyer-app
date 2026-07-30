@@ -86,6 +86,11 @@ shop-owner management screen — this is a buyer-facing app only.
 - FR5.2 Each past order shows the date, total, and itemized line items
   (product, quantity, price at purchase).
 - FR5.3 A user only ever sees their own orders, never another user's.
+- FR5.4 For an order placed through the real hackathon API, the user can
+  download the real PDF invoice the hackathon API generated for it. A user
+  can never download another user's invoice, even by guessing/incrementing
+  an order id — attempting to do so looks identical to the order not
+  existing at all.
 
 ### 6. Shopping assistant
 

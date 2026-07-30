@@ -265,11 +265,38 @@ hackathon's side, it is not a local simulation.
 - **`User.budget`** (the field collected at sign-up) remains unused for
   enforcement — a known loose end, left as-is to keep this change scoped to
   what was asked.
-- **Not built:** fetching/displaying the real PDF invoice (`GET
-  /orders/{order_id}/invoice`) that the hackathon API generates per order.
-  The inline confirmation (order id, amount, new balance) covers what was
-  asked; the invoice endpoint is there if a receipt view is wanted later —
-  `Order.externalOrderId` already has what it'd need.
+## Order invoices (real PDFs)
+
+Each past order on `/orders` that went through the real order-placement
+path (i.e. has an `externalOrderId`) shows a **Download invoice (PDF)**
+link. This streams the hackathon API's own generated invoice — confirmed
+directly by calling `GET /orders/{order_id}/invoice` against a real placed
+order: `Content-Type: application/pdf`, a ~50KB single-page
+ReportLab-generated document — not a locally-built receipt.
+
+- **`lib/hackathonApi.js`'s `getHackathonInvoice({ orderId })`** calls that
+  endpoint with the `X-Api-Key` header (confirmed required — omitting it
+  gets a 401 `"Missing X-Api-Key header"`) and returns the raw PDF bytes.
+  Unlike every other function in this file, the response body is binary,
+  not JSON, so it reads `res.arrayBuffer()` instead of `res.json()`.
+- **`app/api/orders/[id]/invoice/route.js`** is the only place `id` in the
+  URL means our local `Order.id`, not the hackathon's `externalOrderId` —
+  deliberately, so a buyer can't fetch a real invoice by guessing/
+  incrementing someone else's real `order_id` (which never appears in a
+  URL a browser sends). It looks the order up scoped to the *signed-in*
+  user first (`where: { id }`, then checks `order.userId === session.user.id`
+  itself, rather than trusting the id alone) — an order that exists but
+  belongs to someone else, and an order that doesn't exist at all, both
+  return the same 404. Confirmed live with a second throwaway account:
+  trying another user's order id returns "Order not found," not a 403
+  that would leak that the order exists.
+- **An order with no `externalOrderId`** (created before the real-order
+  integration existed, or if a local `Order` row were ever created without
+  one) gets its own 404 with a distinct message — there's genuinely no
+  real invoice to fetch, not a bug.
+- **`Content-Disposition: attachment`** (not `inline`, which is what the
+  hackathon API itself sends) — the point here is a download, so the
+  browser saves the file rather than trying to render it in-tab.
 
 ## Shopping assistant agent: RAG over the PDF catalogue
 
@@ -495,6 +522,7 @@ app/
     auth/[...nextauth]/route.js
     register/route.js
     orders/route.js                    the catalogue's Buy button
+    orders/[id]/invoice/route.js       streams the real PDF invoice for one of the user's own orders
     products/[id]/image/route.js       streams one product's photo
     agent/
       chat/route.js                     the assistant's tool-calling loop

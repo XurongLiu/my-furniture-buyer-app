@@ -34,6 +34,14 @@ export default async function OrdersPage() {
                 <span>{new Date(order.createdAt).toLocaleString()}</span>
                 <span className="font-semibold text-stone-900">${order.total.toFixed(2)}</span>
               </div>
+              {order.externalOrderId && (
+                <a
+                  href={`/api/orders/${order.id}/invoice`}
+                  className="mt-2 inline-block text-sm text-stone-600 underline hover:text-stone-900"
+                >
+                  Download invoice (PDF)
+                </a>
+              )}
               <ul className="mt-2 space-y-2 text-sm">
                 {order.items.map((item) => (
                   <li key={item.id} className="flex items-center gap-2">

@@ -118,6 +118,17 @@ friendly error string plus the conversation history to the model (no
 concrete alternative. See "Shopping assistant agent: RAG over the PDF
 catalogue" in [architecture.md](./architecture.md) for the full design.
 
+**Order invoices are real PDFs from the hackathon API, not locally
+generated.** Each order on `/orders` with an `externalOrderId` shows a
+**Download invoice (PDF)** link, streamed by
+`app/api/orders/[id]/invoice/route.js` via `lib/hackathonApi.js`'s
+`getHackathonInvoice()` (`GET /orders/{order_id}/invoice`, confirmed to
+need the same `X-Api-Key` header as order placement). The route looks the
+order up scoped to the signed-in user first — an order that belongs to
+someone else and an order that doesn't exist both return the same 404, so
+a buyer can't fetch another buyer's real invoice by guessing an id. See
+"Order invoices (real PDFs)" in [architecture.md](./architecture.md).
+
 ## Folder structure
 
 ```
@@ -144,6 +155,7 @@ app/
     auth/[...nextauth]/route.js   NextAuth handler
     register/route.js             creates a new user (hashes password)
     orders/route.js                validates + creates an order
+    orders/[id]/invoice/route.js   streams the real PDF invoice for one of the user's own orders
     products/[id]/image/route.js   streams one product's photo
     agent/
       chat/route.js                 retrieves candidates, runs the model loop
